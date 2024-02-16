@@ -47,8 +47,8 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
     private ?string $address = null;
 
-    #[ORM\Column(type: 'date', nullable: true)]
-    private ?string $inscriptionDate = null;
+    #[ORM\Column(type: 'datetime', nullable: true)]
+    private ?\DateTimeInterface $inscriptionDate = null;
 
     #[ORM\Column(type: 'string', length: 255, nullable: true)]
     private ?string $speciality = null;
@@ -205,12 +205,12 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function getInscriptionDate(): ?string
+    public function getInscriptionDate(): ?\DateTimeInterface
     {
         return $this->inscriptionDate;
     }
 
-    public function setInscriptionDate(?string $inscriptionDate): static
+    public function setInscriptionDate(?\DateTimeInterface $inscriptionDate): self
     {
         $this->inscriptionDate = $inscriptionDate;
 
