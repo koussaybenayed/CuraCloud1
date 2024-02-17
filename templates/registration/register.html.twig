@@ -226,26 +226,27 @@
                             }) }}
                     </div>
                     <div class="pt-4">
+                      <input type="hidden" name="registration_type" value="patient">
                       <button type="submit" class="btn btn-primary me-sm-3 me-1">Submit</button>
                       <button type="reset" class="btn btn-label-secondary">Cancel</button>
                     </div>
                   {{ form_end(registrationForm) }}
                 </div>
                 <div class="tab-pane fade" id="form-tabs-doctor" role="tabpanel">
-                  <form>
+                  {{ form_start(registrationForm2) }}
                     <div class="row g-3">
                       <div class="col-md-6">
                         <label class="form-label" for="formtabs-first-name">First Name</label>
                           <div class="input-group input-group-merge">
                             <span id="basic-icon-default-fullname2" class="input-group-text"><i class="bx bx-user"></i></span>
-                            <input type="text" id="formtabs-first-name" class="form-control" placeholder="John">
+                            {{ form_widget(registrationForm2.firstName, { 'attr': {'class': 'form-control', 'placeholder': 'John'} }) }}                         
                           </div>
                       </div>
                       <div class="col-md-6">
                         <label class="form-label" for="formtabs-last-name">Last Name</label>
                           <div class="input-group input-group-merge">
                             <span id="basic-icon-default-fullname2" class="input-group-text"><i class='bx bx-id-card'></i></span>
-                            <input type="text" id="formtabs-last-name" class="form-control" placeholder="Doe">
+                            {{ form_widget(registrationForm2.lastName, { 'attr': {'class': 'form-control', 'placeholder': 'Doe'} }) }}
                           </div>
                       </div>
                       <div class="col-md-6">
@@ -253,7 +254,7 @@
                         <div class="input-group input-group-merge">
                           <div class="input-group input-group-merge">
                             <span class="input-group-text"><i class="bx bx-envelope"></i></span>
-                            <input type="text" id="formtabs-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="formtabs-email2">
+                            {{ form_widget(registrationForm2.email, { 'attr': {'class': 'form-control', 'placeholder': 'john.doe'} }) }}                            
                             <span class="input-group-text" id="formtabs-email2">@example.com</span>
                           </div>
                           
@@ -264,7 +265,8 @@
                           <label class="form-label" for="formtabs-password">Password</label>
                           <div class="input-group input-group-merge">
                             <span class="input-group-text"><i class='bx bx-lock-alt'></i></span>
-                            <input type="password" id="formtabs-password" class="form-control" placeholder="············" aria-describedby="formtabs-password2" aria-autocomplete="list">
+                            {# <input type="password" id="formtabs-password" class="form-control" placeholder="············" aria-describedby="formtabs-password2" aria-autocomplete="list"> #}
+                            {{ form_widget(registrationForm2.plainPassword, { 'attr': {'class': 'form-control', 'placeholder': '············'} }) }}
                             <span class="input-group-text cursor-pointer" id="formtabs-password2"><i class="bx bx-hide"></i></span>
                           </div>
                         </div>
@@ -273,14 +275,16 @@
                         <label class="form-label" for="formtabs-birthdate">Birth Date</label>
                         <div class="input-group input-group-merge">
                           <span class="input-group-text"><i class="bx bx-calendar"></i></span>
-                          <input type="text" id="formtabs-birthdate" class="form-control dob-picker flatpickr-input" placeholder="YYYY-MM-DD" readonly="readonly">
+                          {# <input type="text" id="formtabs-birthdate" class="form-control dob-picker flatpickr-input" placeholder="YYYY-MM-DD" readonly="readonly"> #}
+                          {{ form_widget(registrationForm2.birthdate, { 'attr': {'class': 'form-control dob-picker flatpickr-input', 'placeholder': 'YYYY-MM-DD', 'readonly': 'readonly'} }) }}
                         </div>
                       </div>
                       <div class="col-md-6">
                         <label class="form-label" for="formtabs-phone">Phone No</label>
                           <div class="input-group input-group-merge">
                             <span id="basic-icon-default-phone2" class="input-group-text"><i class="bx bx-phone"></i></span>
-                            <input type="text" id="formtabs-phone" class="form-control phone-mask" placeholder="(+216) 98 765 243" aria-label="98 765 243">
+                            {# <input type="text" id="formtabs-phone" class="form-control phone-mask" placeholder="(+216) 98 765 243" aria-label="98 765 243"> #}
+                            {{ form_widget(registrationForm2.phoneNumber, { 'attr': {'class': 'form-control phone-mask', 'placeholder': '(+216) 98 765 243', 'aria-label': '98 765 243'} }) }}
                           </div>
                       </div>
                       <div class="col-md-6">
@@ -355,27 +359,26 @@
                         <input class="form-control" type="file" id="formFile">
                     </div>
                       <div class="col-md-6">
-                        <label class="form-check-label">Gender</label>
-                        <div class="col mt-2">
-                          <div class="form-check form-check-inline">
-                            <input name="collapsible-address-type" class="form-check-input" type="radio" value="" checked="">
-                            <label class="form-check-label">Male</label>
-
-                          </div>
-                          <div class="form-check form-check-inline">
-                            <input name="collapsible-address-type" class="form-check-input" type="radio" value="">
-                            <label class="form-check-label"> Female </label>
-                          </div>
-                        </div>
+                        {{ form_row(registrationForm2.gender, {
+                                'label': 'Gender',
+                                'label_attr': {'class': 'form-check-label'},
+                                'expanded': true,
+                                'multiple': false,
+                                'attr': {
+                                    'class': 'col mt-2',
+                                } 
+                        }) }}
                       </div> 
                     </div>
                     <div class="pt-4">
+                      <input type="hidden" name="registration_type" value="doctor">
                       <button type="submit" class="btn btn-primary me-sm-3 me-1">Submit</button>
                       <button type="reset" class="btn btn-label-secondary">Cancel</button>
                     </div>
-                  </form>
+                  {{ form_end(registrationForm2) }}
                 </div>
                 <div class="tab-pane fade" id="form-tabs-pharmacy" role="tabpanel">
+
                   <form>
                     <div class="row g-3">
                       <div class="col-md-6">
