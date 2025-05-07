@@ -1,0 +1,154 @@
+{% extends 'newbase.html.twig' %}
+
+{% block body %}
+    <div class="container mt-4">
+        <h1 class="mb-4">Appointment Details</h1>
+
+        <div class="card">
+            <div class="card-header">
+                <button class="btn btn-primary" id="showQRCode">Show QR Code</button>
+            </div>
+
+            <div class="card-body">
+                <h5 class="card-title">Appointment #{{ appointment.id }}</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr></tr>
+
+                            <tr>
+                                <th scope="row">Description</th>
+                                <td>{{ appointment.description }}</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Status</th>
+                                <td>
+                                    <span style="color:
+                                        {% if appointment.status|lower == 'accepted' %}
+                                            #28a745
+                                        {% elseif appointment.status|lower == 'completed' %}
+                                            #007bff
+                                        {% elseif appointment.status|lower == 'scheduled' %}
+                                            #ffc107
+                                        {% elseif appointment.status|lower == 'cancelled' %}
+                                            #dc3545
+                                        {% else %}
+                                            #6c757d
+                                        {% endif %}
+                                        ">
+                                        {{ appointment.status }}
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Start Date</th>
+                                <td>
+                                    {% if appointment.startDate %}
+                                        {{ appointment.startDate|date('l, F j, Y, g:i A') }}
+                                    {% else %}
+                                        N/A
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">End Date</th>
+                                <td>
+                                    {% if appointment.endDate %}
+                                        {{ appointment.endDate|date('l, F j, Y, g:i A') }}
+                                    {% else %}
+                                        N/A
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% if appointment.status|lower == 'completed' %}
+                                <tr>
+                                    <td colspan="2">
+                                        <button id="showRatingPopup" class="btn btn-primary mt-4">Rate this Appointment</button>
+                                    </td>
+                                </tr>
+                            {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+                <a href="{{ path('user_app_appointment_index') }}" class="btn btn-secondary">Back to List</a>
+                <div>
+                    <a href="{{ path('user_app_appointment_edit', {'id': appointment.id}) }}" class="btn btn-primary">Edit</a>
+                    {{ include('/FrontOffice/appointment/_delete_form.html.twig') }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div id="qrPopup" style="display: none; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 100; background: white; padding: 20px; border: 1px solid #ccc; border-radius: 5px;">
+		<img src="{{ path('generate_qr', { 'description': appointment.description, 'status': appointment.status, 'startDate': appointment.startDate|date('Y-m-d'), 'endDate': appointment.endDate|date('Y-m-d') }) }}" alt="QR Code">
+		<button id="closePopup">Close</button>
+	</div>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#showRatingPopup").click(function() {
+            Swal.fire({
+                title: 'Rate this Appointment',
+                html: `
+                    <div id="starRating" style="font-size: 2em;"> 
+                        <i class="far fa-star" data-rating="1" style="color: gold;"></i>
+                        <i class="far fa-star" data-rating="2" style="color: gold;"></i>
+                        <i class="far fa-star" data-rating="3" style="color: gold;"></i>
+                        <i class="far fa-star" data-rating="4" style="color: gold;"></i>
+                        <i class="far fa-star" data-rating="5" style="color: gold;"></i>
+                    </div>
+                    <input type="hidden" id="selectedRating" value="">
+                `,
+                showCancelButton: true,
+                confirmButtonText: 'Submit Rating',
+                preConfirm: () => {
+                    const rating = $("#selectedRating").val();
+                    if (!rating) {
+                        Swal.showValidationMessage('Please select a rating');
+                    }
+                    return { rating: rating };
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // AJAX request to update the rating
+                    $.ajax({
+                        url: "{{ path('submit_rating', {'id': appointment.id}) }}",
+                        method: "POST",
+                        data: {
+                            rating: result.value.rating
+                        },
+                        success: function(response) {
+                            // Handle success response, if needed
+                            console.log("Rating updated successfully!");
+                            Swal.fire('Success', 'Your rating has been submitted!', 'success');
+                        },
+                        error: function(xhr, status, error) {
+                            // Handle error response, if needed
+                            console.error("Error updating rating:", error);
+                            Swal.fire('Error', 'An error occurred while submitting your rating.', 'error');
+                        }
+                    });
+                }
+            });
+        });
+
+        $(document).on('click', '#starRating i', function() {
+            var rating = $(this).attr("data-rating");
+            $("#starRating i").removeClass("fas").addClass("far").css('color', 'gold');
+            $(this).prevAll().addBack().removeClass("far").addClass("fas").css('color', 'gold'); 
+            $("#selectedRating").val(rating);
+        });
+
+        $("#closePopup").click(function() {
+            $("#ratingPopup").hide();
+        });
+    });
+</script>
+
+{% endblock %}

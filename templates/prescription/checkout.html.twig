@@ -1,0 +1,53 @@
+{% extends 'newbase.html.twig' %}
+
+{% block title %}
+    <title>Checkout</title>
+{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        .font-size-lg {
+            font-size: 1.2rem; /* Adjust the font size as needed */
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="border rounded p-4 mb-5 pb-5">
+                    <!-- Medication Details -->
+                    <h4>Medication Details</h4>
+                    <div style="margin-bottom: 10px;"></div>
+                    <dl class="row mb-4">
+                        <dt class="col-6">Medication Name</dt>
+                        <dd class="col-6">{{ medicationDetails.name }}</dd>
+
+                        <dt class="col-6">Dose</dt>
+                        <dd class="col-6">{{ medicationDetails.dose }}</dd>
+                        <div class="w-100"></div>
+
+                        <hr class="mx-n4">
+                        <div style="margin-bottom: 60px;"></div>
+                        <dt class="col-6">Price</dt>
+                        <dd class="col-6">{{ medicationDetails.price }}</dd>
+                    </dl>
+
+                    <div style="margin-bottom: 8px;"></div>
+
+                    <!-- Action Buttons -->
+                    <div class="d-grid gap-3">
+                        <a href="{{ path('user_prescription_show' , {'id': prescription.id})}}" class="btn btn-outline-secondary btn-block">Back to details</a>
+                    </div>
+
+                    <div class="text-center mt-3"> <!-- Center the "Pay" button -->
+                        <form action="{{ path('user_prescription_pay', {'id': prescription.id}) }}" method="GET">
+                            <button type="submit" class="btn btn-outline-primary btn-block">Pay</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

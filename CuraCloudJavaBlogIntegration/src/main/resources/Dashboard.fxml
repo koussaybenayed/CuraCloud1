@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="562.0" prefWidth="782.0" styleClass="bg-color-1" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.controllers.Dashboard">
+    <stylesheets>
+        <URL value="@Dashboard.css" />
+    </stylesheets>
+    <children>
+        <Button layoutX="100.0" layoutY="100.0" mnemonicParsing="false" onAction="#navigateToPrescriptionIndex" styleClass="nav-btn-1" text="Prescription Index" />
+        <Button layoutX="100.0" layoutY="150.0" mnemonicParsing="false" onAction="#navigateToMedsIndex" styleClass="nav-btn-2" text="Meds Index" />
+    </children>
+</AnchorPane>

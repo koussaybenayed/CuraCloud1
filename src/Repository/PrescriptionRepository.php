@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Repository;
-
+use \App\Entity\User;
 use App\Entity\Prescription;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
@@ -45,4 +45,14 @@ class PrescriptionRepository extends ServiceEntityRepository
 //            ->getOneOrNullResult()
 //        ;
 //    }
+public function findUserByPrescriptionId($prescriptionId): ?User
+{
+    return $this->createQueryBuilder('u')
+        ->join('u.prescriptions', 'p')
+        ->andWhere('p.id = :prescriptionId')
+        ->setParameter('prescriptionId', $prescriptionId)
+        ->getQuery()
+        ->getOneOrNullResult();
+}
+
 }

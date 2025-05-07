@@ -1,0 +1,52 @@
+/* styles.css */
+
+.navbar {
+    -fx-background-color: #333333; /* Set the background color */
+    -fx-padding: 10px; /* Add padding around the navbar */
+}
+
+.navbar Button {
+    -fx-text-fill: white; /* Set text color */
+    -fx-font-size: 14px; /* Set font size */
+    -fx-background-color: transparent; /* Remove button background color */
+    -fx-border-color: white; /* Set border color */
+    -fx-border-width: 1px; /* Set border width */
+    -fx-border-radius: 5px; /* Set border radius */
+    -fx-padding: 5px 10px; /* Add padding inside the button */
+}
+
+.navbar Button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2); /* Set background color on hover */
+}
+/* Style for each individual blog box */
+/* Style for blog title */
+.blog-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* Style for blog content */
+.blog-content {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333; /* Text color */
+}
+
+/* Style for blog date */
+.blog-date {
+    -fx-font-size: 12px;
+    -fx-text-fill: #888; /* Gray text color */
+}
+
+/* Style for blog box (VBox) */
+.blog-box {
+    -fx-background-color: #fff;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 2, 2);
+}
+
+/* styles.css */
+
+.navbar {
+    -fx-background-color: green;
+}

@@ -1,0 +1,90 @@
+{% extends 'newbase.html.twig' %}
+
+{% block body %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-sm-8">
+            <div class="post">
+                <div class="post-thumbnail">
+                    <a href="#">
+                        <img src="{{ asset('images/blogs/' ~ blog.image) }}" alt="Blog Image" class="img-fluid">
+                    </a>
+                </div>
+                <div class="post-header font-alt">
+                    <h1 class="post-title">
+                        <a href="{{ path('app_blog_show', {'id': blog.id}) }}" class="post-link">
+                            {{ blog.title }}
+                        </a>
+                    </h1>
+                    <div class="post-meta">
+                        <a href="#">{{ blog.subject }}</a>
+                    </div>
+                </div>
+
+                <div class="post-entry">
+                    <p>{{ blog.content }}</p>
+                </div>
+
+                {# Like/Dislike buttons above the comments section #}
+                <div class="d-flex justify-content-end mt-2">
+                    <form id="likeForm" action="{{ path('app_blog_like', {'id': blog.id}) }}" method="POST">
+                        <button type="button" class="btn btn-primary btn-round me-2" onclick="toggleLike()">Like ({{ blog.likes|length }})</button>
+                    </form>
+
+                    <form id="dislikeForm" action="{{ path('app_blog_dislike', {'id': blog.id}) }}" method="POST">
+                        <button type="button" class="btn btn-primary btn-round" onclick="toggleDislike()">Dislike ({{ blog.dislikes|length }})</button>
+                    </form>
+                </div>
+
+                {# Display edit and delete buttons for the author #}
+                {% if app.user == blog.author %}
+                    <div class="d-flex justify-content-end">
+                        <a href="{{ path('app_blog_edit', {'id': blog.id}) }}" class="btn btn-primary me-2">Edit</a>
+                        <a href="{{ path('app_blog_delete', {'id': blog.id}) }}" class="btn btn-danger">Delete</a>
+                    </div>
+                {% endif %}
+
+                <div>
+                    <h2>Comments on this Post</h2>
+
+                    <div class="card bg-primary text-white mb-3">
+                        <ul class="list-unstyled">
+                            {% for blogComment in blog.comments %}
+                                <li class="card-body">
+                                    {% if blogComment.user %}
+                                        {# <img class="mr-3 rounded-circle" src="{{ path_to_your_user_profile_picture(blogComment.user.profilePicture) }}" alt="User Profile Picture"> #}
+                                    {% else %}
+                                        <div class="mr-3 rounded-circle placeholder"></div>
+                                    {% endif %}
+                                    <div class="media-body">
+                                        <div class="comment-content-container">
+                                            <div class="card-title header-elements">
+                                                <h5 class="m-0 me-2">{{ blogComment.user ? blogComment.user.firstName : 'Anonymous' }} {{ blogComment.user ? blogComment.user.lastName : 'Anonymous' }}</h5>
+                                            </div>
+                                            
+                                            <p class="card-text">{{ blogComment.content }} - {{ blogComment.submissionDate ? blogComment.submissionDate|date('Y-m-d') : '' }}</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                    {# New comment form #}
+                    {{ include('comments/_form.html.twig') }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleLike() {
+        document.getElementById('likeForm').submit();
+    }
+
+    function toggleDislike() {
+        document.getElementById('dislikeForm').submit();
+    }
+</script>
+{% endblock %}

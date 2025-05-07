@@ -1,0 +1,1995 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\CoreExtension;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+
+/* newbase.html.twig */
+class __TwigTemplate_3f9a4ad78fda2e610787592de12180a7 extends Template
+{
+    private $source;
+    private $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->parent = false;
+
+        $this->blocks = [
+            'title' => [$this, 'block_title'],
+            'css' => [$this, 'block_css'],
+            'body' => [$this, 'block_body'],
+            'js' => [$this, 'block_js'],
+        ];
+    }
+
+    protected function doDisplay(array $context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "newbase.html.twig"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "newbase.html.twig"));
+
+        // line 1
+        yield "<!DOCTYPE html>
+
+<html lang=\"en\" class=\"light-style  layout-navbar-fixed      \" dir=\"ltr\" data-theme=\"theme-default\" data-assets-path=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/\" data-base-url=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1\" data-framework=\"laravel\" data-template=\"front-menu-theme-default-light\">
+
+
+<!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1/front-pages/pricing by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Nov 2023 03:53:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset=\"utf-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0\" />
+    <script src=\"https://code.jquery.com/jquery-3.6.4.min.js\"></script>
+    <link rel=\"stylesheet\" href=\"";
+        // line 12
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("node_modules/sweetalert2/dist/sweetalert2.min.css"), "html", null, true);
+        yield "\">
+    <script src=\"";
+        // line 13
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("node_modules/sweetalert2/dist/sweetalert2.all.min.js"), "html", null, true);
+        yield "\"></script>
+    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css\">
+    <script src=\"https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js\"></script>
+  ";
+        // line 16
+        yield from $this->unwrap()->yieldBlock('title', $context, $blocks);
+        // line 19
+        yield "  <meta name=\"description\" content=\"Most Powerful &amp; Comprehensive Bootstrap 5 HTML Admin Dashboard Template built for developers!\" />
+  <meta name=\"keywords\" content=\"dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5\">
+  <!-- laravel CRUD token -->
+  <meta name=\"csrf-token\" content=\"0eCEBTosT4fUoOUBm1mZC5xlQ6QVoufdLxSNbJCn\">
+  <!-- Canonical SEO -->
+  <link rel=\"canonical\" href=\"https://themeselection.com/item/sneat-bootstrap-laravel-admin-template/\">
+  <!-- Favicon -->
+  <link rel=\"icon\" type=\"image/x-icon\" href=\"https://media.discordapp.net/attachments/1199781434030821399/1206316935956930591/LOGO.png?ex=65ee0631&is=65db9131&hm=ebb60ff6418e39aa96b28b0cde8e4928ec7477f74385ad56cd0d94ccc1221d9c&=&format=webp&quality=lossless&width=537&height=537\" />
+
+    
+";
+        // line 29
+        yield from $this->unwrap()->yieldBlock('css', $context, $blocks);
+        // line 97
+        yield "</head>
+
+<body>
+  
+      <!-- Google Tag Manager (noscript) (Default ThemeSelection: GTM-5DDHKGP, PixInvent: GTM-5J3LMKC) -->
+  <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-5DDHKGP\" height=\"0\" width=\"0\" style=\"display: none; visibility: hidden\"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    
+
+  <!-- Layout Content -->
+  
+
+
+<!-- Navbar: Start -->
+<nav class=\"layout-navbar shadow-none py-0\">
+  <div class=\"container\">
+    <div class=\"navbar navbar-expand-lg landing-navbar px-3 px-md-4 \">
+      <!-- Menu logo wrapper: Start -->
+      <div class=\"navbar-brand app-brand demo d-flex py-0 me-4\">
+        <!-- Mobile menu toggle: Start-->
+        <button class=\"navbar-toggler border-0 px-0 me-2\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+          <i class=\"tf-icons bx bx-menu bx-sm align-middle\"></i>
+        </button>
+        <!-- Mobile menu toggle: End-->
+       <a href=\"landing.html\" class=\"app-brand-link\">
+    <span class=\"app-brand-logo demo\">
+        <img src=\"";
+        // line 123
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/blogs/LOGO-65ea2b987652d.png"), "html", null, true);
+        yield "\" alt=\"Your Logo\" width=\"50\">
+    </span>
+</a>
+  <g id=\"g-app-brand\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">
+    <g id=\"Brand-Logo\" transform=\"translate(-27.000000, -15.000000)\">
+      <g id=\"Icon\" transform=\"translate(27.000000, 15.000000)\">
+        <g id=\"Mask\" transform=\"translate(0.000000, 8.000000)\">
+          <mask id=\"mask-2\" fill=\"white\">
+            <use xlink:href=\"#path-1\"></use>
+          </mask>
+          <use fill=\"var(--bs-primary)\" xlink:href=\"#path-1\"></use>
+          <g id=\"Path-3\" mask=\"url(#mask-2)\">
+            <use fill=\"var(--bs-primary)\" xlink:href=\"#path-3\"></use>
+            <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-3\"></use>
+          </g>
+          <g id=\"Path-4\" mask=\"url(#mask-2)\">
+            <use fill=\"var(--bs-primary)\" xlink:href=\"#path-4\"></use>
+            <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-4\"></use>
+          </g>
+        </g>
+        <g id=\"Triangle\" transform=\"translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) \">
+          <use fill=\"var(--bs-primary)\" xlink:href=\"#path-5\"></use>
+          <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-5\"></use>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+</span>
+          <span class=\"app-brand-text demo menu-text fw-bold ms-2 ps-1\">CuraCloud</span>
+        </a>
+      </div>
+      <!-- Menu logo wrapper: End -->
+      <!-- Menu wrapper: Start -->
+      <div class=\"collapse navbar-collapse landing-nav-menu\" id=\"navbarSupportedContent\">
+        <button class=\"navbar-toggler border-0 text-heading position-absolute end-0 top-0 scaleX-n1-rtl\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+          <i class=\"tf-icons bx bx-x bx-sm\"></i>
+        </button>
+        <ul class=\"navbar-nav me-auto\" >
+          <li class=\"nav-item active\">
+            <a class=\"nav-link fw-medium\" aria-current=\"page\"  href=\"";
+        // line 163
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_home");
+        yield "\">Home</a>
+          </li>
+          <li class=\"nav-item mega-dropdown\">
+            <a href=\"javascript:void(0);\" class=\"nav-link dropdown-toggle navbar-ex-14-mega-dropdown mega-dropdown fw-medium\" aria-expanded=\"false\" data-bs-toggle=\"mega-dropdown\" data-trigger=\"hover\">
+              <span>Laboratoires</span>
+            </a>
+            <div class=\"dropdown-menu p-4\">
+              <div class=\"row gy-4\">
+                <div class=\"col-12 col-lg\">
+                  <!-- add page slug in \$activeRoutes array, defined Beginning of the page to add active class to the nav item -->
+                  <ul class=\"nav flex-column\">
+                    <li class=\"nav-item \">
+                      <a class=\"nav-link mega-dropdown-link\"  href=\"";
+        // line 175
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_bilan_index");
+        yield "\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Bilan</span>
+                      </a>
+                    </li>
+                    <li class=\"nav-item \">
+                      <a class=\"nav-link mega-dropdown-link\"  href=\"";
+        // line 181
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_diagnostic_request_index");
+        yield "\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Diagnostic Request</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            
+          </li>
+            <li class=\"nav-item mega-dropdown\">
+            <a href=\"javascript:void(0);\" class=\"nav-link dropdown-toggle navbar-ex-14-mega-dropdown mega-dropdown fw-medium\" aria-expanded=\"false\" data-bs-toggle=\"mega-dropdown\" data-trigger=\"hover\">
+              <span>Patient Portal</span>
+            </a>
+            <div class=\"dropdown-menu p-4\">
+              <div class=\"row gy-4\">
+                <div class=\"col-12 col-lg\">
+                  <!-- add page slug in \$activeRoutes array, defined Beginning of the page to add active class to the nav item -->
+                  <ul class=\"nav flex-column\">
+                    <li class=\"nav-item \">
+                    ";
+        // line 203
+        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_PATIENT")) {
+            // line 204
+            yield "                      <a class=\"nav-link mega-dropdown-link\"  href=\"";
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_app_appointment_index");
+            yield "\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Appointments</span>
+                      </a>
+                    ";
+        }
+        // line 209
+        yield "                    ";
+        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_DOCTOR")) {
+            // line 210
+            yield "                      <a class=\"nav-link mega-dropdown-link\"  href=\"";
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("admin_app_appointment_index");
+            yield "\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Appointments</span>
+                      </a>
+                    ";
+        }
+        // line 215
+        yield "                    </li>
+                    ";
+        // line 216
+        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_PATIENT")) {
+            // line 217
+            yield "                    <li class=\"nav-item \">
+                      <a class=\"nav-link mega-dropdown-link\"  href=\"";
+            // line 218
+            yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_medical_record_index");
+            yield "\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Medical Record</span>
+                      </a>
+                    </li>
+                    ";
+        }
+        // line 224
+        yield "                  </ul>
+                </div>
+              </div>
+            </div>
+           
+             <li class=\"nav-item \">
+                   <a class=\"nav-link fw-medium\" href=\"";
+        // line 230
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("user_prescription_index");
+        yield "\" target=\"_blank\">Prescriptions</a>
+              </li>
+            
+            
+                  <li class=\"nav-item mega-dropdown \">
+            <a href=\"javascript:void(0);\" class=\"nav-link dropdown-toggle navbar-ex-14-mega-dropdown mega-dropdown fw-medium\" aria-expanded=\"false\" data-bs-toggle=\"mega-dropdown\" data-trigger=\"hover\">
+              <span>CuraHub</span>
+            </a>
+            <div class=\"dropdown-menu p-4\">
+              <div class=\"row gy-4\">
+                <div class=\"col-12 col-lg\">
+                  <!-- add page slug in \$activeRoutes array, defined Beginning of the page to add active class to the nav item -->
+                  <ul class=\"nav flex-column\">
+                    <li class=\"nav-item \">
+                      <a class=\"nav-link mega-dropdown-link\"href=\"";
+        // line 244
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_blog_index");
+        yield "\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>blogs</span>
+                      </a>
+                    </li>
+                    <li class=\"nav-item \">
+                      <a class=\"nav-link mega-dropdown-link\" href=\"";
+        // line 250
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("stream_index");
+        yield "\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Stream</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            
+          </li>
+      </div>
+   
+      <!-- Menu wrapper: End -->
+      <!-- Toolbar: Start -->
+      <ul class=\"navbar-nav flex-row align-items-center ms-auto\">
+                <!-- Style Switcher -->
+        <li class=\"nav-item dropdown-style-switcher dropdown me-2 me-xl-0\">
+          <a class=\"nav-link dropdown-toggle hide-arrow\" href=\"javascript:void(0);\" data-bs-toggle=\"dropdown\">
+            <i class='bx bx-sm'></i>
+          </a>
+          <ul class=\"dropdown-menu dropdown-menu-end dropdown-styles\">
+            <li>
+              <a class=\"dropdown-item\" href=\"javascript:void(0);\" data-theme=\"light\">
+                <span class=\"align-middle\"><i class='bx bx-sun me-2'></i>Light</span>
+              </a>
+            </li>
+            <li>
+              <a class=\"dropdown-item\" href=\"javascript:void(0);\" data-theme=\"dark\">
+                <span class=\"align-middle\"><i class=\"bx bx-moon me-2\"></i>Dark</span>
+              </a>
+            </li>
+            <li>
+              <a class=\"dropdown-item\" href=\"javascript:void(0);\" data-theme=\"system\">
+                <span class=\"align-middle\"><i class=\"bx bx-desktop me-2\"></i>System</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- / Style Switcher-->
+        
+        <!-- navbar button: Start -->
+
+        <li>
+          <a href=\"";
+        // line 295
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
+        yield "\" class=\"btn btn-primary\" target=\"_blank\"><span class=\"tf-icons bx bx-user me-md-1\"></span><span class=\"d-none d-md-block\">Logout</span></a>
+        </li>
+        <!-- navbar button: End -->
+      </ul>
+      <!-- Toolbar: End -->
+    </div>
+  </div>
+</nav>
+<!-- Navbar: End -->
+<!-- Sections:Start -->
+<!-- Pricing Plans -->
+<section class=\"section-py first-section-pt\">
+";
+        // line 307
+        yield from $this->unwrap()->yieldBlock('body', $context, $blocks);
+        // line 677
+        yield "</section>
+<!--/ FAQS -->
+
+
+<!-- / Sections:End -->
+
+<!-- Footer: Start -->
+<footer class=\"landing-footer bg-body footer-text\">
+  <div class=\"footer-top\">
+    <div class=\"container\">
+      <div class=\"row gx-0 gy-4 g-md-5\">
+        <div class=\"col-lg-5\">
+          <a href=\"landing.html\" class=\"app-brand-link mb-4\">
+            <span class=\"app-brand-logo demo\"><svg width=\"25\" viewBox=\"0 0 25 42\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">
+  <defs>
+    <path d=\"M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z\" id=\"path-1\"></path>
+    <path d=\"M5.47320593,6.00457225 C4.05321814,8.216144 4.36334763,10.0722806 6.40359441,11.5729822 C8.61520715,12.571656 10.0999176,13.2171421 10.8577257,13.5094407 L15.5088241,14.433041 L18.6192054,7.984237 C15.5364148,3.11535317 13.9273018,0.573395879 13.7918663,0.358365126 C13.5790555,0.511491653 10.8061687,2.3935607 5.47320593,6.00457225 Z\" id=\"path-3\"></path>
+    <path d=\"M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z\" id=\"path-4\"></path>
+    <path d=\"M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z\" id=\"path-5\"></path>
+  </defs>
+  <g id=\"g-app-brand\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">
+    <g id=\"Brand-Logo\" transform=\"translate(-27.000000, -15.000000)\">
+      <g id=\"Icon\" transform=\"translate(27.000000, 15.000000)\">
+        <g id=\"Mask\" transform=\"translate(0.000000, 8.000000)\">
+          <mask id=\"mask-2\" fill=\"white\">
+            <use xlink:href=\"#path-1\"></use>
+          </mask>
+          <use fill=\"var(--bs-primary)\" xlink:href=\"#path-1\"></use>
+          <g id=\"Path-3\" mask=\"url(#mask-2)\">
+            <use fill=\"var(--bs-primary)\" xlink:href=\"#path-3\"></use>
+            <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-3\"></use>
+          </g>
+          <g id=\"Path-4\" mask=\"url(#mask-2)\">
+            <use fill=\"var(--bs-primary)\" xlink:href=\"#path-4\"></use>
+            <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-4\"></use>
+          </g>
+        </g>
+        <g id=\"Triangle\" transform=\"translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) \">
+          <use fill=\"var(--bs-primary)\" xlink:href=\"#path-5\"></use>
+          <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-5\"></use>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+</span>
+            <span class=\"app-brand-text demo footer-link fw-bold ms-2 ps-1\">CuraCloud </span>
+          </a>
+          <p class=\"footer-text footer-logo-description mb-4\">
+           Our website is your companion on every device, providing a smooth and friendly experience
+          </p>
+          <form class=\"footer-form\">
+            <label for=\"footer-email\" class=\"small\">Subscribe to newsletter</label>
+            <div class=\"d-flex mt-1\">
+              <input type=\"email\" class=\"form-control rounded-0 rounded-start-bottom rounded-start-top\" id=\"footer-email\" placeholder=\"Your email\" />
+              <button type=\"submit\" class=\"btn btn-primary shadow-none rounded-0 rounded-end-bottom rounded-end-top\">
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class=\"col-lg-2 col-md-4 col-sm-6\">
+          <h6 class=\"footer-title mb-4\">Demos</h6>
+          ";
+        // line 757
+        yield "        </div>
+        <div class=\"col-lg-2 col-md-4 col-sm-6\">
+          <h6 class=\"footer-title mb-4\">Pages</h6>
+         ";
+        // line 777
+        yield "        </div>
+        <div class=\"col-lg-3 col-md-4\">
+          <h6 class=\"footer-title mb-4\">Download our app</h6>
+          <a href=\"javascript:void(0);\" class=\"d-block footer-link mb-3 pb-2\"><img src=\"";
+        // line 780
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/landing-page/apple-icon.png"), "html", null, true);
+        yield "\" alt=\"apple icon\" /></a>
+          <a href=\"javascript:void(0);\" class=\"d-block footer-link\"><img src=\"";
+        // line 781
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/landing-page/google-play-icon.png"), "html", null, true);
+        yield "\" alt=\"google play icon\" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=\"footer-bottom py-3\">
+    <div class=\"container d-flex flex-wrap justify-content-between flex-md-row flex-column text-center text-md-start\">
+      <div class=\"mb-2 mb-md-0\">
+        <span class=\"footer-text\">©
+          <script>
+          document.write(new Date().getFullYear());
+
+          </script>
+        </span>
+        <a href=\"https://themeselection.com/\" target=\"_blank\" class=\"fw-medium text-white footer-link\">CuraTeam,</a>
+        <span class=\"footer-text\"> Made with ❤️ for a better healthcare.</span>
+      </div>
+      <div>
+        <a href=\"https://github.com/themeselection\" class=\"footer-link me-3\" target=\"_blank\">
+          <img src=\"";
+        // line 800
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/icons/github-light.png"), "html", null, true);
+        yield "\" alt=\"github icon\" data-app-light-img=\"front-pages/icons/github-light.png\" data-app-dark-img=\"front-pages/icons/github-dark.png\" />
+        </a>
+        <a href=\"https://www.facebook.com/ThemeSelections/\" class=\"footer-link me-3\" target=\"_blank\">
+          <img src=\"";
+        // line 803
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/icons/facebook-light.png"), "html", null, true);
+        yield "\" alt=\"facebook icon\" data-app-light-img=\"front-pages/icons/facebook-light.png\" data-app-dark-img=\"front-pages/icons/facebook-dark.png\" />
+        </a>
+        <a href=\"https://twitter.com/Theme_Selection\" class=\"footer-link me-3\" target=\"_blank\">
+          <img src=\"";
+        // line 806
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/icons/twitter-light.png"), "html", null, true);
+        yield "\" alt=\"twitter icon\" data-app-light-img=\"front-pages/icons/twitter-light.png\" data-app-dark-img=\"front-pages/icons/twitter-dark.png\" />
+        </a>
+        <a href=\"https://www.instagram.com/themeselection/\" class=\"footer-link\" target=\"_blank\">
+          <img src=\"";
+        // line 809
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/icons/instagram-light.png"), "html", null, true);
+        yield "\" alt=\"google icon\" data-app-light-img=\"front-pages/icons/instagram-light.png\" data-app-dark-img=\"front-pages/icons/instagram-dark.png\" />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer: End -->
+  <!--/ Layout Content -->
+  
+";
+        // line 818
+        yield from $this->unwrap()->yieldBlock('js', $context, $blocks);
+        // line 843
+        yield "
+</body>
+
+
+<!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1/front-pages/pricing by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Nov 2023 03:53:41 GMT -->
+</html>
+";
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        return; yield '';
+    }
+
+    // line 16
+    public function block_title($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
+
+        // line 17
+        yield "  <title> CuraCloud </title>
+    ";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        return; yield '';
+    }
+
+    // line 29
+    public function block_css($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "css"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "css"));
+
+        // line 30
+        yield "<link rel=\"stylesheet\" href=\"";
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/libs/leaflet/leaflet.css"), "html", null, true);
+        yield "\" />
+<link rel=\"stylesheet\" href=\"";
+        // line 31
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/libs/leaflet/leaflet.css"), "html", null, true);
+        yield "\" />
+  <!-- Include Styles -->
+  <!-- \$isFront is used to append the front layout styles only on the front layout otherwise the variable will be blank -->
+  <!-- BEGIN: Theme CSS-->
+<!-- Fonts -->
+<link rel=\"preconnect\" href=\"https://fonts.googleapis.com/\">
+<link rel=\"preconnect\" href=\"https://fonts.gstatic.com/\" crossorigin>
+<link href=\"https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap\" rel=\"stylesheet\">
+
+<link rel=\"stylesheet\" href=\"";
+        // line 40
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/fonts/boxiconsc4a7.css?id=87122b3a3900320673311cebdeb618da"), "html", null, true);
+        yield "\" />
+<!-- Core CSS -->
+<link rel=\"stylesheet\" href=\"";
+        // line 42
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/css/rtl/corea8ac.css?id=55b2a9dfaa009c41df62ca8d16e913a8"), "html", null, true);
+        yield "\" class=\"template-customizer-core-css\" />
+<link rel=\"stylesheet\" href=\"";
+        // line 43
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/css/rtl/theme-default4c4b.css?id=9182924a7b965439eca5e189ba43eba1"), "html", null, true);
+        yield "\" class=\"template-customizer-theme-css\" />
+<link rel=\"stylesheet\" href=\"";
+        // line 44
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/css/demob77a.css?id=69dfc5e48fce5a4ff55ff7b593cdf93d"), "html", null, true);
+        yield "\" />
+<link rel=\"stylesheet\" href=\"";
+        // line 45
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/css/pages/front-page74c7.css?id=6ea5e011264576f3de2d3b23d3ddd649"), "html", null, true);
+        yield "\" />
+<!-- Vendor Styles -->
+<link rel=\"stylesheet\" href=\"";
+        // line 47
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/libs/fullcalendar/fullcalendar.css"), "html", null, true);
+        yield "\"/>
+<link rel=\"stylesheet\" href=\"";
+        // line 48
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/css/pages/app-calendar.css"), "html", null, true);
+        yield "\"/>
+<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css\"
+
+<!-- Page Styles -->
+<link rel=\"stylesheet\" href=\"";
+        // line 52
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/css/pages/front-page-pricing.css"), "html", null, true);
+        yield "\" />
+
+  <!-- Include Scripts for customizer, helper, analytics, config -->
+  <!-- \$isFront is used to append the front layout scriptsIncludes only on the front layout otherwise the variable will be blank -->
+  <!-- laravel style -->
+<script src=\"";
+        // line 57
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/js/helpers.js"), "html", null, true);
+        yield "\"></script>
+<!-- beautify ignore:start -->
+  <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+  <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+  <script src=\"";
+        // line 61
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/js/template-customizer.js"), "html", null, true);
+        yield "\"></script>
+
+  <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+  <script src=\"";
+        // line 64
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/js/front-config.js"), "html", null, true);
+        yield "\"></script>
+
+  <script>
+    window.templateCustomizer = new TemplateCustomizer({
+      cssPath: '',
+      themesPath: '',
+      defaultStyle: \"light\",
+      displayCustomizer: \"true\",
+      lang: 'en',
+      pathResolver: function(path) {
+        var resolvedPaths = {
+          // Core stylesheets
+                      'core.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/core.css?id=55b2a9dfaa009c41df62ca8d16e913a8',
+            'core-dark.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/core-dark.css?id=d98ae2a03b5b1b05651411ee58ef81a6',
+          
+          // Themes
+                      'theme-default.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-default.css?id=9182924a7b965439eca5e189ba43eba1',
+            'theme-default-dark.css':
+            'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-default-dark.css?id=ae30991ef3f62e7c03ca6f8930843e80',
+                      'theme-bordered.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-bordered.css?id=a4f95a927b1e2bcdfd57a3bbfb2bd3d9',
+            'theme-bordered-dark.css':
+            'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-bordered-dark.css?id=2a668deb480284f975db82d0a7277156',
+                      'theme-semi-dark.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-semi-dark.css?id=9c02fb39c47f91b2d198f343fa8b4df7',
+            'theme-semi-dark-dark.css':
+            'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-semi-dark-dark.css?id=c4b1950a14ffd431f752917b97a0ee51',
+                  }
+        return resolvedPaths[path] || path;
+      },
+      'controls': [\"rtl\",\"style\"],
+
+    });
+  </script>
+  ";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        return; yield '';
+    }
+
+    // line 307
+    public function block_body($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+
+        // line 308
+        yield "
+  <div class=\"container\">
+    <h2 class=\"text-center mb-2\">Pricing Plans</h2>
+    <p class=\"text-center mb-4 pb-2\"> All plans include 40+ advanced tools and features to boost your product.<br>
+      Choose the best plan to fit your needs.</p>
+    <div class=\"d-flex align-items-center justify-content-center flex-wrap gap-2 pb-5 pt-3 mb-0 mb-md-4\">
+      <label class=\"switch switch-primary ms-3 ms-sm-0 mt-2\">
+        <span class=\"switch-label\">Monthly</span>
+        <input type=\"checkbox\" class=\"switch-input price-duration-toggler\" checked />
+        <span class=\"switch-toggle-slider\">
+          <span class=\"switch-on\"></span>
+          <span class=\"switch-off\"></span>
+        </span>
+        <span class=\"switch-label\">Annual</span>
+      </label>
+<div class=\"mt-n5 ms-n5 ml-2 mb-2 d-none d-sm-inline-flex align-items-start\">
+        <img src=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/img/pages/pricing-arrow-dark.png\" alt=\"arrow img\" class=\"scaleX-n1-rtl mt-2 pt-1\" data-app-dark-img=\"pages/pricing-arrow-dark.png\" data-app-light-img=\"pages/pricing-arrow-light.html\">
+        <span class=\"badge badge-sm bg-label-primary\">Save upto 10%</span>
+      </div>
+    </div>
+
+    <div class=\"row mx-0 gy-3 px-lg-5\">
+      <!-- Basic -->
+      <div class=\"col-lg mb-md-0 mb-4\">
+        <div class=\"card border rounded shadow-none\">
+          <div class=\"card-body\">
+            <div class=\"my-3 pt-2 text-center\">
+              <img src=\"";
+        // line 335
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/icons/unicons/bookmark.png"), "html", null, true);
+        yield "\" alt=\"Basic Image\" height=\"80\">
+            </div>
+            <h3 class=\"card-title text-center text-capitalize mb-1\">Basic</h3>
+            <p class=\"text-center\">A simple start for everyone</p>
+            <div class=\"text-center\">
+              <div class=\"d-flex justify-content-center\">
+                <sup class=\"h6 pricing-currency mt-3 mb-0 me-1 text-primary\">\$</sup>
+                <h1 class=\"display-4 mb-0 text-primary\">0</h1>
+                <sub class=\"h6 pricing-duration mt-auto mb-2 text-muted fw-normal\">/month</sub>
+              </div>
+            </div>
+
+            <ul class=\"ps-0 my-4 pt-2 circle-bullets\">
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>100 responses a month</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Unlimited forms and surveys</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Unlimited fields</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Basic form creation tools</li>
+              <li class=\"mb-0\"><i class='bx bx-radio-circle me-2'></i>Up to 2 subdomains</li>
+            </ul>
+            <a href=\"payment.html\" class=\"btn btn-label-success d-grid w-100\">Your Current Plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pro -->
+      <div class=\"col-lg mb-md-0 mb-4\">
+        <div class=\"card border-primary border shadow-none\">
+          <div class=\"card-body position-relative\">
+            <div class=\"position-absolute end-0 me-4 top-0 mt-4\">
+              <span class=\"badge bg-label-primary\">Popular</span>
+            </div>
+            <div class=\"my-3 pt-2 text-center\">
+              <img src=\"";
+        // line 367
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/icons/unicons/wallet-round.png"), "html", null, true);
+        yield "\" alt=\"Standard Image\" height=\"80\">
+            </div>
+            <h3 class=\"card-title text-center text-capitalize mb-1\">Pro</h3>
+            <p class=\"text-center\">For small to medium businesses</p>
+            <div class=\"text-center\">
+              <div class=\"d-flex justify-content-center\">
+                <sup class=\"h6 pricing-currency mt-3 mb-0 me-1 text-primary\">\$</sup>
+                <h1 class=\"price-toggle price-yearly display-4 text-primary mb-0\">7</h1>
+                <h1 class=\"price-toggle price-monthly display-4 text-primary mb-0 d-none\">9</h1>
+                <sub class=\"h6 text-muted pricing-duration mt-auto mb-2 fw-normal\">/month</sub>
+              </div>
+              <small class=\"price-yearly price-yearly-toggle text-muted\">\$ 90 / year</small>
+            </div>
+
+            <ul class=\"ps-0 my-4 pt-2 circle-bullets\">
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Up to 5 users</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>120+ components</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Basic support on Github</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Monthly updates</li>
+              <li class=\"mb-0\"><i class='bx bx-radio-circle me-2'></i>Integrations</li>
+            </ul>
+            <a href=\"payment.html\" class=\"btn btn-primary d-grid w-100\">Upgrade</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enterprise -->
+      <div class=\"col-lg\">
+        <div class=\"card border rounded shadow-none\">
+          <div class=\"card-body\">
+
+            <div class=\"my-3 pt-2 text-center\">
+              <img src=\"";
+        // line 399
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/icons/unicons/briefcase-round.png"), "html", null, true);
+        yield "\" alt=\"Enterprise Image\" height=\"80\">
+            </div>
+            <h3 class=\"card-title text-center text-capitalize mb-1\">Enterprise</h3>
+            <p class=\"text-center\">Solution for big organizations</p>
+
+            <div class=\"text-center\">
+              <div class=\"d-flex justify-content-center\">
+                <sup class=\"h6 text-primary pricing-currency mt-3 mb-0 me-1\">\$</sup>
+                <h1 class=\"price-toggle price-yearly display-4 text-primary mb-0\">16</h1>
+                <h1 class=\"price-toggle price-monthly display-4 text-primary mb-0 d-none\">19</h1>
+                <sub class=\"h6 pricing-duration mt-auto mb-2 fw-normal text-muted\">/month</sub>
+              </div>
+              <small class=\"price-yearly price-yearly-toggle text-muted\">\$ 190 / year</small>
+            </div>
+
+            <ul class=\"ps-0 my-4 pt-2 circle-bullets\">
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Up to 10 users</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>150+ components</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Basic support on Github</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Monthly updates</li>
+              <li class=\"mb-0\"><i class='bx bx-radio-circle me-2'></i>Speedy build tooling</li>
+            </ul>
+
+            <a href=\"payment.html\" class=\"btn btn-label-primary d-grid w-100\">Upgrade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Pricing Plans -->
+<!-- Pricing Free Trial -->
+<section class=\"pricing-free-trial bg-label-primary\">
+  <div class=\"container\">
+    <div class=\"position-relative\">
+      <div class=\"d-flex justify-content-between flex-column-reverse flex-lg-row align-items-center py-4 px-5\">
+        <div class=\"text-center text-lg-start mt-2 ms-3\">
+          <h3 class=\"text-primary mb-1\">Still not convinced? Start with a 14-day FREE trial!</h3>
+          <p class=\"text-body mb-1\">You will get full access to with all the features for 14 days.</p>
+          <a href=\"payment.html\" class=\"btn btn-primary mt-4 mb-2\">Start 14-day FREE trial</a>
+        </div>
+        <!-- image -->
+        <div class=\"text-center\">
+          <img src=\"";
+        // line 442
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/illustrations/lady-with-laptop-light.png"), "html", null, true);
+        yield "\" class=\"img-fluid me-lg-5 pe-lg-1 mb-3 mb-lg-0 scaleX-n1-rtl\" alt=\"Api Key Image\" data-app-light-img=\"illustrations/lady-with-laptop-light.png\" data-app-dark-img=\"illustrations/lady-with-laptop-dark.png\" height=\"202\" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Pricing Free Trial -->
+<!-- Plans Comparison -->
+<section class=\"section-py pricing-plans-comparison\">
+  <div class=\"container\">
+    <div class=\"row\">
+      <div class=\"col-12 text-center mb-4\">
+        <h2 class=\"mb-2\">Pick a plan that works best for you</h2>
+        <p class=\"mb-1\">Stay cool, we have a 48-hour money back guarantee!</p>
+      </div>
+    </div>
+    <div class=\"row mx-4\">
+      <div class=\"col-12\">
+        <div class=\"table-responsive border rounded\">
+          <table class=\"table table-striped text-center mb-0\">
+            <thead>
+              <tr>
+                <th scope=\"col\">
+                  <p class=\"mb-1\">Features</p>
+                  <small class=\"text-muted fw-normal text-capitalize\">Native front features</small>
+                </th>
+                <th scope=\"col\">
+                  <p class=\"mb-1\">Starter</p>
+                  <small class=\"text-muted fw-normal text-capitalize\">Free</small>
+                </th>
+                <th scope=\"col\">
+                  <p class=\"mb-1 position-relative\">Pro
+                    <span class=\"badge badge-center rounded-pill bg-primary position-absolute mt-n2 ms-1\"><i class=\"bx bx-star\"></i></span>
+                  </p>
+                  <small class=\"text-muted fw-normal text-capitalize\">\$7.5/month</small>
+                </th>
+                <th scope=\"col\">
+                  <p class=\"mb-1\">Enterprise</p>
+                  <small class=\"text-muted fw-normal text-capitalize\">\$16/month</small>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>14-days free trial</td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>No user limit</td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Product Support</td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Email Support</td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td>
+                  <span class=\"badge bg-label-primary badge-sm text-uppercase\">Add-on Available</span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Integrations</td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Removal of Front branding</td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td>
+                  <span class=\"badge bg-label-primary badge-sm text-uppercase\">Add-on Available</span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Active maintenance & support</td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Data storage for 365 days</td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a href=\"payment.html\" class=\"btn text-nowrap btn-label-primary\">Choose Plan</a>
+                </td>
+                <td>
+                  <a href=\"payment.html\" class=\"btn text-nowrap btn-primary\">Choose Plan</a>
+                </td>
+                <td>
+                  <a href=\"payment.html\" class=\"btn text-nowrap btn-label-primary\">Choose Plan</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Plans Comparison -->
+<!-- FAQS -->
+<section class=\"section-py pricing-faqs rounded-bottom bg-body\">
+  <div class=\"container\">
+    <div class=\"text-center mb-5\">
+      <h2 class=\"mb-2\">FAQs</h2>
+      <p>Let us help answer the most common questions you might have.</p>
+    </div>
+    <div id=\"faq\" class=\"accordion accordion-without-arrow\">
+      <div class=\"card accordion-item\">
+        <h6 class=\"accordion-header\">
+          <button class=\"accordion-button collapsed\" data-bs-toggle=\"collapse\" data-bs-target=\"#faq-2\" aria-expanded=\"false\" aria-controls=\"faq-2\">
+            How do you process payments?
+          </button>
+        </h6>
+        <div id=\"faq-2\" class=\"accordion-collapse collapse\" data-bs-parent=\"#faq\">
+          <div class=\"accordion-body\">
+            We accept Visa®, MasterCard®, American Express®, and PayPal®.
+            So you can be confident that your credit card information will be kept
+            safe and secure.
+          </div>
+        </div>
+      </div>
+
+      <div class=\"card accordion-item\">
+        <h6 class=\"accordion-header\">
+          <button class=\"accordion-button\" type=\"button\" data-bs-toggle=\"collapse\" aria-expanded=\"true\" data-bs-target=\"#faq-1\" aria-controls=\"faq-1\">
+            What counts towards the 100 responses limit?
+          </button>
+        </h6>
+
+        <div id=\"faq-1\" class=\"accordion-collapse collapse show\" data-bs-parent=\"#faq\">
+          <div class=\"accordion-body\">
+            We count all responses submitted through all your forms in a month.
+            If you already received 100 responses this month, you won’t be able to receive any more of them until next
+            month when the counter resets.
+          </div>
+        </div>
+      </div>
+
+      <div class=\"card accordion-item\">
+        <h6 class=\"accordion-header\">
+          <button class=\"accordion-button collapsed\" data-bs-toggle=\"collapse\" data-bs-target=\"#faq-3\" aria-expanded=\"false\" aria-controls=\"faq-3\">
+            What payment methods do you accept?
+          </button>
+        </h6>
+        <div id=\"faq-3\" class=\"accordion-collapse collapse\" data-bs-parent=\"#faq\">
+          <div class=\"accordion-body\">
+            2Checkout accepts all types of credit and debit cards.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  ";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        return; yield '';
+    }
+
+    // line 818
+    public function block_js($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "js"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "js"));
+
+        // line 819
+        yield "<script src=\"";
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/libs/leaflet/leaflet.js"), "html", null, true);
+        yield "\"></script>
+<script src=\"../../demo/assets/js/maps-leaflet.js\"></script>
+  <!-- Include Scripts -->
+  <!-- \$isFront is used to append the front layout scripts only on the front layout otherwise the variable will be blank -->
+  <!-- BEGIN: Vendor JS-->
+<script src=\"";
+        // line 824
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/js/dropdown-hover.js"), "html", null, true);
+        yield "\"></script>
+<script src=\"";
+        // line 825
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/js/mega-dropdown.js"), "html", null, true);
+        yield "\"></script>
+<script src=\"";
+        // line 826
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/libs/popper/popper0a73.js?id=baf82d96b7771efbcc05c3b77135d24c"), "html", null, true);
+        yield "\"></script>
+<script src=\"";
+        // line 827
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/js/bootstrapcfc4.js?id=4648227467e3fd3f4cf976cfb0e43aea"), "html", null, true);
+        yield "\"></script>
+<script src=\"";
+        // line 828
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("front/js/custom/script.js"), "html", null, true);
+        yield "\"></script>
+<script src=\"https://cdn.jsdelivr.net/npm/sweetalert2@11\"></script>
+<script src=\"";
+        // line 830
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/libs/fullcalendar/fullcalendar.js"), "html", null, true);
+        yield "\"></script>
+<script src=\"";
+        // line 831
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/js/app-calendar-events.js"), "html", null, true);
+        yield "\"></script>
+<script src=\"";
+        // line 832
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/js/app-calendar.js"), "html", null, true);
+        yield "\"></script>
+<!-- END: Page Vendor JS-->
+<!-- BEGIN: Theme JS-->
+<script src=\"";
+        // line 835
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/js/front-maind55a.js?id=7e3beea798d1161b84cbf0934a1cd521"), "html", null, true);
+        yield "\"></script>
+<!-- END: Theme JS-->
+<!-- Pricing Modal JS-->
+<!-- END: Pricing Modal JS-->
+<!-- BEGIN: Page JS-->
+<script src=\"";
+        // line 840
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/js/front-page-pricing.js"), "html", null, true);
+        yield "\"></script>
+<!-- END: Page JS-->
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        return; yield '';
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getTemplateName()
+    {
+        return "newbase.html.twig";
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getDebugInfo()
+    {
+        return array (  1106 => 840,  1098 => 835,  1092 => 832,  1088 => 831,  1084 => 830,  1079 => 828,  1075 => 827,  1071 => 826,  1067 => 825,  1063 => 824,  1054 => 819,  1044 => 818,  798 => 442,  752 => 399,  717 => 367,  682 => 335,  653 => 308,  643 => 307,  599 => 64,  593 => 61,  586 => 57,  578 => 52,  571 => 48,  567 => 47,  562 => 45,  558 => 44,  554 => 43,  550 => 42,  545 => 40,  533 => 31,  528 => 30,  518 => 29,  506 => 17,  496 => 16,  479 => 843,  477 => 818,  465 => 809,  459 => 806,  453 => 803,  447 => 800,  425 => 781,  421 => 780,  416 => 777,  411 => 757,  346 => 677,  344 => 307,  329 => 295,  281 => 250,  272 => 244,  255 => 230,  247 => 224,  238 => 218,  235 => 217,  233 => 216,  230 => 215,  221 => 210,  218 => 209,  209 => 204,  207 => 203,  182 => 181,  173 => 175,  158 => 163,  115 => 123,  87 => 97,  85 => 29,  73 => 19,  71 => 16,  65 => 13,  61 => 12,  48 => 1,);
+    }
+
+    public function getSourceContext()
+    {
+        return new Source("<!DOCTYPE html>
+
+<html lang=\"en\" class=\"light-style  layout-navbar-fixed      \" dir=\"ltr\" data-theme=\"theme-default\" data-assets-path=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/\" data-base-url=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1\" data-framework=\"laravel\" data-template=\"front-menu-theme-default-light\">
+
+
+<!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1/front-pages/pricing by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Nov 2023 03:53:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset=\"utf-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0\" />
+    <script src=\"https://code.jquery.com/jquery-3.6.4.min.js\"></script>
+    <link rel=\"stylesheet\" href=\"{{ asset('node_modules/sweetalert2/dist/sweetalert2.min.css') }}\">
+    <script src=\"{{ asset('node_modules/sweetalert2/dist/sweetalert2.all.min.js') }}\"></script>
+    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css\">
+    <script src=\"https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js\"></script>
+  {% block title %}
+  <title> CuraCloud </title>
+    {% endblock %}
+  <meta name=\"description\" content=\"Most Powerful &amp; Comprehensive Bootstrap 5 HTML Admin Dashboard Template built for developers!\" />
+  <meta name=\"keywords\" content=\"dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5\">
+  <!-- laravel CRUD token -->
+  <meta name=\"csrf-token\" content=\"0eCEBTosT4fUoOUBm1mZC5xlQ6QVoufdLxSNbJCn\">
+  <!-- Canonical SEO -->
+  <link rel=\"canonical\" href=\"https://themeselection.com/item/sneat-bootstrap-laravel-admin-template/\">
+  <!-- Favicon -->
+  <link rel=\"icon\" type=\"image/x-icon\" href=\"https://media.discordapp.net/attachments/1199781434030821399/1206316935956930591/LOGO.png?ex=65ee0631&is=65db9131&hm=ebb60ff6418e39aa96b28b0cde8e4928ec7477f74385ad56cd0d94ccc1221d9c&=&format=webp&quality=lossless&width=537&height=537\" />
+
+    
+{% block css %}
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/vendor/libs/leaflet/leaflet.css')}}\" />
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/vendor/libs/leaflet/leaflet.css')}}\" />
+  <!-- Include Styles -->
+  <!-- \$isFront is used to append the front layout styles only on the front layout otherwise the variable will be blank -->
+  <!-- BEGIN: Theme CSS-->
+<!-- Fonts -->
+<link rel=\"preconnect\" href=\"https://fonts.googleapis.com/\">
+<link rel=\"preconnect\" href=\"https://fonts.gstatic.com/\" crossorigin>
+<link href=\"https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap\" rel=\"stylesheet\">
+
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/vendor/fonts/boxiconsc4a7.css?id=87122b3a3900320673311cebdeb618da')}}\" />
+<!-- Core CSS -->
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/vendor/css/rtl/corea8ac.css?id=55b2a9dfaa009c41df62ca8d16e913a8')}}\" class=\"template-customizer-core-css\" />
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/vendor/css/rtl/theme-default4c4b.css?id=9182924a7b965439eca5e189ba43eba1')}}\" class=\"template-customizer-theme-css\" />
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/css/demob77a.css?id=69dfc5e48fce5a4ff55ff7b593cdf93d')}}\" />
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/vendor/css/pages/front-page74c7.css?id=6ea5e011264576f3de2d3b23d3ddd649')}}\" />
+<!-- Vendor Styles -->
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/vendor/libs/fullcalendar/fullcalendar.css')}}\"/>
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/vendor/css/pages/app-calendar.css')}}\"/>
+<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css\"
+
+<!-- Page Styles -->
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/vendor/css/pages/front-page-pricing.css')}}\" />
+
+  <!-- Include Scripts for customizer, helper, analytics, config -->
+  <!-- \$isFront is used to append the front layout scriptsIncludes only on the front layout otherwise the variable will be blank -->
+  <!-- laravel style -->
+<script src=\"{{asset('back/assets/vendor/js/helpers.js')}}\"></script>
+<!-- beautify ignore:start -->
+  <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+  <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+  <script src=\"{{asset('back/assets/vendor/js/template-customizer.js')}}\"></script>
+
+  <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+  <script src=\"{{asset('back/assets/js/front-config.js')}}\"></script>
+
+  <script>
+    window.templateCustomizer = new TemplateCustomizer({
+      cssPath: '',
+      themesPath: '',
+      defaultStyle: \"light\",
+      displayCustomizer: \"true\",
+      lang: 'en',
+      pathResolver: function(path) {
+        var resolvedPaths = {
+          // Core stylesheets
+                      'core.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/core.css?id=55b2a9dfaa009c41df62ca8d16e913a8',
+            'core-dark.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/core-dark.css?id=d98ae2a03b5b1b05651411ee58ef81a6',
+          
+          // Themes
+                      'theme-default.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-default.css?id=9182924a7b965439eca5e189ba43eba1',
+            'theme-default-dark.css':
+            'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-default-dark.css?id=ae30991ef3f62e7c03ca6f8930843e80',
+                      'theme-bordered.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-bordered.css?id=a4f95a927b1e2bcdfd57a3bbfb2bd3d9',
+            'theme-bordered-dark.css':
+            'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-bordered-dark.css?id=2a668deb480284f975db82d0a7277156',
+                      'theme-semi-dark.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-semi-dark.css?id=9c02fb39c47f91b2d198f343fa8b4df7',
+            'theme-semi-dark-dark.css':
+            'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-semi-dark-dark.css?id=c4b1950a14ffd431f752917b97a0ee51',
+                  }
+        return resolvedPaths[path] || path;
+      },
+      'controls': [\"rtl\",\"style\"],
+
+    });
+  </script>
+  {% endblock %}
+</head>
+
+<body>
+  
+      <!-- Google Tag Manager (noscript) (Default ThemeSelection: GTM-5DDHKGP, PixInvent: GTM-5J3LMKC) -->
+  <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-5DDHKGP\" height=\"0\" width=\"0\" style=\"display: none; visibility: hidden\"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    
+
+  <!-- Layout Content -->
+  
+
+
+<!-- Navbar: Start -->
+<nav class=\"layout-navbar shadow-none py-0\">
+  <div class=\"container\">
+    <div class=\"navbar navbar-expand-lg landing-navbar px-3 px-md-4 \">
+      <!-- Menu logo wrapper: Start -->
+      <div class=\"navbar-brand app-brand demo d-flex py-0 me-4\">
+        <!-- Mobile menu toggle: Start-->
+        <button class=\"navbar-toggler border-0 px-0 me-2\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+          <i class=\"tf-icons bx bx-menu bx-sm align-middle\"></i>
+        </button>
+        <!-- Mobile menu toggle: End-->
+       <a href=\"landing.html\" class=\"app-brand-link\">
+    <span class=\"app-brand-logo demo\">
+        <img src=\"{{ asset('images/blogs/LOGO-65ea2b987652d.png')}}\" alt=\"Your Logo\" width=\"50\">
+    </span>
+</a>
+  <g id=\"g-app-brand\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">
+    <g id=\"Brand-Logo\" transform=\"translate(-27.000000, -15.000000)\">
+      <g id=\"Icon\" transform=\"translate(27.000000, 15.000000)\">
+        <g id=\"Mask\" transform=\"translate(0.000000, 8.000000)\">
+          <mask id=\"mask-2\" fill=\"white\">
+            <use xlink:href=\"#path-1\"></use>
+          </mask>
+          <use fill=\"var(--bs-primary)\" xlink:href=\"#path-1\"></use>
+          <g id=\"Path-3\" mask=\"url(#mask-2)\">
+            <use fill=\"var(--bs-primary)\" xlink:href=\"#path-3\"></use>
+            <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-3\"></use>
+          </g>
+          <g id=\"Path-4\" mask=\"url(#mask-2)\">
+            <use fill=\"var(--bs-primary)\" xlink:href=\"#path-4\"></use>
+            <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-4\"></use>
+          </g>
+        </g>
+        <g id=\"Triangle\" transform=\"translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) \">
+          <use fill=\"var(--bs-primary)\" xlink:href=\"#path-5\"></use>
+          <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-5\"></use>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+</span>
+          <span class=\"app-brand-text demo menu-text fw-bold ms-2 ps-1\">CuraCloud</span>
+        </a>
+      </div>
+      <!-- Menu logo wrapper: End -->
+      <!-- Menu wrapper: Start -->
+      <div class=\"collapse navbar-collapse landing-nav-menu\" id=\"navbarSupportedContent\">
+        <button class=\"navbar-toggler border-0 text-heading position-absolute end-0 top-0 scaleX-n1-rtl\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+          <i class=\"tf-icons bx bx-x bx-sm\"></i>
+        </button>
+        <ul class=\"navbar-nav me-auto\" >
+          <li class=\"nav-item active\">
+            <a class=\"nav-link fw-medium\" aria-current=\"page\"  href=\"{{ path('app_home') }}\">Home</a>
+          </li>
+          <li class=\"nav-item mega-dropdown\">
+            <a href=\"javascript:void(0);\" class=\"nav-link dropdown-toggle navbar-ex-14-mega-dropdown mega-dropdown fw-medium\" aria-expanded=\"false\" data-bs-toggle=\"mega-dropdown\" data-trigger=\"hover\">
+              <span>Laboratoires</span>
+            </a>
+            <div class=\"dropdown-menu p-4\">
+              <div class=\"row gy-4\">
+                <div class=\"col-12 col-lg\">
+                  <!-- add page slug in \$activeRoutes array, defined Beginning of the page to add active class to the nav item -->
+                  <ul class=\"nav flex-column\">
+                    <li class=\"nav-item \">
+                      <a class=\"nav-link mega-dropdown-link\"  href=\"{{ path('app_bilan_index') }}\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Bilan</span>
+                      </a>
+                    </li>
+                    <li class=\"nav-item \">
+                      <a class=\"nav-link mega-dropdown-link\"  href=\"{{ path('app_diagnostic_request_index') }}\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Diagnostic Request</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            
+          </li>
+            <li class=\"nav-item mega-dropdown\">
+            <a href=\"javascript:void(0);\" class=\"nav-link dropdown-toggle navbar-ex-14-mega-dropdown mega-dropdown fw-medium\" aria-expanded=\"false\" data-bs-toggle=\"mega-dropdown\" data-trigger=\"hover\">
+              <span>Patient Portal</span>
+            </a>
+            <div class=\"dropdown-menu p-4\">
+              <div class=\"row gy-4\">
+                <div class=\"col-12 col-lg\">
+                  <!-- add page slug in \$activeRoutes array, defined Beginning of the page to add active class to the nav item -->
+                  <ul class=\"nav flex-column\">
+                    <li class=\"nav-item \">
+                    {% if is_granted('ROLE_PATIENT') %}
+                      <a class=\"nav-link mega-dropdown-link\"  href=\"{{ path('user_app_appointment_index') }}\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Appointments</span>
+                      </a>
+                    {% endif %}
+                    {% if is_granted('ROLE_DOCTOR') %}
+                      <a class=\"nav-link mega-dropdown-link\"  href=\"{{ path('admin_app_appointment_index') }}\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Appointments</span>
+                      </a>
+                    {% endif %}
+                    </li>
+                    {% if is_granted('ROLE_PATIENT') %}
+                    <li class=\"nav-item \">
+                      <a class=\"nav-link mega-dropdown-link\"  href=\"{{ path('user_medical_record_index') }}\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Medical Record</span>
+                      </a>
+                    </li>
+                    {% endif %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+           
+             <li class=\"nav-item \">
+                   <a class=\"nav-link fw-medium\" href=\"{{ path('user_prescription_index') }}\" target=\"_blank\">Prescriptions</a>
+              </li>
+            
+            
+                  <li class=\"nav-item mega-dropdown \">
+            <a href=\"javascript:void(0);\" class=\"nav-link dropdown-toggle navbar-ex-14-mega-dropdown mega-dropdown fw-medium\" aria-expanded=\"false\" data-bs-toggle=\"mega-dropdown\" data-trigger=\"hover\">
+              <span>CuraHub</span>
+            </a>
+            <div class=\"dropdown-menu p-4\">
+              <div class=\"row gy-4\">
+                <div class=\"col-12 col-lg\">
+                  <!-- add page slug in \$activeRoutes array, defined Beginning of the page to add active class to the nav item -->
+                  <ul class=\"nav flex-column\">
+                    <li class=\"nav-item \">
+                      <a class=\"nav-link mega-dropdown-link\"href=\"{{ path('app_blog_index') }}\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>blogs</span>
+                      </a>
+                    </li>
+                    <li class=\"nav-item \">
+                      <a class=\"nav-link mega-dropdown-link\" href=\"{{ path('stream_index') }}\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Stream</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            
+          </li>
+      </div>
+   
+      <!-- Menu wrapper: End -->
+      <!-- Toolbar: Start -->
+      <ul class=\"navbar-nav flex-row align-items-center ms-auto\">
+                <!-- Style Switcher -->
+        <li class=\"nav-item dropdown-style-switcher dropdown me-2 me-xl-0\">
+          <a class=\"nav-link dropdown-toggle hide-arrow\" href=\"javascript:void(0);\" data-bs-toggle=\"dropdown\">
+            <i class='bx bx-sm'></i>
+          </a>
+          <ul class=\"dropdown-menu dropdown-menu-end dropdown-styles\">
+            <li>
+              <a class=\"dropdown-item\" href=\"javascript:void(0);\" data-theme=\"light\">
+                <span class=\"align-middle\"><i class='bx bx-sun me-2'></i>Light</span>
+              </a>
+            </li>
+            <li>
+              <a class=\"dropdown-item\" href=\"javascript:void(0);\" data-theme=\"dark\">
+                <span class=\"align-middle\"><i class=\"bx bx-moon me-2\"></i>Dark</span>
+              </a>
+            </li>
+            <li>
+              <a class=\"dropdown-item\" href=\"javascript:void(0);\" data-theme=\"system\">
+                <span class=\"align-middle\"><i class=\"bx bx-desktop me-2\"></i>System</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- / Style Switcher-->
+        
+        <!-- navbar button: Start -->
+
+        <li>
+          <a href=\"{{ path('app_logout')}}\" class=\"btn btn-primary\" target=\"_blank\"><span class=\"tf-icons bx bx-user me-md-1\"></span><span class=\"d-none d-md-block\">Logout</span></a>
+        </li>
+        <!-- navbar button: End -->
+      </ul>
+      <!-- Toolbar: End -->
+    </div>
+  </div>
+</nav>
+<!-- Navbar: End -->
+<!-- Sections:Start -->
+<!-- Pricing Plans -->
+<section class=\"section-py first-section-pt\">
+{% block body %}
+
+  <div class=\"container\">
+    <h2 class=\"text-center mb-2\">Pricing Plans</h2>
+    <p class=\"text-center mb-4 pb-2\"> All plans include 40+ advanced tools and features to boost your product.<br>
+      Choose the best plan to fit your needs.</p>
+    <div class=\"d-flex align-items-center justify-content-center flex-wrap gap-2 pb-5 pt-3 mb-0 mb-md-4\">
+      <label class=\"switch switch-primary ms-3 ms-sm-0 mt-2\">
+        <span class=\"switch-label\">Monthly</span>
+        <input type=\"checkbox\" class=\"switch-input price-duration-toggler\" checked />
+        <span class=\"switch-toggle-slider\">
+          <span class=\"switch-on\"></span>
+          <span class=\"switch-off\"></span>
+        </span>
+        <span class=\"switch-label\">Annual</span>
+      </label>
+<div class=\"mt-n5 ms-n5 ml-2 mb-2 d-none d-sm-inline-flex align-items-start\">
+        <img src=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/img/pages/pricing-arrow-dark.png\" alt=\"arrow img\" class=\"scaleX-n1-rtl mt-2 pt-1\" data-app-dark-img=\"pages/pricing-arrow-dark.png\" data-app-light-img=\"pages/pricing-arrow-light.html\">
+        <span class=\"badge badge-sm bg-label-primary\">Save upto 10%</span>
+      </div>
+    </div>
+
+    <div class=\"row mx-0 gy-3 px-lg-5\">
+      <!-- Basic -->
+      <div class=\"col-lg mb-md-0 mb-4\">
+        <div class=\"card border rounded shadow-none\">
+          <div class=\"card-body\">
+            <div class=\"my-3 pt-2 text-center\">
+              <img src=\"{{asset('back/assets/img/icons/unicons/bookmark.png')}}\" alt=\"Basic Image\" height=\"80\">
+            </div>
+            <h3 class=\"card-title text-center text-capitalize mb-1\">Basic</h3>
+            <p class=\"text-center\">A simple start for everyone</p>
+            <div class=\"text-center\">
+              <div class=\"d-flex justify-content-center\">
+                <sup class=\"h6 pricing-currency mt-3 mb-0 me-1 text-primary\">\$</sup>
+                <h1 class=\"display-4 mb-0 text-primary\">0</h1>
+                <sub class=\"h6 pricing-duration mt-auto mb-2 text-muted fw-normal\">/month</sub>
+              </div>
+            </div>
+
+            <ul class=\"ps-0 my-4 pt-2 circle-bullets\">
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>100 responses a month</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Unlimited forms and surveys</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Unlimited fields</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Basic form creation tools</li>
+              <li class=\"mb-0\"><i class='bx bx-radio-circle me-2'></i>Up to 2 subdomains</li>
+            </ul>
+            <a href=\"payment.html\" class=\"btn btn-label-success d-grid w-100\">Your Current Plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pro -->
+      <div class=\"col-lg mb-md-0 mb-4\">
+        <div class=\"card border-primary border shadow-none\">
+          <div class=\"card-body position-relative\">
+            <div class=\"position-absolute end-0 me-4 top-0 mt-4\">
+              <span class=\"badge bg-label-primary\">Popular</span>
+            </div>
+            <div class=\"my-3 pt-2 text-center\">
+              <img src=\"{{asset('back/assets/img/icons/unicons/wallet-round.png')}}\" alt=\"Standard Image\" height=\"80\">
+            </div>
+            <h3 class=\"card-title text-center text-capitalize mb-1\">Pro</h3>
+            <p class=\"text-center\">For small to medium businesses</p>
+            <div class=\"text-center\">
+              <div class=\"d-flex justify-content-center\">
+                <sup class=\"h6 pricing-currency mt-3 mb-0 me-1 text-primary\">\$</sup>
+                <h1 class=\"price-toggle price-yearly display-4 text-primary mb-0\">7</h1>
+                <h1 class=\"price-toggle price-monthly display-4 text-primary mb-0 d-none\">9</h1>
+                <sub class=\"h6 text-muted pricing-duration mt-auto mb-2 fw-normal\">/month</sub>
+              </div>
+              <small class=\"price-yearly price-yearly-toggle text-muted\">\$ 90 / year</small>
+            </div>
+
+            <ul class=\"ps-0 my-4 pt-2 circle-bullets\">
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Up to 5 users</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>120+ components</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Basic support on Github</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Monthly updates</li>
+              <li class=\"mb-0\"><i class='bx bx-radio-circle me-2'></i>Integrations</li>
+            </ul>
+            <a href=\"payment.html\" class=\"btn btn-primary d-grid w-100\">Upgrade</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enterprise -->
+      <div class=\"col-lg\">
+        <div class=\"card border rounded shadow-none\">
+          <div class=\"card-body\">
+
+            <div class=\"my-3 pt-2 text-center\">
+              <img src=\"{{asset('back/assets/img/icons/unicons/briefcase-round.png')}}\" alt=\"Enterprise Image\" height=\"80\">
+            </div>
+            <h3 class=\"card-title text-center text-capitalize mb-1\">Enterprise</h3>
+            <p class=\"text-center\">Solution for big organizations</p>
+
+            <div class=\"text-center\">
+              <div class=\"d-flex justify-content-center\">
+                <sup class=\"h6 text-primary pricing-currency mt-3 mb-0 me-1\">\$</sup>
+                <h1 class=\"price-toggle price-yearly display-4 text-primary mb-0\">16</h1>
+                <h1 class=\"price-toggle price-monthly display-4 text-primary mb-0 d-none\">19</h1>
+                <sub class=\"h6 pricing-duration mt-auto mb-2 fw-normal text-muted\">/month</sub>
+              </div>
+              <small class=\"price-yearly price-yearly-toggle text-muted\">\$ 190 / year</small>
+            </div>
+
+            <ul class=\"ps-0 my-4 pt-2 circle-bullets\">
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Up to 10 users</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>150+ components</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Basic support on Github</li>
+              <li class=\"mb-2\"><i class='bx bx-radio-circle me-2'></i>Monthly updates</li>
+              <li class=\"mb-0\"><i class='bx bx-radio-circle me-2'></i>Speedy build tooling</li>
+            </ul>
+
+            <a href=\"payment.html\" class=\"btn btn-label-primary d-grid w-100\">Upgrade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Pricing Plans -->
+<!-- Pricing Free Trial -->
+<section class=\"pricing-free-trial bg-label-primary\">
+  <div class=\"container\">
+    <div class=\"position-relative\">
+      <div class=\"d-flex justify-content-between flex-column-reverse flex-lg-row align-items-center py-4 px-5\">
+        <div class=\"text-center text-lg-start mt-2 ms-3\">
+          <h3 class=\"text-primary mb-1\">Still not convinced? Start with a 14-day FREE trial!</h3>
+          <p class=\"text-body mb-1\">You will get full access to with all the features for 14 days.</p>
+          <a href=\"payment.html\" class=\"btn btn-primary mt-4 mb-2\">Start 14-day FREE trial</a>
+        </div>
+        <!-- image -->
+        <div class=\"text-center\">
+          <img src=\"{{asset('back/assets/img/illustrations/lady-with-laptop-light.png')}}\" class=\"img-fluid me-lg-5 pe-lg-1 mb-3 mb-lg-0 scaleX-n1-rtl\" alt=\"Api Key Image\" data-app-light-img=\"illustrations/lady-with-laptop-light.png\" data-app-dark-img=\"illustrations/lady-with-laptop-dark.png\" height=\"202\" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Pricing Free Trial -->
+<!-- Plans Comparison -->
+<section class=\"section-py pricing-plans-comparison\">
+  <div class=\"container\">
+    <div class=\"row\">
+      <div class=\"col-12 text-center mb-4\">
+        <h2 class=\"mb-2\">Pick a plan that works best for you</h2>
+        <p class=\"mb-1\">Stay cool, we have a 48-hour money back guarantee!</p>
+      </div>
+    </div>
+    <div class=\"row mx-4\">
+      <div class=\"col-12\">
+        <div class=\"table-responsive border rounded\">
+          <table class=\"table table-striped text-center mb-0\">
+            <thead>
+              <tr>
+                <th scope=\"col\">
+                  <p class=\"mb-1\">Features</p>
+                  <small class=\"text-muted fw-normal text-capitalize\">Native front features</small>
+                </th>
+                <th scope=\"col\">
+                  <p class=\"mb-1\">Starter</p>
+                  <small class=\"text-muted fw-normal text-capitalize\">Free</small>
+                </th>
+                <th scope=\"col\">
+                  <p class=\"mb-1 position-relative\">Pro
+                    <span class=\"badge badge-center rounded-pill bg-primary position-absolute mt-n2 ms-1\"><i class=\"bx bx-star\"></i></span>
+                  </p>
+                  <small class=\"text-muted fw-normal text-capitalize\">\$7.5/month</small>
+                </th>
+                <th scope=\"col\">
+                  <p class=\"mb-1\">Enterprise</p>
+                  <small class=\"text-muted fw-normal text-capitalize\">\$16/month</small>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>14-days free trial</td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>No user limit</td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Product Support</td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Email Support</td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td>
+                  <span class=\"badge bg-label-primary badge-sm text-uppercase\">Add-on Available</span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Integrations</td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Removal of Front branding</td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td>
+                  <span class=\"badge bg-label-primary badge-sm text-uppercase\">Add-on Available</span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Active maintenance & support</td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>Data storage for 365 days</td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-secondary\">
+                    <i class=\"bx bx-x\"></i>
+                  </span>
+                </td>
+                <td><span class=\"badge badge-center rounded-pill w-px-20 h-px-20 bg-label-primary\">
+                    <i class=\"bx bx-check\"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a href=\"payment.html\" class=\"btn text-nowrap btn-label-primary\">Choose Plan</a>
+                </td>
+                <td>
+                  <a href=\"payment.html\" class=\"btn text-nowrap btn-primary\">Choose Plan</a>
+                </td>
+                <td>
+                  <a href=\"payment.html\" class=\"btn text-nowrap btn-label-primary\">Choose Plan</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Plans Comparison -->
+<!-- FAQS -->
+<section class=\"section-py pricing-faqs rounded-bottom bg-body\">
+  <div class=\"container\">
+    <div class=\"text-center mb-5\">
+      <h2 class=\"mb-2\">FAQs</h2>
+      <p>Let us help answer the most common questions you might have.</p>
+    </div>
+    <div id=\"faq\" class=\"accordion accordion-without-arrow\">
+      <div class=\"card accordion-item\">
+        <h6 class=\"accordion-header\">
+          <button class=\"accordion-button collapsed\" data-bs-toggle=\"collapse\" data-bs-target=\"#faq-2\" aria-expanded=\"false\" aria-controls=\"faq-2\">
+            How do you process payments?
+          </button>
+        </h6>
+        <div id=\"faq-2\" class=\"accordion-collapse collapse\" data-bs-parent=\"#faq\">
+          <div class=\"accordion-body\">
+            We accept Visa®, MasterCard®, American Express®, and PayPal®.
+            So you can be confident that your credit card information will be kept
+            safe and secure.
+          </div>
+        </div>
+      </div>
+
+      <div class=\"card accordion-item\">
+        <h6 class=\"accordion-header\">
+          <button class=\"accordion-button\" type=\"button\" data-bs-toggle=\"collapse\" aria-expanded=\"true\" data-bs-target=\"#faq-1\" aria-controls=\"faq-1\">
+            What counts towards the 100 responses limit?
+          </button>
+        </h6>
+
+        <div id=\"faq-1\" class=\"accordion-collapse collapse show\" data-bs-parent=\"#faq\">
+          <div class=\"accordion-body\">
+            We count all responses submitted through all your forms in a month.
+            If you already received 100 responses this month, you won’t be able to receive any more of them until next
+            month when the counter resets.
+          </div>
+        </div>
+      </div>
+
+      <div class=\"card accordion-item\">
+        <h6 class=\"accordion-header\">
+          <button class=\"accordion-button collapsed\" data-bs-toggle=\"collapse\" data-bs-target=\"#faq-3\" aria-expanded=\"false\" aria-controls=\"faq-3\">
+            What payment methods do you accept?
+          </button>
+        </h6>
+        <div id=\"faq-3\" class=\"accordion-collapse collapse\" data-bs-parent=\"#faq\">
+          <div class=\"accordion-body\">
+            2Checkout accepts all types of credit and debit cards.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+</section>
+<!--/ FAQS -->
+
+
+<!-- / Sections:End -->
+
+<!-- Footer: Start -->
+<footer class=\"landing-footer bg-body footer-text\">
+  <div class=\"footer-top\">
+    <div class=\"container\">
+      <div class=\"row gx-0 gy-4 g-md-5\">
+        <div class=\"col-lg-5\">
+          <a href=\"landing.html\" class=\"app-brand-link mb-4\">
+            <span class=\"app-brand-logo demo\"><svg width=\"25\" viewBox=\"0 0 25 42\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">
+  <defs>
+    <path d=\"M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z\" id=\"path-1\"></path>
+    <path d=\"M5.47320593,6.00457225 C4.05321814,8.216144 4.36334763,10.0722806 6.40359441,11.5729822 C8.61520715,12.571656 10.0999176,13.2171421 10.8577257,13.5094407 L15.5088241,14.433041 L18.6192054,7.984237 C15.5364148,3.11535317 13.9273018,0.573395879 13.7918663,0.358365126 C13.5790555,0.511491653 10.8061687,2.3935607 5.47320593,6.00457225 Z\" id=\"path-3\"></path>
+    <path d=\"M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z\" id=\"path-4\"></path>
+    <path d=\"M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z\" id=\"path-5\"></path>
+  </defs>
+  <g id=\"g-app-brand\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">
+    <g id=\"Brand-Logo\" transform=\"translate(-27.000000, -15.000000)\">
+      <g id=\"Icon\" transform=\"translate(27.000000, 15.000000)\">
+        <g id=\"Mask\" transform=\"translate(0.000000, 8.000000)\">
+          <mask id=\"mask-2\" fill=\"white\">
+            <use xlink:href=\"#path-1\"></use>
+          </mask>
+          <use fill=\"var(--bs-primary)\" xlink:href=\"#path-1\"></use>
+          <g id=\"Path-3\" mask=\"url(#mask-2)\">
+            <use fill=\"var(--bs-primary)\" xlink:href=\"#path-3\"></use>
+            <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-3\"></use>
+          </g>
+          <g id=\"Path-4\" mask=\"url(#mask-2)\">
+            <use fill=\"var(--bs-primary)\" xlink:href=\"#path-4\"></use>
+            <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-4\"></use>
+          </g>
+        </g>
+        <g id=\"Triangle\" transform=\"translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) \">
+          <use fill=\"var(--bs-primary)\" xlink:href=\"#path-5\"></use>
+          <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-5\"></use>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+</span>
+            <span class=\"app-brand-text demo footer-link fw-bold ms-2 ps-1\">CuraCloud </span>
+          </a>
+          <p class=\"footer-text footer-logo-description mb-4\">
+           Our website is your companion on every device, providing a smooth and friendly experience
+          </p>
+          <form class=\"footer-form\">
+            <label for=\"footer-email\" class=\"small\">Subscribe to newsletter</label>
+            <div class=\"d-flex mt-1\">
+              <input type=\"email\" class=\"form-control rounded-0 rounded-start-bottom rounded-start-top\" id=\"footer-email\" placeholder=\"Your email\" />
+              <button type=\"submit\" class=\"btn btn-primary shadow-none rounded-0 rounded-end-bottom rounded-end-top\">
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class=\"col-lg-2 col-md-4 col-sm-6\">
+          <h6 class=\"footer-title mb-4\">Demos</h6>
+          {#<ul class=\"list-unstyled\">
+            <li class=\"mb-3\">
+              <a href=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1\" target=\"_blank\" class=\"footer-link\">Vertical Layout</a>
+            </li>
+            <li class=\"mb-3\">
+              <a href=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-5\" target=\"_blank\" class=\"footer-link\">Horizontal Layout</a>
+            </li>
+            <li class=\"mb-3\">
+              <a href=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-2\" target=\"_blank\" class=\"footer-link\">Bordered Layout</a>
+            </li>
+            <li class=\"mb-3\">
+              <a href=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-3\" target=\"_blank\" class=\"footer-link\">Semi Dark Layout</a>
+            </li>
+            <li class=\"mb-3\">
+              <a href=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-4\" target=\"_blank\" class=\"footer-link\">Dark Layout</a>
+            </li>
+          </ul>#}
+        </div>
+        <div class=\"col-lg-2 col-md-4 col-sm-6\">
+          <h6 class=\"footer-title mb-4\">Pages</h6>
+         {# <ul class=\"list-unstyled\">
+            <li class=\"mb-3\">
+              <a href=\"pricing.html\" class=\"footer-link\">Pricing</a>
+            </li>
+            <li class=\"mb-3\">
+              <a href=\"payment.html\" class=\"footer-link\">Payment<span class=\"badge rounded bg-primary ms-2 px-2\">New</span></a>
+            </li>
+            <li class=\"mb-3\">
+              <a href=\"checkout.html\" class=\"footer-link\">Checkout</a>
+            </li>
+            <li class=\"mb-3\">
+              <a href=\"help-center.html\" class=\"footer-link\">Help Center</a>
+            </li>
+            <li class=\"mb-3\">
+              <a href=\"../auth/login-cover.html\" target=\"_blank\" class=\"footer-link\">Login/Register</a>
+            </li>
+          </ul>#}
+        </div>
+        <div class=\"col-lg-3 col-md-4\">
+          <h6 class=\"footer-title mb-4\">Download our app</h6>
+          <a href=\"javascript:void(0);\" class=\"d-block footer-link mb-3 pb-2\"><img src=\"{{asset('back/assets/img/front-pages/landing-page/apple-icon.png')}}\" alt=\"apple icon\" /></a>
+          <a href=\"javascript:void(0);\" class=\"d-block footer-link\"><img src=\"{{asset('back/assets/img/front-pages/landing-page/google-play-icon.png')}}\" alt=\"google play icon\" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=\"footer-bottom py-3\">
+    <div class=\"container d-flex flex-wrap justify-content-between flex-md-row flex-column text-center text-md-start\">
+      <div class=\"mb-2 mb-md-0\">
+        <span class=\"footer-text\">©
+          <script>
+          document.write(new Date().getFullYear());
+
+          </script>
+        </span>
+        <a href=\"https://themeselection.com/\" target=\"_blank\" class=\"fw-medium text-white footer-link\">CuraTeam,</a>
+        <span class=\"footer-text\"> Made with ❤️ for a better healthcare.</span>
+      </div>
+      <div>
+        <a href=\"https://github.com/themeselection\" class=\"footer-link me-3\" target=\"_blank\">
+          <img src=\"{{asset('back/assets/img/front-pages/icons/github-light.png')}}\" alt=\"github icon\" data-app-light-img=\"front-pages/icons/github-light.png\" data-app-dark-img=\"front-pages/icons/github-dark.png\" />
+        </a>
+        <a href=\"https://www.facebook.com/ThemeSelections/\" class=\"footer-link me-3\" target=\"_blank\">
+          <img src=\"{{asset('back/assets/img/front-pages/icons/facebook-light.png')}}\" alt=\"facebook icon\" data-app-light-img=\"front-pages/icons/facebook-light.png\" data-app-dark-img=\"front-pages/icons/facebook-dark.png\" />
+        </a>
+        <a href=\"https://twitter.com/Theme_Selection\" class=\"footer-link me-3\" target=\"_blank\">
+          <img src=\"{{asset('back/assets/img/front-pages/icons/twitter-light.png')}}\" alt=\"twitter icon\" data-app-light-img=\"front-pages/icons/twitter-light.png\" data-app-dark-img=\"front-pages/icons/twitter-dark.png\" />
+        </a>
+        <a href=\"https://www.instagram.com/themeselection/\" class=\"footer-link\" target=\"_blank\">
+          <img src=\"{{asset('back/assets/img/front-pages/icons/instagram-light.png')}}\" alt=\"google icon\" data-app-light-img=\"front-pages/icons/instagram-light.png\" data-app-dark-img=\"front-pages/icons/instagram-dark.png\" />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer: End -->
+  <!--/ Layout Content -->
+  
+{% block js %}
+<script src=\"{{asset('back/assets/vendor/libs/leaflet/leaflet.js')}}\"></script>
+<script src=\"../../demo/assets/js/maps-leaflet.js\"></script>
+  <!-- Include Scripts -->
+  <!-- \$isFront is used to append the front layout scripts only on the front layout otherwise the variable will be blank -->
+  <!-- BEGIN: Vendor JS-->
+<script src=\"{{asset('back/assets/vendor/js/dropdown-hover.js')}}\"></script>
+<script src=\"{{asset('back/assets/vendor/js/mega-dropdown.js')}}\"></script>
+<script src=\"{{asset('back/assets/vendor/libs/popper/popper0a73.js?id=baf82d96b7771efbcc05c3b77135d24c')}}\"></script>
+<script src=\"{{asset('back/assets/vendor/js/bootstrapcfc4.js?id=4648227467e3fd3f4cf976cfb0e43aea')}}\"></script>
+<script src=\"{{ asset('front/js/custom/script.js') }}\"></script>
+<script src=\"https://cdn.jsdelivr.net/npm/sweetalert2@11\"></script>
+<script src=\"{{asset('back/assets/vendor/libs/fullcalendar/fullcalendar.js')}}\"></script>
+<script src=\"{{asset('back/assets/js/app-calendar-events.js')}}\"></script>
+<script src=\"{{asset('back/assets/js/app-calendar.js')}}\"></script>
+<!-- END: Page Vendor JS-->
+<!-- BEGIN: Theme JS-->
+<script src=\"{{asset('back/assets/js/front-maind55a.js?id=7e3beea798d1161b84cbf0934a1cd521')}}\"></script>
+<!-- END: Theme JS-->
+<!-- Pricing Modal JS-->
+<!-- END: Pricing Modal JS-->
+<!-- BEGIN: Page JS-->
+<script src=\"{{asset('back/assets/js/front-page-pricing.js')}}\"></script>
+<!-- END: Page JS-->
+{% endblock %}
+
+</body>
+
+
+<!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1/front-pages/pricing by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Nov 2023 03:53:41 GMT -->
+</html>
+", "newbase.html.twig", "C:\\Users\\pc\\Desktop\\integration rayhanne - Copie (2)\\CuraCloud\\templates\\newbase.html.twig");
+    }
+}

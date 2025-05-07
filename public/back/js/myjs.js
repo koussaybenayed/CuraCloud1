@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   //calendar input
   document.addEventListener('DOMContentLoaded', function () {
-    flatpickr("#registration_form_birthdate", {
+    flatpickr(".birthdate-input", {
       dateFormat: "Y-m-d",
       // You can add more options if needed
     });
@@ -20,4 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
   Dropzone.autoDiscover = false; // Disable auto-discover to manually initialize
   var myDropzone = new Dropzone("#dropzone-basic", { /* your options here */ });
   //fix radio form class in register
+  
+
   

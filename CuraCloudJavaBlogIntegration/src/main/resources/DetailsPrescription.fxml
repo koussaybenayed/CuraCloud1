@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="562.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.controllers.PrescriptionDetails">
+    <stylesheets>
+        <URL value="@Style.css" />
+    </stylesheets>
+    <VBox alignment="CENTER_LEFT" layoutX="134.0" layoutY="124.0" prefHeight="244.0" prefWidth="485.0" spacing="10">
+
+    <ListView fx:id="listPU" prefHeight="91.0" prefWidth="315.0" styleClass="listcelltext" />
+        <Label fx:id="creationDateLabel" prefHeight="27.0" prefWidth="439.0" styleClass="label-medication" text="" textAlignment="JUSTIFY" />
+      <Label fx:id="durationLabel" prefHeight="27.0" prefWidth="407.0" styleClass="label-medication" text="" />
+    </VBox>
+    <Label layoutX="260.0" layoutY="61.0" text="Prescription Details" textFill="#0c30a8">
+        <font>
+            <Font name="Verdana" size="24.0" />
+        </font>
+    </Label>
+   <Button layoutX="434.0" layoutY="409.0" mnemonicParsing="false" onAction="#updatePrescription" prefHeight="36.0" prefWidth="89.0" styleClass="btn-1" text="Update" />
+   <Button layoutX="134.0" layoutY="409.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="81.0" styleClass="btn-1" text="Back" />
+   <Button fx:id="Delete" layoutX="534.0" layoutY="409.0" mnemonicParsing="false" onAction="#deletePrescription" prefHeight="25.0" prefWidth="81.0" styleClass="btn-1" text="Delete" />
+</AnchorPane>

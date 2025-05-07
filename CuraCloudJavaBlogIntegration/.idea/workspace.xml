@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f8e977a-ead3-431b-a9f5-c3269467b483" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/resources/ShowBlogs.fxml" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2fGNU1qGOwyM1XS2h1Vh5FUEyQj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainFx.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.CuraCloudJava [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.CuraCloudJava [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.CuraCloudJava [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.CuraCloudJava [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.CuraCloudJava [org.openjfx:javafx-maven-plugin:0.0.8:run].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.CuraCloudJava [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.CuraCloudJava [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.CuraCloudJava [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/integration rayhanne - Copie (2)/CuraCloud/CuraCloudJavaBlogIntegration&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="tn.esprit.controllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\Desktop\integrationjava\CuraCloudJavaBlogIntegration\src\main\java\tn\esprit\util" />
+      <recent name="C:\Users\pc\Desktop\integrationjava\CuraCloudJavaBlogIntegration\src\main\resources\html" />
+      <recent name="C:\Users\pc\Desktop\integrationjava\CuraCloudJavaBlogIntegration\src\main\resources" />
+      <recent name="C:\Users\pc\Desktop\integrationjava\CuraCloudJavaBlogIntegration\src\main\java\tn\esprit\services" />
+      <recent name="C:\Users\pc\Desktop\integrationjava\CuraCloudJavaBlogIntegration\src\main\resources\portalInterface" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\Desktop\CuraCloudJavaBlogIntegration\src\main\resources\userInterafce" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tn.esprit.services" />
+      <recent name="tn.esprit.models" />
+      <recent name="tn.esprit.controllers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MainFx">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tn.esprit.Main" />
+      <module name="CuraCloudJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tn.esprit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainFx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="jbr-17" />
+      <option name="MAIN_CLASS_NAME" value="MainFx.MainFx" />
+      <module name="CuraCloudJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="MainFx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.MainFx" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainFx" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f8e977a-ead3-431b-a9f5-c3269467b483" name="Changes" comment="" />
+      <created>1713423469474</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713423469474</updated>
+      <workItem from="1713423470639" duration="1804000" />
+      <workItem from="1713425330606" duration="5667000" />
+      <workItem from="1713431576636" duration="10896000" />
+      <workItem from="1713615753159" duration="683000" />
+      <workItem from="1713796434230" duration="8418000" />
+      <workItem from="1713816815820" duration="642000" />
+      <workItem from="1713817481623" duration="48393000" />
+      <workItem from="1713997270071" duration="5694000" />
+      <workItem from="1713687211829" duration="12546000" />
+      <workItem from="1714136297424" duration="208000" />
+      <workItem from="1714317611882" duration="5417000" />
+      <workItem from="1714563670768" duration="11921000" />
+      <workItem from="1714580845086" duration="280000" />
+      <workItem from="1714581138218" duration="27450000" />
+      <workItem from="1714919857896" duration="14366000" />
+      <workItem from="1715075208854" duration="245000" />
+      <workItem from="1715084959245" duration="22906000" />
+      <workItem from="1715111174826" duration="4920000" />
+      <workItem from="1715156952477" duration="6228000" />
+      <workItem from="1715163404037" duration="508000" />
+      <workItem from="1715163924321" duration="49061000" />
+      <workItem from="1715420841364" duration="408000" />
+      <workItem from="1715690132523" duration="61000" />
+      <workItem from="1715690202227" duration="66000" />
+      <workItem from="1715690276964" duration="842000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MainFx/MainFx.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tn/esprit/controllers/BlogDetailsController.java</url>
+          <line>391</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

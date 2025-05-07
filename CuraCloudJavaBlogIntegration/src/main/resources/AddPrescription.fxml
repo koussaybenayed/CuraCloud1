@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="562.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.controllers.AddPrescription">
+   <stylesheets>
+      <URL value="@Style.css" />
+   </stylesheets>
+   <children>
+
+      <TextField fx:id="MedsNotesPTF" layoutX="204.0" layoutY="315.0" prefHeight="41.0" prefWidth="373.0" promptText="Medication Notes" styleClass="text-field-custom " />
+      <DatePicker fx:id="dateP" disable="true" layoutX="201.0" layoutY="411.0" prefHeight="25.0" prefWidth="151.0" />
+      <Button layoutX="240.0" layoutY="466.0" mnemonicParsing="false" onAction="#AddPrescription" prefHeight="25.0" prefWidth="115.0" styleClass="btn-1" text="Confirm" />
+      <Button layoutX="384.0" layoutY="466.0" mnemonicParsing="false" onAction="#cancel" prefHeight="25.0" prefWidth="115.0" styleClass="btn-1" text="Cancel" />
+      <TitledPane animated="false" layoutX="203.0" layoutY="-70.0" text="untitled" />
+      <Label layoutX="291.0" layoutY="58.0" prefHeight="41.0" prefWidth="367.0" text="Add Prescription " textFill="#052794">
+         <font>
+            <Font name="Verdana" size="24.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listPM" layoutX="207.0" layoutY="164.0" prefHeight="125.0" prefWidth="367.0" styleClass="white-bg" stylesheets="@Dashboard.css">
+         <!-- Remove <selectionModel> element -->
+      </ListView>
+      <TextField fx:id="search" layoutX="270.0" layoutY="120.0" prefHeight="25.0" prefWidth="228.0" promptText="Search for a specific type" styleClass="text-field-custom " />
+      <Button layoutX="504.0" layoutY="119.0" mnemonicParsing="false" onAction="#Search" prefHeight="25.0" prefWidth="47.0" styleClass="btn-3" text="🔍" />
+      <TextField fx:id="PatientEmailP" layoutX="203.0" layoutY="367.0" prefHeight="26.0" prefWidth="374.0" promptText="Patient Email " styleClass="text-field-custom " />
+
+   </children>
+</AnchorPane>

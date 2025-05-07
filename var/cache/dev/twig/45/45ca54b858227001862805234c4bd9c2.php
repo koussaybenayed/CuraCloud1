@@ -1,0 +1,1610 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\CoreExtension;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+
+/* newbaseprelogin.html.twig */
+class __TwigTemplate_fe624e1cb280efc5ba210bc9f24ae56c extends Template
+{
+    private $source;
+    private $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->parent = false;
+
+        $this->blocks = [
+        ];
+    }
+
+    protected function doDisplay(array $context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "newbaseprelogin.html.twig"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "newbaseprelogin.html.twig"));
+
+        // line 1
+        yield "<!DOCTYPE html>
+
+<html lang=\"en\" class=\"light-style  layout-navbar-fixed      \" dir=\"ltr\" data-theme=\"theme-default\" data-assets-path=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/\" data-base-url=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1\" data-framework=\"laravel\" data-template=\"front-menu-theme-default-light\">
+
+
+<!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1/front-pages/landing by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Nov 2023 03:53:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset=\"utf-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0\" />
+  <title>CuraCloud</title>
+  <meta name=\"description\" content=\"Most Powerful &amp; Comprehensive Bootstrap 5 HTML Admin Dashboard Template built for developers!\" />
+  <meta name=\"keywords\" content=\"dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5\">
+  <!-- laravel CRUD token -->
+  <meta name=\"csrf-token\" content=\"0eCEBTosT4fUoOUBm1mZC5xlQ6QVoufdLxSNbJCn\">
+  <!-- Canonical SEO -->
+  <link rel=\"canonical\" href=\"https://themeselection.com/item/sneat-bootstrap-laravel-admin-template/\">
+  <!-- Favicon -->
+  <link rel=\"icon\" type=\"image/x-icon\" href=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/img/favicon/favicon.ico\" />
+
+  
+      <!-- Google Tag Manager (Default ThemeSelection: GTM-5DDHKGP, PixInvent: GTM-5J3LMKC) -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        '../../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5DDHKGP');
+  </script>
+  <!-- End Google Tag Manager -->
+    
+
+  <!-- Include Styles -->
+  <!-- \$isFront is used to append the front layout styles only on the front layout otherwise the variable will be blank -->
+  <!-- BEGIN: Theme CSS-->
+<!-- Fonts -->
+<link rel=\"preconnect\" href=\"https://fonts.googleapis.com/\">
+<link rel=\"preconnect\" href=\"https://fonts.gstatic.com/\" crossorigin>
+<link href=\"https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap\" rel=\"stylesheet\">
+
+<link rel=\"stylesheet\" href=\"";
+        // line 50
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/fonts/boxiconsc4a7.css?id=87122b3a3900320673311cebdeb618da"), "html", null, true);
+        yield "\" />
+<!-- Core CSS -->
+<link rel=\"stylesheet\" href=\"";
+        // line 52
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/css/rtl/corea8ac.css?id=55b2a9dfaa009c41df62ca8d16e913a8"), "html", null, true);
+        yield "\" class=\"template-customizer-core-css\" />
+<link rel=\"stylesheet\" href=\"";
+        // line 53
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/css/rtl/theme-default4c4b.css?id=9182924a7b965439eca5e189ba43eba1"), "html", null, true);
+        yield "\" class=\"template-customizer-theme-css\" />
+<link rel=\"stylesheet\" href=\"";
+        // line 54
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/css/demob77a.css?id=69dfc5e48fce5a4ff55ff7b593cdf93d"), "html", null, true);
+        yield "\" />
+<link rel=\"stylesheet\" href=\"";
+        // line 55
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/css/pages/front-page74c7.css?id=6ea5e011264576f3de2d3b23d3ddd649"), "html", null, true);
+        yield "\" />
+<!-- Vendor Styles -->
+<link rel=\"stylesheet\" href=\"";
+        // line 57
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/libs/nouislider/nouislider.css"), "html", null, true);
+        yield "\" />
+<link rel=\"stylesheet\" href=\"";
+        // line 58
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/libs/swiper/swiper.css"), "html", null, true);
+        yield "\" />
+
+
+<!-- Page Styles -->
+<link rel=\"stylesheet\" href=\"";
+        // line 62
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/css/pages/front-page-landing.css"), "html", null, true);
+        yield "\" />
+
+  <!-- Include Scripts for customizer, helper, analytics, config -->
+  <!-- \$isFront is used to append the front layout scriptsIncludes only on the front layout otherwise the variable will be blank -->
+  <!-- laravel style -->
+<script src=\"";
+        // line 67
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/js/helpers.js"), "html", null, true);
+        yield "\"></script>
+<!-- beautify ignore:start -->
+  <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+  <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+  <script src=\"";
+        // line 71
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/js/template-customizer.js"), "html", null, true);
+        yield "\"></script>
+
+  <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+  <script src=\"";
+        // line 74
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/js/front-config.js"), "html", null, true);
+        yield "\"></script>
+
+  <script>
+    window.templateCustomizer = new TemplateCustomizer({
+      cssPath: '',
+      themesPath: '',
+      defaultStyle: \"light\",
+      displayCustomizer: \"true\",
+      lang: 'en',
+      pathResolver: function(path) {
+        var resolvedPaths = {
+          // Core stylesheets
+                      'core.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/core.css?id=55b2a9dfaa009c41df62ca8d16e913a8',
+            'core-dark.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/core-dark.css?id=d98ae2a03b5b1b05651411ee58ef81a6',
+          
+          // Themes
+                      'theme-default.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-default.css?id=9182924a7b965439eca5e189ba43eba1',
+            'theme-default-dark.css':
+            'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-default-dark.css?id=ae30991ef3f62e7c03ca6f8930843e80',
+                      'theme-bordered.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-bordered.css?id=a4f95a927b1e2bcdfd57a3bbfb2bd3d9',
+            'theme-bordered-dark.css':
+            'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-bordered-dark.css?id=2a668deb480284f975db82d0a7277156',
+                      'theme-semi-dark.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-semi-dark.css?id=9c02fb39c47f91b2d198f343fa8b4df7',
+            'theme-semi-dark-dark.css':
+            'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-semi-dark-dark.css?id=c4b1950a14ffd431f752917b97a0ee51',
+                  }
+        return resolvedPaths[path] || path;
+      },!
+      'controls': [\"rtl\",\"style\"],
+
+    });
+  </script>
+</head>
+
+<body>
+  
+      <!-- Google Tag Manager (noscript) (Default ThemeSelection: GTM-5DDHKGP, PixInvent: GTM-5J3LMKC) -->
+  <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-5DDHKGP\" height=\"0\" width=\"0\" style=\"display: none; visibility: hidden\"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    
+
+  <!-- Layout Content -->
+  
+
+
+<!-- Navbar: Start -->
+<!-- Navbar: Start -->
+<nav class=\"layout-navbar shadow-none py-0\">
+  <div class=\"container\">
+    <div class=\"navbar navbar-expand-lg landing-navbar px-3 px-md-4 \">
+      <!-- Menu logo wrapper: Start -->
+      <div class=\"navbar-brand app-brand demo d-flex py-0 me-4\">
+        <!-- Mobile menu toggle: Start-->
+        <button class=\"navbar-toggler border-0 px-0 me-2\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+          <i class=\"tf-icons bx bx-menu bx-sm align-middle\"></i>
+        </button>
+        <!-- Mobile menu toggle: End-->
+      <a  class=\"app-brand-link\">
+    <span class=\"app-brand-logo demo\">
+        <img src=\"";
+        // line 133
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/blogs/LOGO-65ea2b987652d.png"), "html", null, true);
+        yield "\" alt=\"Your Logo\" width=\"50\">
+    </span>
+</a>
+  <g id=\"g-app-brand\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">
+    <g id=\"Brand-Logo\" transform=\"translate(-27.000000, -15.000000)\">
+      <g id=\"Icon\" transform=\"translate(27.000000, 15.000000)\">
+        <g id=\"Mask\" transform=\"translate(0.000000, 8.000000)\">
+          <mask id=\"mask-2\" fill=\"white\">
+            <use xlink:href=\"#path-1\"></use>
+          </mask>
+          <use fill=\"var(--bs-primary)\" xlink:href=\"#path-1\"></use>
+          <g id=\"Path-3\" mask=\"url(#mask-2)\">
+            <use fill=\"var(--bs-primary)\" xlink:href=\"#path-3\"></use>
+            <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-3\"></use>
+          </g>
+          <g id=\"Path-4\" mask=\"url(#mask-2)\">
+            <use fill=\"var(--bs-primary)\" xlink:href=\"#path-4\"></use>
+            <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-4\"></use>
+          </g>
+        </g>
+        <g id=\"Triangle\" transform=\"translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) \">
+          <use fill=\"var(--bs-primary)\" xlink:href=\"#path-5\"></use>
+          <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-5\"></use>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+</span>
+          <span class=\"app-brand-text demo menu-text fw-bold ms-2 ps-1\">CuraCloud</span>
+        </a>
+      </div>
+      <!-- Menu logo wrapper: End -->
+      <!-- Menu wrapper: Start -->
+      <div class=\"collapse navbar-collapse landing-nav-menu\" id=\"navbarSupportedContent\">
+        <button class=\"navbar-toggler border-0 text-heading position-absolute end-0 top-0 scaleX-n1-rtl\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+          <i class=\"tf-icons bx bx-x bx-sm\"></i>
+        </button>
+        <ul class=\"navbar-nav me-auto\" >
+          <li class=\"nav-item active\">
+            <a class=\"nav-link fw-medium\" aria-current=\"page\" href=\"";
+        // line 173
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_prehome");
+        yield "\">Home</a>
+          </li>
+          ";
+        // line 203
+        yield "            ";
+        // line 233
+        yield "                  ";
+        // line 261
+        yield "      </div>
+   
+      <!-- Menu wrapper: End -->
+      <!-- Toolbar: Start -->
+      <ul class=\"navbar-nav flex-row align-items-center ms-auto\">
+                <!-- Style Switcher -->
+        <li class=\"nav-item dropdown-style-switcher dropdown me-2 me-xl-0\">
+          <a class=\"nav-link dropdown-toggle hide-arrow\" href=\"javascript:void(0);\" data-bs-toggle=\"dropdown\">
+            <i class='bx bx-sm'></i>
+          </a>
+          <ul class=\"dropdown-menu dropdown-menu-end dropdown-styles\">
+            <li>
+              <a class=\"dropdown-item\" href=\"javascript:void(0);\" data-theme=\"light\">
+                <span class=\"align-middle\"><i class='bx bx-sun me-2'></i>Light</span>
+              </a>
+            </li>
+            <li>
+              <a class=\"dropdown-item\" href=\"javascript:void(0);\" data-theme=\"dark\">
+                <span class=\"align-middle\"><i class=\"bx bx-moon me-2\"></i>Dark</span>
+              </a>
+            </li>
+            <li>
+              <a class=\"dropdown-item\" href=\"javascript:void(0);\" data-theme=\"system\">
+                <span class=\"align-middle\"><i class=\"bx bx-desktop me-2\"></i>System</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- / Style Switcher-->
+        
+        <!-- navbar button: Start -->
+        <li>
+          <a href=\"";
+        // line 293
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+        yield "\" class=\"btn btn-primary\" target=\"_blank\"><span class=\"tf-icons bx bx-user me-md-1\"></span><span class=\"d-none d-md-block\">Login/Register</span></a>
+        </li>
+        <!-- navbar button: End -->
+      </ul>
+      <!-- Toolbar: End -->
+    </div>
+  </div>
+</nav>
+<!-- Navbar: End -->
+
+<!-- Sections:Start -->
+<div data-bs-spy=\"scroll\" class=\"scrollspy-example\">
+  <!-- Hero: Start -->
+  <section id=\"hero-animation\">
+    <div id=\"landingHero\" class=\"section-py landing-hero position-relative\">
+      <div class=\"container\">
+        <div class=\"hero-text-box text-center\">
+          <h1 class=\"text-primary hero-title display-4 fw-bold\">Hello &amp; welcome 
+        <div class=\"font-alt mb-40 titan-title-size-4\">We are CuraCloud</div> 
+         </h1>
+          <h2 class=\"hero-sub-title h6 mb-4 pb-1\">
+            CuraCloud is an EHR system for<br class=\"d-none d-lg-block\" />
+           Tunisian patients and health care providers
+          </h2>
+          <div class=\"landing-hero-btn d-inline-block position-relative\">
+            <span class=\"hero-btn-item position-absolute d-none d-md-flex text-heading\">Join community
+              <img src=\"";
+        // line 319
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/icons/Join-community-arrow.png"), "html", null, true);
+        yield "\" alt=\"Join community arrow\" class=\"scaleX-n1-rtl\" /></span>
+        
+          <a href=\"";
+        // line 321
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+        yield "\" class=\"btn btn-primary\" target=\"_blank\"><span class=\"tf-icons bx bx-user me-md-1\"></span><span class=\"d-none d-md-block\">Login/Register</span></a>
+      
+          </div>
+        </div>
+        <div id=\"heroDashboardAnimation\" class=\"hero-animation-img\">
+          <a  target=\"_blank\">
+            <div id=\"heroAnimationImg\" class=\"position-relative hero-dashboard-img\">
+              <div id=\"heroAnimationImg\" class=\"position-relative hero-dashboard-img\">
+    <img src=\"";
+        // line 329
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/blogs/LOGO-65ea2b987652d.png"), "html", null, true);
+        yield "\" alt=\"hero dashboard\" class=\"animation-img\" data-app-light-img=\"front-pages/landing-page/hero-dashboard-light.png\" data-app-dark-img=\"front-pages/landing-page/hero-dashboard-dark.html\" />
+    <img src=\"";
+        // line 330
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("images/blogs/LOGO-65ea2b987652d.png"), "html", null, true);
+        yield "\" alt=\"hero elements\" class=\"position-absolute hero-elements-img animation-img top-0 start-0\" data-app-light-img=\"front-pages/landing-page/hero-elements-light.png\" data-app-dark-img=\"front-pages/landing-page/hero-elements-dark.html\" />
+</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class=\"landing-hero-blank\"></div>
+  </section>
+  <!-- Hero: End -->
+
+  <!-- Useful features: Start -->
+  <section id=\"landingFeatures\" class=\"section-py landing-features\">
+    <div class=\"container\">
+      <div class=\"text-center mb-3 pb-1\">
+        <span class=\"badge bg-label-primary\">Useful Features</span>
+      </div>
+      <h3 class=\"text-center mb-1\">
+        <span class=\"section-title\">Everything you need</span> to start your medical journey
+      </h3>
+    
+      <div class=\"features-icon-wrapper row gx-0 gy-4 g-sm-5\">
+        <div class=\"col-lg-4 col-sm-6 text-center features-icon-box\">
+          <div class=\"text-center mb-3\">
+            <img src=\"";
+        // line 353
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/icons/laptop.png"), "html", null, true);
+        yield "\" alt=\"laptop charging\" />
+          </div>
+          <h5 class=\"mb-3\">Digital documents </h5>
+          <p class=\"features-icon-description\">
+           Your medical records all digitalised and ready
+          </p>
+        </div>
+        <div class=\"col-lg-4 col-sm-6 text-center features-icon-box\">
+          <div class=\"text-center mb-3\">
+            <img src=\"";
+        // line 362
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/icons/rocket.png"), "html", null, true);
+        yield "\" alt=\"transition up\" />
+          </div>
+          <h5 class=\"mb-3\">Continuous Updates</h5>
+          <p class=\"features-icon-description\">
+            A self updating application
+          </p>
+        </div>
+        <div class=\"col-lg-4 col-sm-6 text-center features-icon-box')}}\">
+          <div class=\"text-center mb-3\">
+            <img src=\"";
+        // line 371
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/icons/paper.png"), "html", null, true);
+        yield "\" alt=\"edit\" />
+          </div>
+          <h5 class=\"mb-3\">Careful Appointements</h5>
+          <p class=\"features-icon-description\">
+            Make your Appointments with your favorite doctor online.
+          </p>
+        </div>
+        <div class=\"col-lg-4 col-sm-6 text-center features-icon-box\">
+          <div class=\"text-center mb-3\">
+            <img src=\"";
+        // line 380
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/icons/check.png"), "html", null, true);
+        yield "\" alt=\"3d select solid\" />
+          </div>
+          <h5 class=\"mb-3\">Customized prescriptions</h5>
+          <p class=\"features-icon-description\">
+           With all available medications and notes.
+          </p>
+        </div>
+        <div class=\"col-lg-4 col-sm-6 text-center features-icon-box\">
+          <div class=\"text-center mb-3\">
+            <img src=\"";
+        // line 389
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/icons/user.png"), "html", null, true);
+        yield "\" alt=\"lifebelt\" />
+          </div>
+          <h5 class=\"mb-3\">CuraHub</h5>
+          <p class=\"features-icon-description\">A Platform with all your favorite doctors.</p>
+        </div>
+        <div class=\"col-lg-4 col-sm-6 text-center features-icon-box\">
+          <div class=\"text-center mb-3\">
+            <img src=\"";
+        // line 396
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/icons/keyboard.png"), "html", null, true);
+        yield "\" alt=\"google docs\" />
+          </div>
+          <h5 class=\"mb-3\">Excellent Research</h5>
+          <p class=\"features-icon-description\">We aim to provide the best of health services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Useful features: End -->
+
+  <!-- Real customers reviews: Start -->
+  <section id=\"landingReviews\" class=\"section-py bg-body landing-reviews pb-0\">
+    <!-- What people say slider: Start -->
+    <div class=\"container\">
+      <div class=\"row align-items-center gx-0 gy-4 g-lg-5\">
+        <div class=\"col-md-6 col-lg-5 col-xl-3\">
+          <div class=\"mb-3 pb-1\">
+            <span class=\"badge bg-label-primary\">Real Customers Reviews</span>
+          </div>
+          <h3 class=\"mb-1\"><span class=\"section-title\">What people say</span></h3>
+          <p class=\"mb-3 mb-md-5\">
+            See what our customers have to<br class=\"d-none d-xl-block\" />
+            say about their experience.
+          </p>
+          <div class=\"landing-reviews-btns d-flex align-items-center gap-3\">
+            <button id=\"reviews-previous-btn\" class=\"btn btn-label-primary reviews-btn\" type=\"button\">
+              <i class=\"bx bx-chevron-left bx-sm\"></i>
+            </button>
+            <button id=\"reviews-next-btn\" class=\"btn btn-label-primary reviews-btn\" type=\"button\">
+              <i class=\"bx bx-chevron-right bx-sm\"></i>
+            </button>
+          </div>
+        </div>
+        <div class=\"col-md-6 col-lg-7 col-xl-9\">
+          <div class=\"swiper-reviews-carousel overflow-hidden mb-5 pb-md-2 pb-md-3\">
+            <div class=\"swiper\" id=\"swiper-reviews\">
+              <div class=\"swiper-wrapper\">
+                <div class=\"swiper-slide\">
+                  <div class=\"card h-100\">
+                    <div class=\"card-body text-body d-flex flex-column justify-content-between h-100\">
+                      
+                      <p>
+                        “CuraCloud is a digital platform that englobeeverything you need to flow you health.”
+                      </p>
+                      <div class=\"text-warning mb-3\">
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                      </div>
+                      <div class=\"d-flex align-items-center\">
+                        <div class=\"avatar me-2 avatar-sm\">
+                          <img src=\"";
+        // line 449
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/avatars/1.png"), "html", null, true);
+        yield "\" alt=\"Avatar\" class=\"rounded-circle\" />
+                        </div>
+                        <div>
+                          <h6 class=\"mb-0\">Eya Dahen</h6>
+                          <p class=\"small text-muted mb-0\">Patient </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=\"swiper-slide\">
+                  <div class=\"card h-100\">
+                    <div class=\"card-body text-body d-flex flex-column justify-content-between h-100\">
+                      <p>
+                        “I've never used an application as CuraCloud and flexible as CuraCloud. It's my go to for trucking my patients health.\"
+                      </p>
+                      <div class=\"text-warning mb-3\">
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                      </div>
+                      <div class=\"d-flex align-items-center\">
+                        <div class=\"avatar me-2 avatar-sm\">
+                          <img src=\"";
+        // line 474
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/avatars/2.png"), "html", null, true);
+        yield "\" alt=\"Avatar\" class=\"rounded-circle\" />
+                        </div>
+                        <div>
+                          <h6 class=\"mb-0\">Ahmed Arfaoui</h6>
+                          <p class=\"small text-muted mb-0\">Doctor at clinique Avicenne</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=\"swiper-slide\">
+                  <div class=\"card h-100\">
+                    <div class=\"card-body text-body d-flex flex-column justify-content-between h-100\">
+                     
+                      <p>
+                        This application is really easy to work with it  & well documented. The docs are really easy to understand and
+                        it's always easy to find a screenshot from their website.
+                      </p>
+                      <div class=\"text-warning mb-3\">
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                      </div>
+                      <div class=\"d-flex align-items-center\">
+                        <div class=\"avatar me-2 avatar-sm\">
+                          <img src=\"";
+        // line 501
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/avatars/3.png"), "html", null, true);
+        yield "\" alt=\"Avatar\" class=\"rounded-circle\" />
+                        </div>
+                        <div>
+                          <h6 class=\"mb-0\">Louay Araour</h6>
+                          <p class=\"small text-muted mb-0\">Biologiste at Pasteur</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=\"swiper-slide\">
+                  <div class=\"card h-100\">
+                    <div class=\"card-body text-body d-flex flex-column justify-content-between h-100\">
+                      
+                      <p>
+                        All the requirements for developers have been taken into consideration, so I’m able to build
+                        any interface I want.
+                      </p>
+                      <div class=\"text-warning mb-3\">
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bx-star bx-sm\"></i>
+                      </div>
+                      <div class=\"d-flex align-items-center\">
+                        <div class=\"avatar me-2 avatar-sm\">
+                          <img src=\"";
+        // line 528
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/avatars/4.png"), "html", null, true);
+        yield "\" alt=\"Avatar\" class=\"rounded-circle\" />
+                        </div>
+                        <div>
+                          <h6 class=\"mb-0\">Sara Smith</h6>
+                          <p class=\"small text-muted mb-0\">Founder of Continental</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class=\"swiper-slide\">
+                  <div class=\"card h-100\">
+                    <div class=\"card-body text-body d-flex flex-column justify-content-between h-100\">
+                      <div class=\"mb-3\">
+                        <img src=\"";
+        // line 543
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/branding/logo-6.png"), "html", null, true);
+        yield "\" alt=\"client logo\" class=\"client-logo img-fluid\" />
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nemo mollitia, ad eum
+                        officia numquam nostrum repellendus consequuntur!
+                      </p>
+                      <div class=\"text-warning mb-3\">
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bx-star bx-sm\"></i>
+                      </div>
+                      <div class=\"d-flex align-items-center\">
+                        <div class=\"avatar me-2 avatar-sm\">
+                          <img src=\"";
+        // line 558
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/avatars/1.png"), "html", null, true);
+        yield "\" alt=\"Avatar\" class=\"rounded-circle\" />
+                        </div>
+                        <div>
+                          <h6 class=\"mb-0\">Sara Smith</h6>
+                          <p class=\"small text-muted mb-0\">Founder of Continental</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=\"swiper-button-next\"></div>
+              <div class=\"swiper-button-prev\"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- What people say slider: End -->
+    <hr class=\"m-0\" />
+ 
+  </section>
+  <!-- Real customers reviews: End -->
+
+
+  
+
+  
+
+ 
+
+  
+  <!-- Contact Us: End -->
+</div>
+<!-- / Sections:End -->
+
+<!-- Footer: Start -->
+<footer class=\"landing-footer bg-body footer-text\">
+  <div class=\"footer-top\">
+    <div class=\"container\">
+      <div class=\"row gx-0 gy-4 g-md-5\">
+        <div class=\"col-lg-5\">
+          <a  class=\"app-brand-link mb-4\">
+            <span class=\"app-brand-logo demo\"><svg width=\"25\" viewBox=\"0 0 25 42\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">
+  <defs>
+    <path d=\"M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z\" id=\"path-1\"></path>
+    <path d=\"M5.47320593,6.00457225 C4.05321814,8.216144 4.36334763,10.0722806 6.40359441,11.5729822 C8.61520715,12.571656 10.0999176,13.2171421 10.8577257,13.5094407 L15.5088241,14.433041 L18.6192054,7.984237 C15.5364148,3.11535317 13.9273018,0.573395879 13.7918663,0.358365126 C13.5790555,0.511491653 10.8061687,2.3935607 5.47320593,6.00457225 Z\" id=\"path-3\"></path>
+    <path d=\"M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z\" id=\"path-4\"></path>
+    <path d=\"M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z\" id=\"path-5\"></path>
+  </defs>
+  <g id=\"g-app-brand\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">
+    <g id=\"Brand-Logo\" transform=\"translate(-27.000000, -15.000000)\">
+      <g id=\"Icon\" transform=\"translate(27.000000, 15.000000)\">
+        <g id=\"Mask\" transform=\"translate(0.000000, 8.000000)\">
+          <mask id=\"mask-2\" fill=\"white\">
+            <use xlink:href=\"#path-1\"></use>
+          </mask>
+          <use fill=\"var(--bs-primary)\" xlink:href=\"#path-1\"></use>
+          <g id=\"Path-3\" mask=\"url(#mask-2)\">
+            <use fill=\"var(--bs-primary)\" xlink:href=\"#path-3\"></use>
+            <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-3\"></use>
+          </g>
+          <g id=\"Path-4\" mask=\"url(#mask-2)\">
+            <use fill=\"var(--bs-primary)\" xlink:href=\"#path-4\"></use>
+            <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-4\"></use>
+          </g>
+        </g>
+        <g id=\"Triangle\" transform=\"translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) \">
+          <use fill=\"var(--bs-primary)\" xlink:href=\"#path-5\"></use>
+          <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-5\"></use>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+</span>
+            <span class=\"app-brand-text demo footer-link fw-bold ms-2 ps-1\">CuraCloud </span>
+          </a>
+          <p class=\"footer-text footer-logo-description mb-4\">
+           Our website is your companion on every device, providing a smooth and friendly experience
+          </p>
+          <form class=\"footer-form\">
+            <label for=\"footer-email\" class=\"small\">Subscribe to newsletter</label>
+            <div class=\"d-flex mt-1\">
+              <input type=\"email\" class=\"form-control rounded-0 rounded-start-bottom rounded-start-top\" id=\"footer-email\" placeholder=\"Your email\" />
+              <button type=\"submit\" class=\"btn btn-primary shadow-none rounded-0 rounded-end-bottom rounded-end-top\">
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class=\"col-lg-2 col-md-4 col-sm-6\">
+          <h6 class=\"footer-title mb-4\">Demos</h6>
+          ";
+        // line 668
+        yield "        </div>
+        <div class=\"col-lg-2 col-md-4 col-sm-6\">
+          <h6 class=\"footer-title mb-4\">Pages</h6>
+         ";
+        // line 688
+        yield "        </div>
+        <div class=\"col-lg-3 col-md-4\">
+          <h6 class=\"footer-title mb-4\">Download our app</h6>
+          <a href=\"javascript:void(0);\" class=\"d-block footer-link mb-3 pb-2\"><img src=\"";
+        // line 691
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/landing-page/apple-icon.png"), "html", null, true);
+        yield "\" alt=\"apple icon\" /></a>
+          <a href=\"javascript:void(0);\" class=\"d-block footer-link\"><img src=\"";
+        // line 692
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/landing-page/google-play-icon.png"), "html", null, true);
+        yield "\" alt=\"google play icon\" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=\"footer-bottom py-3\">
+    <div class=\"container d-flex flex-wrap justify-content-between flex-md-row flex-column text-center text-md-start\">
+      <div class=\"mb-2 mb-md-0\">
+        <span class=\"footer-text\">©
+          <script>
+          document.write(new Date().getFullYear());
+
+          </script>
+        </span>
+        <a href=\"https://themeselection.com/\" target=\"_blank\" class=\"fw-medium text-white footer-link\">CuraTeam,</a>
+        <span class=\"footer-text\"> Made with ❤️ for a better healthcare.</span>
+      </div>
+      <div>
+        <a href=\"https://github.com/themeselection\" class=\"footer-link me-3\" target=\"_blank\">
+          <img src=\"";
+        // line 711
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/icons/github-light.png"), "html", null, true);
+        yield "\" alt=\"github icon\" data-app-light-img=\"front-pages/icons/github-light.png\" data-app-dark-img=\"front-pages/icons/github-dark.png\" />
+        </a>
+        <a href=\"https://www.facebook.com/ThemeSelections/\" class=\"footer-link me-3\" target=\"_blank\">
+          <img src=\"";
+        // line 714
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/icons/facebook-light.png"), "html", null, true);
+        yield "\" alt=\"facebook icon\" data-app-light-img=\"front-pages/icons/facebook-light.png\" data-app-dark-img=\"front-pages/icons/facebook-dark.png\" />
+        </a>
+        <a href=\"https://twitter.com/Theme_Selection\" class=\"footer-link me-3\" target=\"_blank\">
+          <img src=\"";
+        // line 717
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/icons/twitter-light.png"), "html", null, true);
+        yield "\" alt=\"twitter icon\" data-app-light-img=\"front-pages/icons/twitter-light.png\" data-app-dark-img=\"front-pages/icons/twitter-dark.png\" />
+        </a>
+        <a href=\"https://www.instagram.com/themeselection/\" class=\"footer-link\" target=\"_blank\">
+          <img src=\"";
+        // line 720
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/img/front-pages/icons/instagram-light.png"), "html", null, true);
+        yield "\" alt=\"google icon\" data-app-light-img=\"front-pages/icons/instagram-light.png\" data-app-dark-img=\"front-pages/icons/instagram-dark.png\" />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer: End -->
+  
+
+  <!-- Include Scripts -->
+  <!-- \$isFront is used to append the front layout scripts only on the front layout otherwise the variable will be blank -->
+  <!-- BEGIN: Vendor JS-->
+<script src=\"";
+        // line 732
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/js/dropdown-hover.js"), "html", null, true);
+        yield "\"></script>
+<script src=\"";
+        // line 733
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/js/mega-dropdown.js"), "html", null, true);
+        yield "\"></script>
+<script src=\"";
+        // line 734
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/libs/popper/popper0a73.js?id=baf82d96b7771efbcc05c3b77135d24c"), "html", null, true);
+        yield "\"></script>
+<script src=\"";
+        // line 735
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/js/bootstrapcfc4.js?id=4648227467e3fd3f4cf976cfb0e43aea"), "html", null, true);
+        yield "\"></script>
+
+<script src=\"";
+        // line 737
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/libs/nouislider/nouislider.js"), "html", null, true);
+        yield "\"></script>
+<script src=\"";
+        // line 738
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/vendor/libs/swiper/swiper.js"), "html", null, true);
+        yield "\"></script>
+<!-- END: Page Vendor JS-->
+<!-- BEGIN: Theme JS-->
+<script src=\"";
+        // line 741
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/js/front-maind55a.js?id=7e3beea798d1161b84cbf0934a1cd521"), "html", null, true);
+        yield "\"></script>
+<!-- END: Theme JS-->
+<!-- Pricing Modal JS-->
+<!-- END: Pricing Modal JS-->
+<!-- BEGIN: Page JS-->
+<script src=\"";
+        // line 746
+        yield Twig\Extension\EscaperExtension::escape($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("back/assets/js/front-page-landing.js"), "html", null, true);
+        yield "\"></script>
+<!-- END: Page JS-->
+
+</body>
+
+
+<!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1/front-pages/landing by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Nov 2023 03:53:39 GMT -->
+</html>
+";
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        return; yield '';
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getTemplateName()
+    {
+        return "newbaseprelogin.html.twig";
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     */
+    public function getDebugInfo()
+    {
+        return array (  810 => 746,  802 => 741,  796 => 738,  792 => 737,  787 => 735,  783 => 734,  779 => 733,  775 => 732,  760 => 720,  754 => 717,  748 => 714,  742 => 711,  720 => 692,  716 => 691,  711 => 688,  706 => 668,  610 => 558,  592 => 543,  574 => 528,  544 => 501,  514 => 474,  486 => 449,  430 => 396,  420 => 389,  408 => 380,  396 => 371,  384 => 362,  372 => 353,  346 => 330,  342 => 329,  331 => 321,  326 => 319,  297 => 293,  263 => 261,  261 => 233,  259 => 203,  254 => 173,  211 => 133,  149 => 74,  143 => 71,  136 => 67,  128 => 62,  121 => 58,  117 => 57,  112 => 55,  108 => 54,  104 => 53,  100 => 52,  95 => 50,  44 => 1,);
+    }
+
+    public function getSourceContext()
+    {
+        return new Source("<!DOCTYPE html>
+
+<html lang=\"en\" class=\"light-style  layout-navbar-fixed      \" dir=\"ltr\" data-theme=\"theme-default\" data-assets-path=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/\" data-base-url=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1\" data-framework=\"laravel\" data-template=\"front-menu-theme-default-light\">
+
+
+<!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1/front-pages/landing by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Nov 2023 03:53:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset=\"utf-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0\" />
+  <title>CuraCloud</title>
+  <meta name=\"description\" content=\"Most Powerful &amp; Comprehensive Bootstrap 5 HTML Admin Dashboard Template built for developers!\" />
+  <meta name=\"keywords\" content=\"dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5\">
+  <!-- laravel CRUD token -->
+  <meta name=\"csrf-token\" content=\"0eCEBTosT4fUoOUBm1mZC5xlQ6QVoufdLxSNbJCn\">
+  <!-- Canonical SEO -->
+  <link rel=\"canonical\" href=\"https://themeselection.com/item/sneat-bootstrap-laravel-admin-template/\">
+  <!-- Favicon -->
+  <link rel=\"icon\" type=\"image/x-icon\" href=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/img/favicon/favicon.ico\" />
+
+  
+      <!-- Google Tag Manager (Default ThemeSelection: GTM-5DDHKGP, PixInvent: GTM-5J3LMKC) -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        '../../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-5DDHKGP');
+  </script>
+  <!-- End Google Tag Manager -->
+    
+
+  <!-- Include Styles -->
+  <!-- \$isFront is used to append the front layout styles only on the front layout otherwise the variable will be blank -->
+  <!-- BEGIN: Theme CSS-->
+<!-- Fonts -->
+<link rel=\"preconnect\" href=\"https://fonts.googleapis.com/\">
+<link rel=\"preconnect\" href=\"https://fonts.gstatic.com/\" crossorigin>
+<link href=\"https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;display=swap\" rel=\"stylesheet\">
+
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/vendor/fonts/boxiconsc4a7.css?id=87122b3a3900320673311cebdeb618da')}}\" />
+<!-- Core CSS -->
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/vendor/css/rtl/corea8ac.css?id=55b2a9dfaa009c41df62ca8d16e913a8')}}\" class=\"template-customizer-core-css\" />
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/vendor/css/rtl/theme-default4c4b.css?id=9182924a7b965439eca5e189ba43eba1')}}\" class=\"template-customizer-theme-css\" />
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/css/demob77a.css?id=69dfc5e48fce5a4ff55ff7b593cdf93d')}}\" />
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/vendor/css/pages/front-page74c7.css?id=6ea5e011264576f3de2d3b23d3ddd649')}}\" />
+<!-- Vendor Styles -->
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/vendor/libs/nouislider/nouislider.css')}}\" />
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/vendor/libs/swiper/swiper.css')}}\" />
+
+
+<!-- Page Styles -->
+<link rel=\"stylesheet\" href=\"{{asset('back/assets/vendor/css/pages/front-page-landing.css')}}\" />
+
+  <!-- Include Scripts for customizer, helper, analytics, config -->
+  <!-- \$isFront is used to append the front layout scriptsIncludes only on the front layout otherwise the variable will be blank -->
+  <!-- laravel style -->
+<script src=\"{{asset('back/assets/vendor/js/helpers.js')}}\"></script>
+<!-- beautify ignore:start -->
+  <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+  <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+  <script src=\"{{asset('back/assets/vendor/js/template-customizer.js')}}\"></script>
+
+  <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+  <script src=\"{{asset('back/assets/js/front-config.js')}}\"></script>
+
+  <script>
+    window.templateCustomizer = new TemplateCustomizer({
+      cssPath: '',
+      themesPath: '',
+      defaultStyle: \"light\",
+      displayCustomizer: \"true\",
+      lang: 'en',
+      pathResolver: function(path) {
+        var resolvedPaths = {
+          // Core stylesheets
+                      'core.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/core.css?id=55b2a9dfaa009c41df62ca8d16e913a8',
+            'core-dark.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/core-dark.css?id=d98ae2a03b5b1b05651411ee58ef81a6',
+          
+          // Themes
+                      'theme-default.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-default.css?id=9182924a7b965439eca5e189ba43eba1',
+            'theme-default-dark.css':
+            'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-default-dark.css?id=ae30991ef3f62e7c03ca6f8930843e80',
+                      'theme-bordered.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-bordered.css?id=a4f95a927b1e2bcdfd57a3bbfb2bd3d9',
+            'theme-bordered-dark.css':
+            'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-bordered-dark.css?id=2a668deb480284f975db82d0a7277156',
+                      'theme-semi-dark.css': 'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-semi-dark.css?id=9c02fb39c47f91b2d198f343fa8b4df7',
+            'theme-semi-dark-dark.css':
+            'https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo/assets/vendor/css/rtl/theme-semi-dark-dark.css?id=c4b1950a14ffd431f752917b97a0ee51',
+                  }
+        return resolvedPaths[path] || path;
+      },!
+      'controls': [\"rtl\",\"style\"],
+
+    });
+  </script>
+</head>
+
+<body>
+  
+      <!-- Google Tag Manager (noscript) (Default ThemeSelection: GTM-5DDHKGP, PixInvent: GTM-5J3LMKC) -->
+  <noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-5DDHKGP\" height=\"0\" width=\"0\" style=\"display: none; visibility: hidden\"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    
+
+  <!-- Layout Content -->
+  
+
+
+<!-- Navbar: Start -->
+<!-- Navbar: Start -->
+<nav class=\"layout-navbar shadow-none py-0\">
+  <div class=\"container\">
+    <div class=\"navbar navbar-expand-lg landing-navbar px-3 px-md-4 \">
+      <!-- Menu logo wrapper: Start -->
+      <div class=\"navbar-brand app-brand demo d-flex py-0 me-4\">
+        <!-- Mobile menu toggle: Start-->
+        <button class=\"navbar-toggler border-0 px-0 me-2\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+          <i class=\"tf-icons bx bx-menu bx-sm align-middle\"></i>
+        </button>
+        <!-- Mobile menu toggle: End-->
+      <a  class=\"app-brand-link\">
+    <span class=\"app-brand-logo demo\">
+        <img src=\"{{ asset('images/blogs/LOGO-65ea2b987652d.png')}}\" alt=\"Your Logo\" width=\"50\">
+    </span>
+</a>
+  <g id=\"g-app-brand\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">
+    <g id=\"Brand-Logo\" transform=\"translate(-27.000000, -15.000000)\">
+      <g id=\"Icon\" transform=\"translate(27.000000, 15.000000)\">
+        <g id=\"Mask\" transform=\"translate(0.000000, 8.000000)\">
+          <mask id=\"mask-2\" fill=\"white\">
+            <use xlink:href=\"#path-1\"></use>
+          </mask>
+          <use fill=\"var(--bs-primary)\" xlink:href=\"#path-1\"></use>
+          <g id=\"Path-3\" mask=\"url(#mask-2)\">
+            <use fill=\"var(--bs-primary)\" xlink:href=\"#path-3\"></use>
+            <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-3\"></use>
+          </g>
+          <g id=\"Path-4\" mask=\"url(#mask-2)\">
+            <use fill=\"var(--bs-primary)\" xlink:href=\"#path-4\"></use>
+            <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-4\"></use>
+          </g>
+        </g>
+        <g id=\"Triangle\" transform=\"translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) \">
+          <use fill=\"var(--bs-primary)\" xlink:href=\"#path-5\"></use>
+          <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-5\"></use>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+</span>
+          <span class=\"app-brand-text demo menu-text fw-bold ms-2 ps-1\">CuraCloud</span>
+        </a>
+      </div>
+      <!-- Menu logo wrapper: End -->
+      <!-- Menu wrapper: Start -->
+      <div class=\"collapse navbar-collapse landing-nav-menu\" id=\"navbarSupportedContent\">
+        <button class=\"navbar-toggler border-0 text-heading position-absolute end-0 top-0 scaleX-n1-rtl\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+          <i class=\"tf-icons bx bx-x bx-sm\"></i>
+        </button>
+        <ul class=\"navbar-nav me-auto\" >
+          <li class=\"nav-item active\">
+            <a class=\"nav-link fw-medium\" aria-current=\"page\" href=\"{{ path('app_prehome') }}\">Home</a>
+          </li>
+          {# <li class=\"nav-item mega-dropdown\">
+            <a href=\"javascript:void(0);\" class=\"nav-link dropdown-toggle navbar-ex-14-mega-dropdown mega-dropdown fw-medium\" aria-expanded=\"false\" data-bs-toggle=\"mega-dropdown\" data-trigger=\"hover\">
+              <span>Laboratoires</span>
+            </a>
+            <div class=\"dropdown-menu p-4\">
+              <div class=\"row gy-4\">
+                <div class=\"col-12 col-lg\">
+                  <!-- add page slug in \$activeRoutes array, defined Beginning of the page to add active class to the nav item -->
+                  <ul class=\"nav flex-column\">
+                    <li class=\"nav-item \">
+                      <a class=\"nav-link mega-dropdown-link\" href=\"{{ path('app_bilan_index') }}\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Analyse</span>
+                      </a>
+                    </li>
+                    <li class=\"nav-item \">
+                      <a class=\"nav-link mega-dropdown-link\" href=\"{{ path('app_diagnostic_request_index') }}\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Radiologie</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            
+          </li> #}
+            {# <li class=\"nav-item mega-dropdown\">
+            <a href=\"javascript:void(0);\" class=\"nav-link dropdown-toggle navbar-ex-14-mega-dropdown mega-dropdown fw-medium\" aria-expanded=\"false\" data-bs-toggle=\"mega-dropdown\" data-trigger=\"hover\">
+              <span>Patient Portal</span>
+            </a>
+            <div class=\"dropdown-menu p-4\">
+              <div class=\"row gy-4\">
+                <div class=\"col-12 col-lg\">
+                  <!-- add page slug in \$activeRoutes array, defined Beginning of the page to add active class to the nav item -->
+                  <ul class=\"nav flex-column\">
+                    <li class=\"nav-item \">
+                      <a class=\"nav-link mega-dropdown-link\" href=\"{{ path('user_app_appointment_index') }}\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Appointments</span>
+                      </a>
+                    </li>
+                    <li class=\"nav-item \">
+                      <a class=\"nav-link mega-dropdown-link\" href=\"{{ path('user_medical_record_index') }}\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Medical Record</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+             <li class=\"nav-item \">
+                   <a class=\"nav-link fw-medium\" href=\"{{ path('user_prescription_index') }}\" target=\"_blank\">Prescriptions</a>
+              </li>
+            
+          </li> #}
+                  {# <li class=\"nav-item mega-dropdown \">
+            <a href=\"javascript:void(0);\" class=\"nav-link dropdown-toggle navbar-ex-14-mega-dropdown mega-dropdown fw-medium\" aria-expanded=\"false\" data-bs-toggle=\"mega-dropdown\" data-trigger=\"hover\">
+              <span>CuraHub</span>
+            </a>
+            <div class=\"dropdown-menu p-4\">
+              <div class=\"row gy-4\">
+                <div class=\"col-12 col-lg\">
+                  <!-- add page slug in \$activeRoutes array, defined Beginning of the page to add active class to the nav item -->
+                  <ul class=\"nav flex-column\">
+                    <li class=\"nav-item \">
+                      <a class=\"nav-link mega-dropdown-link\"href=\"{{ path('app_blog_index') }}\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>blogs</span>
+                      </a>
+                    </li>
+                    <li class=\"nav-item \">
+                      <a class=\"nav-link mega-dropdown-link\" href=\"{{ path('app_blog_index') }}\">
+                        <i class='bx bx-radio-circle me-2'></i>
+                        <span>Stream</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            
+          </li> #}
+      </div>
+   
+      <!-- Menu wrapper: End -->
+      <!-- Toolbar: Start -->
+      <ul class=\"navbar-nav flex-row align-items-center ms-auto\">
+                <!-- Style Switcher -->
+        <li class=\"nav-item dropdown-style-switcher dropdown me-2 me-xl-0\">
+          <a class=\"nav-link dropdown-toggle hide-arrow\" href=\"javascript:void(0);\" data-bs-toggle=\"dropdown\">
+            <i class='bx bx-sm'></i>
+          </a>
+          <ul class=\"dropdown-menu dropdown-menu-end dropdown-styles\">
+            <li>
+              <a class=\"dropdown-item\" href=\"javascript:void(0);\" data-theme=\"light\">
+                <span class=\"align-middle\"><i class='bx bx-sun me-2'></i>Light</span>
+              </a>
+            </li>
+            <li>
+              <a class=\"dropdown-item\" href=\"javascript:void(0);\" data-theme=\"dark\">
+                <span class=\"align-middle\"><i class=\"bx bx-moon me-2\"></i>Dark</span>
+              </a>
+            </li>
+            <li>
+              <a class=\"dropdown-item\" href=\"javascript:void(0);\" data-theme=\"system\">
+                <span class=\"align-middle\"><i class=\"bx bx-desktop me-2\"></i>System</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- / Style Switcher-->
+        
+        <!-- navbar button: Start -->
+        <li>
+          <a href=\"{{ path('app_login')}}\" class=\"btn btn-primary\" target=\"_blank\"><span class=\"tf-icons bx bx-user me-md-1\"></span><span class=\"d-none d-md-block\">Login/Register</span></a>
+        </li>
+        <!-- navbar button: End -->
+      </ul>
+      <!-- Toolbar: End -->
+    </div>
+  </div>
+</nav>
+<!-- Navbar: End -->
+
+<!-- Sections:Start -->
+<div data-bs-spy=\"scroll\" class=\"scrollspy-example\">
+  <!-- Hero: Start -->
+  <section id=\"hero-animation\">
+    <div id=\"landingHero\" class=\"section-py landing-hero position-relative\">
+      <div class=\"container\">
+        <div class=\"hero-text-box text-center\">
+          <h1 class=\"text-primary hero-title display-4 fw-bold\">Hello &amp; welcome 
+        <div class=\"font-alt mb-40 titan-title-size-4\">We are CuraCloud</div> 
+         </h1>
+          <h2 class=\"hero-sub-title h6 mb-4 pb-1\">
+            CuraCloud is an EHR system for<br class=\"d-none d-lg-block\" />
+           Tunisian patients and health care providers
+          </h2>
+          <div class=\"landing-hero-btn d-inline-block position-relative\">
+            <span class=\"hero-btn-item position-absolute d-none d-md-flex text-heading\">Join community
+              <img src=\"{{asset('back/assets/img/front-pages/icons/Join-community-arrow.png')}}\" alt=\"Join community arrow\" class=\"scaleX-n1-rtl\" /></span>
+        
+          <a href=\"{{ path('app_login')}}\" class=\"btn btn-primary\" target=\"_blank\"><span class=\"tf-icons bx bx-user me-md-1\"></span><span class=\"d-none d-md-block\">Login/Register</span></a>
+      
+          </div>
+        </div>
+        <div id=\"heroDashboardAnimation\" class=\"hero-animation-img\">
+          <a  target=\"_blank\">
+            <div id=\"heroAnimationImg\" class=\"position-relative hero-dashboard-img\">
+              <div id=\"heroAnimationImg\" class=\"position-relative hero-dashboard-img\">
+    <img src=\"{{ asset('images/blogs/LOGO-65ea2b987652d.png')}}\" alt=\"hero dashboard\" class=\"animation-img\" data-app-light-img=\"front-pages/landing-page/hero-dashboard-light.png\" data-app-dark-img=\"front-pages/landing-page/hero-dashboard-dark.html\" />
+    <img src=\"{{ asset('images/blogs/LOGO-65ea2b987652d.png')}}\" alt=\"hero elements\" class=\"position-absolute hero-elements-img animation-img top-0 start-0\" data-app-light-img=\"front-pages/landing-page/hero-elements-light.png\" data-app-dark-img=\"front-pages/landing-page/hero-elements-dark.html\" />
+</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class=\"landing-hero-blank\"></div>
+  </section>
+  <!-- Hero: End -->
+
+  <!-- Useful features: Start -->
+  <section id=\"landingFeatures\" class=\"section-py landing-features\">
+    <div class=\"container\">
+      <div class=\"text-center mb-3 pb-1\">
+        <span class=\"badge bg-label-primary\">Useful Features</span>
+      </div>
+      <h3 class=\"text-center mb-1\">
+        <span class=\"section-title\">Everything you need</span> to start your medical journey
+      </h3>
+    
+      <div class=\"features-icon-wrapper row gx-0 gy-4 g-sm-5\">
+        <div class=\"col-lg-4 col-sm-6 text-center features-icon-box\">
+          <div class=\"text-center mb-3\">
+            <img src=\"{{asset('back/assets/img/front-pages/icons/laptop.png')}}\" alt=\"laptop charging\" />
+          </div>
+          <h5 class=\"mb-3\">Digital documents </h5>
+          <p class=\"features-icon-description\">
+           Your medical records all digitalised and ready
+          </p>
+        </div>
+        <div class=\"col-lg-4 col-sm-6 text-center features-icon-box\">
+          <div class=\"text-center mb-3\">
+            <img src=\"{{asset('back/assets/img/front-pages/icons/rocket.png')}}\" alt=\"transition up\" />
+          </div>
+          <h5 class=\"mb-3\">Continuous Updates</h5>
+          <p class=\"features-icon-description\">
+            A self updating application
+          </p>
+        </div>
+        <div class=\"col-lg-4 col-sm-6 text-center features-icon-box')}}\">
+          <div class=\"text-center mb-3\">
+            <img src=\"{{asset('back/assets/img/front-pages/icons/paper.png')}}\" alt=\"edit\" />
+          </div>
+          <h5 class=\"mb-3\">Careful Appointements</h5>
+          <p class=\"features-icon-description\">
+            Make your Appointments with your favorite doctor online.
+          </p>
+        </div>
+        <div class=\"col-lg-4 col-sm-6 text-center features-icon-box\">
+          <div class=\"text-center mb-3\">
+            <img src=\"{{asset('back/assets/img/front-pages/icons/check.png')}}\" alt=\"3d select solid\" />
+          </div>
+          <h5 class=\"mb-3\">Customized prescriptions</h5>
+          <p class=\"features-icon-description\">
+           With all available medications and notes.
+          </p>
+        </div>
+        <div class=\"col-lg-4 col-sm-6 text-center features-icon-box\">
+          <div class=\"text-center mb-3\">
+            <img src=\"{{asset('back/assets/img/front-pages/icons/user.png')}}\" alt=\"lifebelt\" />
+          </div>
+          <h5 class=\"mb-3\">CuraHub</h5>
+          <p class=\"features-icon-description\">A Platform with all your favorite doctors.</p>
+        </div>
+        <div class=\"col-lg-4 col-sm-6 text-center features-icon-box\">
+          <div class=\"text-center mb-3\">
+            <img src=\"{{asset('back/assets/img/front-pages/icons/keyboard.png')}}\" alt=\"google docs\" />
+          </div>
+          <h5 class=\"mb-3\">Excellent Research</h5>
+          <p class=\"features-icon-description\">We aim to provide the best of health services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Useful features: End -->
+
+  <!-- Real customers reviews: Start -->
+  <section id=\"landingReviews\" class=\"section-py bg-body landing-reviews pb-0\">
+    <!-- What people say slider: Start -->
+    <div class=\"container\">
+      <div class=\"row align-items-center gx-0 gy-4 g-lg-5\">
+        <div class=\"col-md-6 col-lg-5 col-xl-3\">
+          <div class=\"mb-3 pb-1\">
+            <span class=\"badge bg-label-primary\">Real Customers Reviews</span>
+          </div>
+          <h3 class=\"mb-1\"><span class=\"section-title\">What people say</span></h3>
+          <p class=\"mb-3 mb-md-5\">
+            See what our customers have to<br class=\"d-none d-xl-block\" />
+            say about their experience.
+          </p>
+          <div class=\"landing-reviews-btns d-flex align-items-center gap-3\">
+            <button id=\"reviews-previous-btn\" class=\"btn btn-label-primary reviews-btn\" type=\"button\">
+              <i class=\"bx bx-chevron-left bx-sm\"></i>
+            </button>
+            <button id=\"reviews-next-btn\" class=\"btn btn-label-primary reviews-btn\" type=\"button\">
+              <i class=\"bx bx-chevron-right bx-sm\"></i>
+            </button>
+          </div>
+        </div>
+        <div class=\"col-md-6 col-lg-7 col-xl-9\">
+          <div class=\"swiper-reviews-carousel overflow-hidden mb-5 pb-md-2 pb-md-3\">
+            <div class=\"swiper\" id=\"swiper-reviews\">
+              <div class=\"swiper-wrapper\">
+                <div class=\"swiper-slide\">
+                  <div class=\"card h-100\">
+                    <div class=\"card-body text-body d-flex flex-column justify-content-between h-100\">
+                      
+                      <p>
+                        “CuraCloud is a digital platform that englobeeverything you need to flow you health.”
+                      </p>
+                      <div class=\"text-warning mb-3\">
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                      </div>
+                      <div class=\"d-flex align-items-center\">
+                        <div class=\"avatar me-2 avatar-sm\">
+                          <img src=\"{{asset('back/assets/img/avatars/1.png')}}\" alt=\"Avatar\" class=\"rounded-circle\" />
+                        </div>
+                        <div>
+                          <h6 class=\"mb-0\">Eya Dahen</h6>
+                          <p class=\"small text-muted mb-0\">Patient </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=\"swiper-slide\">
+                  <div class=\"card h-100\">
+                    <div class=\"card-body text-body d-flex flex-column justify-content-between h-100\">
+                      <p>
+                        “I've never used an application as CuraCloud and flexible as CuraCloud. It's my go to for trucking my patients health.\"
+                      </p>
+                      <div class=\"text-warning mb-3\">
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                      </div>
+                      <div class=\"d-flex align-items-center\">
+                        <div class=\"avatar me-2 avatar-sm\">
+                          <img src=\"{{asset('back/assets/img/avatars/2.png')}}\" alt=\"Avatar\" class=\"rounded-circle\" />
+                        </div>
+                        <div>
+                          <h6 class=\"mb-0\">Ahmed Arfaoui</h6>
+                          <p class=\"small text-muted mb-0\">Doctor at clinique Avicenne</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=\"swiper-slide\">
+                  <div class=\"card h-100\">
+                    <div class=\"card-body text-body d-flex flex-column justify-content-between h-100\">
+                     
+                      <p>
+                        This application is really easy to work with it  & well documented. The docs are really easy to understand and
+                        it's always easy to find a screenshot from their website.
+                      </p>
+                      <div class=\"text-warning mb-3\">
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                      </div>
+                      <div class=\"d-flex align-items-center\">
+                        <div class=\"avatar me-2 avatar-sm\">
+                          <img src=\"{{asset('back/assets/img/avatars/3.png')}}\" alt=\"Avatar\" class=\"rounded-circle\" />
+                        </div>
+                        <div>
+                          <h6 class=\"mb-0\">Louay Araour</h6>
+                          <p class=\"small text-muted mb-0\">Biologiste at Pasteur</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=\"swiper-slide\">
+                  <div class=\"card h-100\">
+                    <div class=\"card-body text-body d-flex flex-column justify-content-between h-100\">
+                      
+                      <p>
+                        All the requirements for developers have been taken into consideration, so I’m able to build
+                        any interface I want.
+                      </p>
+                      <div class=\"text-warning mb-3\">
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bx-star bx-sm\"></i>
+                      </div>
+                      <div class=\"d-flex align-items-center\">
+                        <div class=\"avatar me-2 avatar-sm\">
+                          <img src=\"{{asset('back/assets/img/avatars/4.png')}}\" alt=\"Avatar\" class=\"rounded-circle\" />
+                        </div>
+                        <div>
+                          <h6 class=\"mb-0\">Sara Smith</h6>
+                          <p class=\"small text-muted mb-0\">Founder of Continental</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class=\"swiper-slide\">
+                  <div class=\"card h-100\">
+                    <div class=\"card-body text-body d-flex flex-column justify-content-between h-100\">
+                      <div class=\"mb-3\">
+                        <img src=\"{{asset('back/assets/img/front-pages/branding/logo-6.png')}}\" alt=\"client logo\" class=\"client-logo img-fluid\" />
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nemo mollitia, ad eum
+                        officia numquam nostrum repellendus consequuntur!
+                      </p>
+                      <div class=\"text-warning mb-3\">
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bxs-star bx-sm\"></i>
+                        <i class=\"bx bx-star bx-sm\"></i>
+                      </div>
+                      <div class=\"d-flex align-items-center\">
+                        <div class=\"avatar me-2 avatar-sm\">
+                          <img src=\"{{asset('back/assets/img/avatars/1.png')}}\" alt=\"Avatar\" class=\"rounded-circle\" />
+                        </div>
+                        <div>
+                          <h6 class=\"mb-0\">Sara Smith</h6>
+                          <p class=\"small text-muted mb-0\">Founder of Continental</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class=\"swiper-button-next\"></div>
+              <div class=\"swiper-button-prev\"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- What people say slider: End -->
+    <hr class=\"m-0\" />
+ 
+  </section>
+  <!-- Real customers reviews: End -->
+
+
+  
+
+  
+
+ 
+
+  
+  <!-- Contact Us: End -->
+</div>
+<!-- / Sections:End -->
+
+<!-- Footer: Start -->
+<footer class=\"landing-footer bg-body footer-text\">
+  <div class=\"footer-top\">
+    <div class=\"container\">
+      <div class=\"row gx-0 gy-4 g-md-5\">
+        <div class=\"col-lg-5\">
+          <a  class=\"app-brand-link mb-4\">
+            <span class=\"app-brand-logo demo\"><svg width=\"25\" viewBox=\"0 0 25 42\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">
+  <defs>
+    <path d=\"M13.7918663,0.358365126 L3.39788168,7.44174259 C0.566865006,9.69408886 -0.379795268,12.4788597 0.557900856,15.7960551 C0.68998853,16.2305145 1.09562888,17.7872135 3.12357076,19.2293357 C3.8146334,19.7207684 5.32369333,20.3834223 7.65075054,21.2172976 L7.59773219,21.2525164 L2.63468769,24.5493413 C0.445452254,26.3002124 0.0884951797,28.5083815 1.56381646,31.1738486 C2.83770406,32.8170431 5.20850219,33.2640127 7.09180128,32.5391577 C8.347334,32.0559211 11.4559176,30.0011079 16.4175519,26.3747182 C18.0338572,24.4997857 18.6973423,22.4544883 18.4080071,20.2388261 C17.963753,17.5346866 16.1776345,15.5799961 13.0496516,14.3747546 L10.9194936,13.4715819 L18.6192054,7.984237 L13.7918663,0.358365126 Z\" id=\"path-1\"></path>
+    <path d=\"M5.47320593,6.00457225 C4.05321814,8.216144 4.36334763,10.0722806 6.40359441,11.5729822 C8.61520715,12.571656 10.0999176,13.2171421 10.8577257,13.5094407 L15.5088241,14.433041 L18.6192054,7.984237 C15.5364148,3.11535317 13.9273018,0.573395879 13.7918663,0.358365126 C13.5790555,0.511491653 10.8061687,2.3935607 5.47320593,6.00457225 Z\" id=\"path-3\"></path>
+    <path d=\"M7.50063644,21.2294429 L12.3234468,23.3159332 C14.1688022,24.7579751 14.397098,26.4880487 13.008334,28.506154 C11.6195701,30.5242593 10.3099883,31.790241 9.07958868,32.3040991 C5.78142938,33.4346997 4.13234973,34 4.13234973,34 C4.13234973,34 2.75489982,33.0538207 2.37032616e-14,31.1614621 C-0.55822714,27.8186216 -0.55822714,26.0572515 -4.05231404e-15,25.8773518 C0.83734071,25.6075023 2.77988457,22.8248993 3.3049379,22.52991 C3.65497346,22.3332504 5.05353963,21.8997614 7.50063644,21.2294429 Z\" id=\"path-4\"></path>
+    <path d=\"M20.6,7.13333333 L25.6,13.8 C26.2627417,14.6836556 26.0836556,15.9372583 25.2,16.6 C24.8538077,16.8596443 24.4327404,17 24,17 L14,17 C12.8954305,17 12,16.1045695 12,15 C12,14.5672596 12.1403557,14.1461923 12.4,13.8 L17.4,7.13333333 C18.0627417,6.24967773 19.3163444,6.07059163 20.2,6.73333333 C20.3516113,6.84704183 20.4862915,6.981722 20.6,7.13333333 Z\" id=\"path-5\"></path>
+  </defs>
+  <g id=\"g-app-brand\" stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\">
+    <g id=\"Brand-Logo\" transform=\"translate(-27.000000, -15.000000)\">
+      <g id=\"Icon\" transform=\"translate(27.000000, 15.000000)\">
+        <g id=\"Mask\" transform=\"translate(0.000000, 8.000000)\">
+          <mask id=\"mask-2\" fill=\"white\">
+            <use xlink:href=\"#path-1\"></use>
+          </mask>
+          <use fill=\"var(--bs-primary)\" xlink:href=\"#path-1\"></use>
+          <g id=\"Path-3\" mask=\"url(#mask-2)\">
+            <use fill=\"var(--bs-primary)\" xlink:href=\"#path-3\"></use>
+            <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-3\"></use>
+          </g>
+          <g id=\"Path-4\" mask=\"url(#mask-2)\">
+            <use fill=\"var(--bs-primary)\" xlink:href=\"#path-4\"></use>
+            <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-4\"></use>
+          </g>
+        </g>
+        <g id=\"Triangle\" transform=\"translate(19.000000, 11.000000) rotate(-300.000000) translate(-19.000000, -11.000000) \">
+          <use fill=\"var(--bs-primary)\" xlink:href=\"#path-5\"></use>
+          <use fill-opacity=\"0.2\" fill=\"#FFFFFF\" xlink:href=\"#path-5\"></use>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+</span>
+            <span class=\"app-brand-text demo footer-link fw-bold ms-2 ps-1\">CuraCloud </span>
+          </a>
+          <p class=\"footer-text footer-logo-description mb-4\">
+           Our website is your companion on every device, providing a smooth and friendly experience
+          </p>
+          <form class=\"footer-form\">
+            <label for=\"footer-email\" class=\"small\">Subscribe to newsletter</label>
+            <div class=\"d-flex mt-1\">
+              <input type=\"email\" class=\"form-control rounded-0 rounded-start-bottom rounded-start-top\" id=\"footer-email\" placeholder=\"Your email\" />
+              <button type=\"submit\" class=\"btn btn-primary shadow-none rounded-0 rounded-end-bottom rounded-end-top\">
+                Subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class=\"col-lg-2 col-md-4 col-sm-6\">
+          <h6 class=\"footer-title mb-4\">Demos</h6>
+          {#<ul class=\"list-unstyled\">
+            <li class=\"mb-3\">
+              <a href=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1\" target=\"_blank\" class=\"footer-link\">Vertical Layout</a>
+            </li>
+            <li class=\"mb-3\">
+              <a href=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-5\" target=\"_blank\" class=\"footer-link\">Horizontal Layout</a>
+            </li>
+            <li class=\"mb-3\">
+              <a href=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-2\" target=\"_blank\" class=\"footer-link\">Bordered Layout</a>
+            </li>
+            <li class=\"mb-3\">
+              <a href=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-3\" target=\"_blank\" class=\"footer-link\">Semi Dark Layout</a>
+            </li>
+            <li class=\"mb-3\">
+              <a href=\"https://demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-4\" target=\"_blank\" class=\"footer-link\">Dark Layout</a>
+            </li>
+          </ul>#}
+        </div>
+        <div class=\"col-lg-2 col-md-4 col-sm-6\">
+          <h6 class=\"footer-title mb-4\">Pages</h6>
+         {# <ul class=\"list-unstyled\">
+            <li class=\"mb-3\">
+              <a href=\"pricing.html\" class=\"footer-link\">Pricing</a>
+            </li>
+            <li class=\"mb-3\">
+              <a href=\"payment.html\" class=\"footer-link\">Payment<span class=\"badge rounded bg-primary ms-2 px-2\">New</span></a>
+            </li>
+            <li class=\"mb-3\">
+              <a href=\"checkout.html\" class=\"footer-link\">Checkout</a>
+            </li>
+            <li class=\"mb-3\">
+              <a href=\"help-center.html\" class=\"footer-link\">Help Center</a>
+            </li>
+            <li class=\"mb-3\">
+              <a href=\"../auth/login-cover.html\" target=\"_blank\" class=\"footer-link\">Login/Register</a>
+            </li>
+          </ul>#}
+        </div>
+        <div class=\"col-lg-3 col-md-4\">
+          <h6 class=\"footer-title mb-4\">Download our app</h6>
+          <a href=\"javascript:void(0);\" class=\"d-block footer-link mb-3 pb-2\"><img src=\"{{asset('back/assets/img/front-pages/landing-page/apple-icon.png')}}\" alt=\"apple icon\" /></a>
+          <a href=\"javascript:void(0);\" class=\"d-block footer-link\"><img src=\"{{asset('back/assets/img/front-pages/landing-page/google-play-icon.png')}}\" alt=\"google play icon\" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=\"footer-bottom py-3\">
+    <div class=\"container d-flex flex-wrap justify-content-between flex-md-row flex-column text-center text-md-start\">
+      <div class=\"mb-2 mb-md-0\">
+        <span class=\"footer-text\">©
+          <script>
+          document.write(new Date().getFullYear());
+
+          </script>
+        </span>
+        <a href=\"https://themeselection.com/\" target=\"_blank\" class=\"fw-medium text-white footer-link\">CuraTeam,</a>
+        <span class=\"footer-text\"> Made with ❤️ for a better healthcare.</span>
+      </div>
+      <div>
+        <a href=\"https://github.com/themeselection\" class=\"footer-link me-3\" target=\"_blank\">
+          <img src=\"{{asset('back/assets/img/front-pages/icons/github-light.png')}}\" alt=\"github icon\" data-app-light-img=\"front-pages/icons/github-light.png\" data-app-dark-img=\"front-pages/icons/github-dark.png\" />
+        </a>
+        <a href=\"https://www.facebook.com/ThemeSelections/\" class=\"footer-link me-3\" target=\"_blank\">
+          <img src=\"{{asset('back/assets/img/front-pages/icons/facebook-light.png')}}\" alt=\"facebook icon\" data-app-light-img=\"front-pages/icons/facebook-light.png\" data-app-dark-img=\"front-pages/icons/facebook-dark.png\" />
+        </a>
+        <a href=\"https://twitter.com/Theme_Selection\" class=\"footer-link me-3\" target=\"_blank\">
+          <img src=\"{{asset('back/assets/img/front-pages/icons/twitter-light.png')}}\" alt=\"twitter icon\" data-app-light-img=\"front-pages/icons/twitter-light.png\" data-app-dark-img=\"front-pages/icons/twitter-dark.png\" />
+        </a>
+        <a href=\"https://www.instagram.com/themeselection/\" class=\"footer-link\" target=\"_blank\">
+          <img src=\"{{asset('back/assets/img/front-pages/icons/instagram-light.png')}}\" alt=\"google icon\" data-app-light-img=\"front-pages/icons/instagram-light.png\" data-app-dark-img=\"front-pages/icons/instagram-dark.png\" />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer: End -->
+  
+
+  <!-- Include Scripts -->
+  <!-- \$isFront is used to append the front layout scripts only on the front layout otherwise the variable will be blank -->
+  <!-- BEGIN: Vendor JS-->
+<script src=\"{{asset('back/assets/vendor/js/dropdown-hover.js')}}\"></script>
+<script src=\"{{asset('back/assets/vendor/js/mega-dropdown.js')}}\"></script>
+<script src=\"{{asset('back/assets/vendor/libs/popper/popper0a73.js?id=baf82d96b7771efbcc05c3b77135d24c')}}\"></script>
+<script src=\"{{asset('back/assets/vendor/js/bootstrapcfc4.js?id=4648227467e3fd3f4cf976cfb0e43aea')}}\"></script>
+
+<script src=\"{{asset('back/assets/vendor/libs/nouislider/nouislider.js')}}\"></script>
+<script src=\"{{asset('back/assets/vendor/libs/swiper/swiper.js')}}\"></script>
+<!-- END: Page Vendor JS-->
+<!-- BEGIN: Theme JS-->
+<script src=\"{{asset('back/assets/js/front-maind55a.js?id=7e3beea798d1161b84cbf0934a1cd521')}}\"></script>
+<!-- END: Theme JS-->
+<!-- Pricing Modal JS-->
+<!-- END: Pricing Modal JS-->
+<!-- BEGIN: Page JS-->
+<script src=\"{{asset('back/assets/js/front-page-landing.js')}}\"></script>
+<!-- END: Page JS-->
+
+</body>
+
+
+<!-- Mirrored from demos.themeselection.com/sneat-bootstrap-html-laravel-admin-template/demo-1/front-pages/landing by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Nov 2023 03:53:39 GMT -->
+</html>
+", "newbaseprelogin.html.twig", "C:\\Users\\pc\\Desktop\\integration rayhanne - Copie (2)\\CuraCloud\\templates\\newbaseprelogin.html.twig");
+    }
+}

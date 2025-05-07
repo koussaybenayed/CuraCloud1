@@ -1,0 +1,16 @@
+{% extends 'newbase.html.twig' %}
+
+{% block title %}<title>Payment SuccessfuL !</title>{% endblock %}
+
+{% block body %}
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="text-center">
+        <div class="alert alert-sucess alert-dismissible" role="alert">
+            <h4 class="alert-heading d-flex align-items-center justify-content-center mb-1 fs-3">Your Payment has been successful</h4>
+            <p class="mb-0 fs-4">Please press the button below to return to your index.</p>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <a href="{{ path('user_prescription_index') }}" class="btn rounded-pill btn-outline-success btn-lg fs-4">Prescriptions Index</a>
+    </div>
+</div>
+{% endblock %}

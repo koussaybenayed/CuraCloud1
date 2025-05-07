@@ -5,8 +5,12 @@ namespace App\Entity;
 use App\Repository\BilanRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\HttpFoundation\File\File;
+
 
 #[ORM\Entity(repositoryClass: BilanRepository::class)]
+#[Vich\Uploadable]
 class Bilan
 {
     #[ORM\Id]
@@ -28,6 +32,22 @@ class Bilan
 
     #[ORM\Column]
     private ?float $price = null;
+
+    #[ORM\ManyToOne(inversedBy: 'id_bilan')]
+    private ?DiagnosticRequest $diagnosticRequest = null;
+
+
+    #[ORM\Column(length: 255 , nullable: true)]
+    private ?string $imageName = null;
+
+    #[Vich\UploadableField(mapping: 'resultats' , fileNameProperty: 'imageName')]
+    private ?File $imageFile = null;
+
+      /**
+       * @ORM\Column(type="datetime")
+       */
+
+    private $updatedAt;
 
     public function getId(): ?int
     {
@@ -93,4 +113,49 @@ class Bilan
 
         return $this;
     }
+
+    public function getDiagnosticRequest(): ?DiagnosticRequest
+    {
+        return $this->diagnosticRequest;
+    }
+
+    public function setDiagnosticRequest(?DiagnosticRequest $diagnosticRequest): static
+    {
+        $this->diagnosticRequest = $diagnosticRequest;
+
+        return $this;
+    }
+
+    public function getImageName(): ?string
+    {
+        return $this->imageName;
+    }
+
+    public function setImageName(?string $imageName): self
+    {
+        $this->imageName = $imageName;
+
+        return $this;
+    }
+
+
+
+    public function getImageFile(): ?File
+    {
+        return $this->imageFile;
+    }
+
+    public function setImageFile(?File $imageFile): void
+    {
+        $this->imageFile = $imageFile;
+
+        // Si l'image est définie, il est nécessaire de changer également la date de mise à jour pour que VichUploaderBundle fonctionne correctement.
+        if ($imageFile) {
+            $this->updatedAt = new \DateTimeImmutable();
+        }
+    }
+
+
+
+
 }

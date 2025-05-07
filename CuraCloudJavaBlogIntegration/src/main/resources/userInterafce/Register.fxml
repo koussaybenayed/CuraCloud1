@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.controllers.userController.Register">
+   <left>
+        <AnchorPane prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+            <children>
+                <TextField fx:id="emailTF" layoutX="118.0" layoutY="134.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+                <PasswordField fx:id="passwordTF" layoutX="117.0" layoutY="176.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+                <FontAwesomeIconView fill="#0598ff" glyphName="ENVELOPE" layoutX="84.0" layoutY="159.0" size="20" />
+                <FontAwesomeIconView fill="#0598ff" glyphName="LOCK" layoutX="86.0" layoutY="204.0" size="26" text="" />
+                <Button fx:id="signupButton" layoutX="134.0" layoutY="366.0" mnemonicParsing="false" onAction="#signupAction" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: #0598ff;" text="Sign Up" textFill="WHITE">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor></Button>
+                <Hyperlink alignment="CENTER" layoutX="113.0" layoutY="439.0" onAction="#SwitchToLogIn" prefHeight="24.0" prefWidth="125.0" text="already have an account ?">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Hyperlink>
+                <FontAwesomeIconView fill="#0598ff" glyphName="GROUP" layoutX="157.0" layoutY="69.0" size="35" />
+                <Text fill="#0598ff" layoutX="104.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Registration">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Text>
+                <Button layoutX="2.0" layoutY="2.0" mnemonicParsing="false" onAction="#closeWindow" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <FontAwesomeIconView fill="#0598ff" glyphName="CLOSE" size="15" />
+                    </graphic>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button layoutX="158.0" layoutY="417.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+                    <graphic>
+                        <FontAwesomeIconView focusTraversable="true" glyphName="GOOGLE" size="20">
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor></FontAwesomeIconView>
+                    </graphic>
+                </Button>
+                <Line endX="-10.0" fill="#0598ff" layoutX="172.0" layoutY="410.0" startX="-100.0" stroke="#0598ff" />
+                <Line endX="-10.0" layoutX="283.0" layoutY="410.0" startX="-100.0" stroke="#0598ff" />
+                <Text fill="#0598ff" layoutX="167.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="or" />
+            <RadioButton fx:id="patientRadio" layoutX="60.0" layoutY="305.0" mnemonicParsing="false" selected="true" text="Patient" textFill="#0598ff">
+               <toggleGroup>
+                  <ToggleGroup fx:id="role" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="doctorRadio" layoutX="134.0" layoutY="305.0" mnemonicParsing="false" text="Doctor" textFill="#0598ff" toggleGroup="$role" />
+            <RadioButton fx:id="pharmacyRadio" layoutX="202.0" layoutY="305.0" mnemonicParsing="false" text="Pharmacy" textFill="#0598ff" toggleGroup="$role" />
+            <RadioButton fx:id="labRadio" layoutX="189.0" layoutY="331.0" mnemonicParsing="false" text="Lab" textFill="#0598ff" toggleGroup="$role" />
+            <RadioButton fx:id="radiologyRadio" layoutX="97.0" layoutY="331.0" mnemonicParsing="false" text="Radiology" textFill="#0598ff" toggleGroup="$role" />
+            <Label fx:id="captchaLabel" alignment="CENTER" layoutX="51.0" layoutY="233.0" prefHeight="34.0" prefWidth="62.0">
+               <font>
+                  <Font name="Mistral" size="27.0" />
+               </font></Label>
+            <TextField fx:id="captchaTextField" layoutX="120.0" layoutY="235.0" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <Label fx:id="attemptsLabel" layoutX="135.0" layoutY="270.0" prefHeight="17.0" prefWidth="91.0" text="you have 3 atempts" textFill="#0598ff">
+               <font>
+                  <Font name="System Italic" size="10.0" />
+               </font></Label>
+            </children>
+        </AnchorPane>
+   </left>
+   <right>
+        <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="330.0" fitWidth="304.0" layoutX="23.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/LOGO.png" />
+                    </image>
+                </ImageView>
+                <Text fill="WHITE" layoutX="110.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="2.0" style="-fx-font-family: rubik;" text="CuraCloud" textAlignment="CENTER">
+                    <font>
+                        <Font size="28.0" />
+                    </font>
+                </Text>
+            <Text fill="#515151" layoutX="140.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="2.0" style="-fx-font-family: rubik;" text="Welcome" textAlignment="CENTER">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            </children>
+        </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,427 @@
+/* This block was not properly closed */
+
+/* Remove duplicate definitions of .white-bg */
+.bg-color-1 {
+    -fx-background-color: linear-gradient(to bottom right, #d6ffed, #b0cbf9);
+}
+
+.bg-color-2{
+    -fx-background-color: linear-gradient(to bottom right, #d6ffed, #b0f9c5);
+}
+
+
+.bg-color{
+    -fx-background-color: linear-gradient(to bottom right, #00B362, #5381ac);
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+    -fx-border-radius: 30px 50px; /* More rounded horizontally than vertically */
+    -fx-padding: 10px 20px; /* Adjust padding for better visual appearance */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5, 0, 0, 0); /* Add drop shadow effect */
+    -fx-transition: all 0.3s; /* Smooth transition effect */
+}
+
+bg-color.hover {
+    -fx-background-color: linear-gradient(to bottom right, #0be86b, #6fa8dc); /* Lighter color on hover */
+    -fx-translate-y: -2px; /* Move the button slightly upwards */
+}
+
+/* Removed unnecessary comments */
+.radius {
+    -fx-background-radius: 6px;
+}
+
+.text-field-1 {
+    -fx-border-color: #000;
+    -fx-border-width: 0.3px; /* Corrected misspelling */
+    -fx-font-family: Tahoma;
+}
+
+.text-field-1:focused {
+    -fx-border-color: linear-gradient(to bottom right, #00b362, #5381ac);
+}
+
+.btn-1 {
+    -fx-background-color: linear-gradient(to bottom right, #00B362, #5381ac);
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+    -fx-border-radius: 30px 50px; /* More rounded horizontally than vertically */
+    -fx-padding: 10px 20px; /* Adjust padding for better visual appearance */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5, 0, 0, 0); /* Add drop shadow effect */
+    -fx-transition: all 0.3s; /* Smooth transition effect */
+}
+
+.btn-1:hover {
+    -fx-background-color: linear-gradient(to bottom right, #0be86b, #6fa8dc); /* Lighter color on hover */
+    -fx-translate-y: -2px; /* Move the button slightly upwards */
+}
+
+
+#listPUF {
+    -fx-padding: 0;
+    -fx-background-color: rgba(255, 255, 255, 0.11);
+    -fx-border-radius: 15px;
+    -fx-border-color: linear-gradient(to bottom right, #00b362, #5381ac);
+}
+
+#listPUF .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #00b362, #5381ac);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 8px 8px 0 0;
+}
+
+#listPUF .column-header,
+.filter {
+    -fx-size: 40px;
+    -fx-background-color: transparent;
+}
+
+#listPUF .column-header .label {
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+}
+#listPUF {
+    -fx-padding: 0;
+    -fx-background-color: rgba(255, 255, 255, 0.11);
+    -fx-border-radius: 15px;
+    -fx-border-color: linear-gradient(to bottom right, #00b362, #5381ac);
+}
+
+#listC .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #00b362, #5381ac);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 8px 8px 0 0;
+}
+
+#listC .column-header,
+.filter {
+    -fx-size: 40px;
+    -fx-background-color: transparent;
+}
+
+#listC .column-header .label {
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+}
+
+
+
+#listPF {
+    -fx-padding: 0;
+    -fx-background-color: rgba(255, 255, 255, 0.11);
+    -fx-border-radius: 15px;
+    -fx-border-color: linear-gradient(to bottom right, #00b362, #5381ac);
+}
+
+#listPF .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #00b362, #5381ac);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 8px 8px 0 0;
+}
+
+#listPF .column-header,
+.filter {
+    -fx-size: 40px;
+    -fx-background-color: transparent;
+}
+
+#listPF.column-header .label {
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+}
+
+
+#listP {
+    -fx-padding: 0;
+    -fx-background-color: rgba(255, 255, 255, 0.11);
+    -fx-border-radius: 15px;
+    -fx-border-color: linear-gradient(to bottom right, #00b362, #5381ac);
+}
+
+#listP .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #00b362, #5381ac);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 8px 8px 0 0;
+}
+
+#listP .column-header,
+.filter {
+    -fx-size: 40px;
+    -fx-background-color: transparent;
+}
+
+#listP .column-header .label {
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+}
+
+
+
+
+#listM {
+    -fx-padding: 0;
+    -fx-background-color: rgba(255, 255, 255, 0.11);
+    -fx-border-radius: 15px;
+    -fx-border-color: linear-gradient(to bottom right, #00b362, #5381ac);
+}
+
+#listM .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #00b362, #5381ac);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 8px 8px 0 0;
+}
+
+#listM .column-header,
+.filter {
+    -fx-size: 40px;
+    -fx-background-color: transparent;
+}
+
+#listM .column-header .label {
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+}
+
+#listPU {
+    -fx-padding: 0;
+    -fx-background-color: rgba(255, 255, 255, 0.11);
+    -fx-border-radius: 15px;
+    -fx-border-color: linear-gradient(to bottom right, #00b362, #5381ac);
+}
+
+#listPU .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #00b362, #5381ac);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 8px 8px 0 0;
+}
+
+#listPU.column-header,
+.filter {
+    -fx-size: 40px;
+    -fx-background-color: transparent;
+}
+
+#listPU .column-header .label {
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+}
+
+
+#listPMUP {
+    -fx-padding: 0;
+    -fx-background-color: rgba(255, 255, 255, 0.11);
+    -fx-border-radius: 15px;
+    -fx-border-color: linear-gradient(to bottom right, #00b362, #5381ac);
+}
+
+#listPMUP .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #00b362, #5381ac);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 8px 8px 0 0;
+}
+
+#listPMUP .column-header,
+.filter {
+    -fx-size: 40px;
+    -fx-background-color: transparent;
+}
+
+#listPMUP .column-header .label {
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+}
+#listPM {
+    -fx-padding: 0;
+    -fx-background-color: rgba(255, 255, 255, 0.11);
+    -fx-border-radius: 15px;
+    -fx-border-color: linear-gradient(to bottom right, #00b362, #5381ac);
+}
+
+#listPM .column-header-background {
+    -fx-background-color: linear-gradient(to bottom right, #00b362, #5381ac);
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 8px 8px 0 0;
+}
+
+#listPM .column-header,
+.filter {
+    -fx-size: 40px;
+    -fx-background-color: transparent;
+}
+
+#listPM .column-header .label {
+    -fx-font-family: Arial;
+    -fx-text-fill: #fff;
+}
+
+.list-cell {
+    -fx-background-color: rgba(255, 255, 255, 0.11);
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: rgba(255, 255, 255, 0.11); /* Light gray border color */
+}
+
+.list-cell .text {
+    -fx-font-family: Verdana;
+    -fx-font-weight: normal;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+.list-cell:selected {
+    -fx-background-color: #6bcb67; /* Very light blue (baby blue) */
+}
+
+/* Scrollbar */
+.list-view .scroll-bar:vertical {
+    -fx-background-color: #9ad9ff;
+}
+
+.list-view .scroll-bar:vertical .increment-button,
+.list-view .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #9ad9ff;
+}
+
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #9ad9ff; /* Color of the scrollbar */
+    -fx-background-radius: 5px;
+}
+
+.list-view .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #9ad9ff; /* Color of the scrollbar on hover */
+}
+
+.list-cell {
+    -fx-background-color: rgba(242, 245, 242, 0.25); /* Transparent background */
+}
+
+/* Hover effect */
+.list-cell:hover {
+    -fx-background-color: linear-gradient(to bottom right, #0be86b, #6fa8dc); /* Lighter color on hover */
+    -fx-translate-y: -4px; /* Move the button slightly upwards */
+}
+
+/* Style for selected ListView items */
+.list-cell:selected {
+    -fx-background-color: #69d287; /* Light blue background for selected items */
+}
+
+.listcelltext {
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-font-family: Verdana;
+}
+/* Scrollbar */
+.listcelltext .scroll-bar:vertical {
+    -fx-background-color: #9ad9ff;
+}
+
+.listcelltext .scroll-bar:vertical .increment-button,
+.listcelltext .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #9ad9ff;
+}
+
+.listcelltext .scroll-bar:vertical .thumb {
+    -fx-background-color: #9ad9ff; /* Color of the scrollbar */
+    -fx-background-radius: 5px;
+}
+
+.listcelltext .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #9ad9ff; /* Color of the scrollbar on hover */
+}
+
+.btn-2
+{
+        -fx-background-color: linear-gradient(to bottom right, rgba(0, 179, 98, 0), rgba(83, 129, 172, 0));
+        -fx-cursor: hand;
+        -fx-text-fill: #fff;
+        -fx-font-size: 14px;
+        -fx-font-family: Verdana;
+        -fx-border-radius: 30px 50px; /* More rounded horizontally than vertically */
+        -fx-padding: 10px 20px; /* Adjust padding for better visual appearance */
+        -fx-effect: dropshadow(three-pass-box, rgb(253, 253, 253), 5, 0, 0, 0); /* Add drop shadow effect */
+        -fx-transition: all 0.3s; /* Smooth transition effect */
+    }
+
+    .btn-2:hover {
+        -fx-background-color: linear-gradient(to bottom right, #0be86b, #6fa8dc); /* Lighter color on hover */
+        -fx-translate-y: -2px; /* Move the button slightly upwards */
+    }
+
+
+
+.btn-3 {
+    -fx-background-color: linear-gradient(to bottom right, rgba(11, 48, 232, 0), rgba(111, 168, 220, 0));
+    -fx-cursor: hand;
+    -fx-text-fill: #0c30a8;
+    -fx-font-size: 14px;
+    -fx-font-family: Verdana;
+    -fx-border-color:#0c30a8;
+    -fx-border-radius: 30px 50px; /* More rounded horizontally than vertically */
+    -fx-transition: all 0.3s; /* Smooth transition effect */
+}
+
+.btn-3:hover {
+    -fx-background-color: linear-gradient(to bottom right, rgba(118, 232, 11, 0), rgba(111, 168, 220, 0)); /* Lighter color on hover */
+    -fx-translate-y: -2px; /* Move the button slightly upwards */
+    -fx-border-color: #0778a6;
+}
+.text-field-custom {
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right, #00b362, #5381ac); /* Border color same as btn-1 background color */
+    -fx-border-width: 1px;
+    -fx-padding: 5px 10px; /* Adjust padding for better visual appearance */
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+}
+
+.text-field-custom:focused {
+    -fx-border-color: linear-gradient(to bottom right, #00b362, #5381ac);/* Change border color on focus */
+}
+
+.text-field-custom:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(118, 232, 11, 0.5), 10, 0, 0, 0); /* Add glow effect on hover */
+}
+
+.text-field-custom .prompt-text {
+    -fx-text-fill: white; /* Set placeholder text color to white */
+}
+.btn-4 {
+    -fx-background-color: linear-gradient(to bottom right, rgba(11, 48, 232, 0), rgba(111, 168, 220, 0));
+    -fx-cursor: hand;
+    -fx-text-fill: #ef0909;
+    -fx-font-size: 14px;
+    -fx-font-family: Verdana;
+    -fx-border-color: #ef0909;
+    -fx-border-radius: 30px 50px; /* More rounded horizontally than vertically */
+    -fx-effect: dropshadow(three-pass-box, rgb(255, 255, 255), 5, 0, 0, 0); /* Add drop shadow effect */
+    -fx-transition: all 0.3s; /* Smooth transition effect */
+}
+
+.btn-4:hover {
+    -fx-background-color: linear-gradient(to bottom right, rgba(118, 232, 11, 0), rgba(111, 168, 220, 0)); /* Lighter color on hover */
+    -fx-translate-y: -2px; /* Move the button slightly upwards */
+    -fx-border-color: #da082f;
+}
+
+
+
+.label-medication {
+    -fx-font-family: Verdana;
+    -fx-font-size: 16px; /* Adjust font size as needed */
+    -fx-text-fill: #000000; /* Text color */
+}
+
+.label-duration {
+    -fx-font-family: Verdana;
+    -fx-font-size: 16px; /* Adjust font size as needed */
+    -fx-text-fill: #000000; /* Text color */
+}
+
+.label-medication:hover,
+.label-duration:hover {
+    -fx-translate-y: -2px; /* Move the label slightly upwards on hover */
+}

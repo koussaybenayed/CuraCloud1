@@ -1,0 +1,40 @@
+.white-bg{
+    -fx-background-color: #fff;
+}
+.radius{
+    -fx-background-radius: 6px;
+}
+.text-field-1{
+    -fx-border-color: #000;
+    -fx-border-widh: .3px;
+    -fx-font-family: Tahoma;
+
+}
+.text-field-1:focused{
+    -fx-border-color:linear-gradient(to bottom right, #00b362, #5381ac);
+}
+.btn-1{
+    -fx-background-color: linear-gradient(to bottom right, #00B362, #5381ac);
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+}
+.btn-1:hover{
+    -fx-background-color: linear-gradient(to bottom right, #00B362,#5381ac);
+
+}
+.star {
+    -fx-font-size: 20px; /* Adjust the font size as needed */
+    -fx-padding: 5px;
+}
+
+/* Style for the filled star */
+.filled-star {
+    -fx-text-fill: gold; /* Color of the filled star */
+}
+
+/* Style for the empty star */
+.empty-star {
+    -fx-text-fill: lightgray; /* Color of the empty star */
+}

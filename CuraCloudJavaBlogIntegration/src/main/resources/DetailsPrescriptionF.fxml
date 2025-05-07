@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="562.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.controllers.PrescriptionDetailsF">
+    <stylesheets>
+        <URL value="@Style.css" />
+    </stylesheets>
+    <VBox alignment="CENTER_LEFT" layoutX="93.0" layoutY="81.0" prefHeight="348.0" prefWidth="579.0" spacing="10">
+        <ListView fx:id="listPUF" prefHeight="99.0" prefWidth="465.0" styleClass="white-bg radius" />
+        <Label fx:id="creationDateLabel" prefHeight="27.0" prefWidth="439.0" styleClass="label-medication" text="" textAlignment="JUSTIFY" />
+        <Label fx:id="durationLabel" prefHeight="27.0" prefWidth="407.0" styleClass="label-medication" text="" />
+    </VBox>
+    <Label layoutX="247.0" layoutY="62.0" text="Your Prescriptions" textFill="#0c2b86">
+        <font>
+            <Font name="Verdana" size="30.0" />
+        </font>
+    </Label>
+    <Button layoutX="558.0" layoutY="440.0" mnemonicParsing="false" onAction="#cancel" prefHeight="36.0" prefWidth="113.0" styleClass="btn-1" text="Back" />
+</AnchorPane>

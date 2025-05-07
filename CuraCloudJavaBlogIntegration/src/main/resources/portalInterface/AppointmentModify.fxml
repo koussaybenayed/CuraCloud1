@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.Spinner?>
+<AnchorPane prefWidth="800.0" styleClass="bg-color-1" stylesheets="@../css/DashboardAhmed.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.controllers.portalController.AppointmentEditController">
+    <children>
+        <!-- Left Side Navigation -->
+        <AnchorPane layoutY="8.0" prefHeight="592.0" prefWidth="214.0" styleClass="bg-color-1" stylesheets="@../css/DashboardAhmed.css">
+            <children>
+                <Line endX="72.99998474121094" layoutX="132.0" layoutY="160.0" startX="-120.00000762939453" stroke="#011663" />
+                <Label layoutX="14.0" layoutY="177.0" text="Features" textFill="#011663">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button fx:id="DashboardBtnId" alignment="CENTER" layoutX="14.0" layoutY="207.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="186.0" styleClass="nav-btn-2" stylesheets="@../css/DashboardAhmed.css" text="DashBoard">
+                    <graphic>
+                        <FontAwesomeIconView fill="#fff7f7" glyphName="HOME" size="18" />
+                    </graphic>
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button layoutX="14.0" layoutY="292.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="186.0" styleClass="nav-btn-2" stylesheets="@../css/DashboardAhmed.css" text="Blog">
+                    <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="VIDEO_CAMERA" size="18" />
+                    </graphic>
+                </Button>
+                <Button layoutX="14.0" layoutY="335.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="186.0" styleClass="nav-btn-2" stylesheets="@../css/DashboardAhmed.css" text="Prescreptions">
+                    <graphic>
+                        <FontAwesomeIconView fill="#f4f4f4" glyphName="FILE_TEXT" size="18" />
+                    </graphic>
+                </Button>
+                <Button fx:id="LaboratoiresBtnId" layoutX="14.0" layoutY="249.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="186.0" styleClass="nav-btn-2" stylesheets="@../css/DashboardAhmed.css" text="Laboratories">
+                    <graphic>
+                        <FontAwesomeIconView fill="#f8f8f8" glyphName="HEARTBEAT" size="18" />
+                    </graphic>
+                </Button>
+                <Button layoutX="14.0" layoutY="378.0" mnemonicParsing="false" onAction="#navigateToAppointments" prefHeight="37.0" prefWidth="186.0" styleClass="nav-btn-2" stylesheets="@../css/DashboardAhmed.css" text="Appointments">
+                    <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR" size="18" />
+                    </graphic>
+                </Button>
+                <Label layoutX="15.0" layoutY="473.0" text="Profile" textFill="#011663">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button layoutX="14.0" layoutY="496.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="186.0" styleClass="nav-btn-2" stylesheets="@../css/DashboardAhmed.css" text="Profile Settings">
+                    <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="COGS" size="18" />
+                    </graphic>
+                </Button>
+                <FontAwesomeIconView fill="#011663" glyphName="USER" layoutX="81.0" layoutY="64.0" size="40" wrappingWidth="33.23807716369629" />
+                <Label layoutX="14.0" layoutY="95.0" text="Name :" textFill="#011663">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="14.0" layoutY="122.0" text="Email :" textFill="#011663">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Button layoutX="15.0" layoutY="423.0" mnemonicParsing="false" onAction="#navigateToMedicalRecords" prefHeight="37.0" prefWidth="186.0" styleClass="nav-btn-2" stylesheets="@../css/DashboardAhmed.css" text="Medical Records">
+                    <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="BOOK" size="18" />
+                    </graphic>
+                </Button>
+            </children>
+        </AnchorPane>
+        <!-- Edit Appointment Form -->
+        <AnchorPane id="rightPanel" layoutX="214.0" prefHeight="600.0" prefWidth="586.0" style="-fx-background-color: white;">
+            <children>
+                <!-- "Edit Appointment" label -->
+                <Label layoutX="150.0" layoutY="34.0" prefHeight="51.0" prefWidth="280.0" text="Edit Appointment">
+                    <font>
+                        <Font size="34.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="Description" layoutX="193.0" layoutY="260.0" prefHeight="22.0" prefWidth="194.0" promptText="Description" />
+                <ComboBox fx:id="doctorComboBox" layoutX="190.0" layoutY="146.0" prefWidth="200.0" promptText="Select Doctor" />
+                <ComboBox fx:id="patientComboBox" layoutX="190.0" layoutY="204.0" prefWidth="200.0" promptText="Select Patient" />
+                <DatePicker fx:id="appointmentDate" layoutX="104.0" layoutY="315.0" prefHeight="22.0" prefWidth="377.0" promptText="Appointment Date" />
+                <Label fx:id="messageLabel" layoutX="8.0" layoutY="417.0" prefHeight="22.0" prefWidth="570.0" text="Unfortunately, the selected appointment dates are already reserved. Here are some available times for today:" visible="false" />
+                <Spinner fx:id="endTimeSpinner" layoutX="367.0" layoutY="377.0" />
+                <Label layoutX="302.0" layoutY="386.0" text="End Time:" />
+                <Spinner fx:id="startTimeSpinner" layoutX="88.0" layoutY="377.0" />
+                <Label layoutX="21.0" layoutY="386.0" text="Start Time:" />
+                <Button layoutX="268.0" layoutY="547.0" mnemonicParsing="false" onAction="#editAppointment" prefHeight="38.0" prefWidth="47.0" styleClass="btn-1" stylesheets="@../css/StylesAhmed.css">
+                    <graphic>
+                        <FontAwesomeIconView fill="#ffffff" glyphName="PENCIL_SQUARE" size="16" />
+                    </graphic>
+                </Button>
+                <ListView fx:id="availableSlotsListView" layoutX="11.0" layoutY="436.0" prefHeight="97.0" prefWidth="563.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.controllers.userController.Login">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0598ff;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="330.0" fitWidth="304.0" layoutX="23.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/LOGO.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="110.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="2.0" style="-fx-font-family: rubik;" text="CuraCloud" textAlignment="CENTER">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <Text fill="#515151" layoutX="120.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="2.0" text="Welcome Back" textAlignment="CENTER">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="emailTF" layoutX="108.0" layoutY="185.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="passwordTF" layoutX="108.0" layoutY="242.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;" />
+            <FontAwesomeIconView fill="#0598ff" glyphName="ENVELOPE" layoutX="74.0" layoutY="210.0" size="20" />
+            <FontAwesomeIconView fill="#0598ff" glyphName="LOCK" layoutX="77.0" layoutY="270.0" size="26" text="" />
+            <Button fx:id="loginButton" layoutX="134.0" layoutY="308.0" mnemonicParsing="false" onAction="#NormalLogin" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: #0598ff;" text="Log In" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Hyperlink alignment="CENTER" layoutX="130.0" layoutY="404.0" onAction="#ForgetPassword" prefHeight="24.0" prefWidth="90.0" text="Forgot Password ?">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Hyperlink>
+            <FontAwesomeIconView fill="#0598ff" glyphName="GROUP" layoutX="157.0" layoutY="99.0" size="35" />
+            <Text fill="#0598ff" layoutX="132.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Button layoutX="318.0" layoutY="3.0" mnemonicParsing="false" onAction="#closeWindow" style="-fx-background-color: transparent;">
+               <graphic>
+                  <FontAwesomeIconView fill="#0598ff" glyphName="CLOSE" size="15" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="158.0" layoutY="377.0" mnemonicParsing="false" onAction="#CuraWeb" style="-fx-background-color: transparent;">
+               <graphic>
+                  <FontAwesomeIconView focusTraversable="true" glyphName="CHROME" size="20">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></FontAwesomeIconView>
+               </graphic>
+            </Button>
+            <Line endX="-10.0" fill="#0598ff" layoutX="173.0" layoutY="369.0" startX="-100.0" stroke="#0598ff" />
+            <Line endX="-10.0" layoutX="284.0" layoutY="369.0" startX="-100.0" stroke="#0598ff" />
+            <Text fill="#0598ff" layoutX="168.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="or" />
+            <Hyperlink alignment="CENTER" layoutX="227.0" layoutY="465.0" onAction="#SwitchToSignUp" prefHeight="24.0" prefWidth="110.0" text="Create a new account" textFill="#797676">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

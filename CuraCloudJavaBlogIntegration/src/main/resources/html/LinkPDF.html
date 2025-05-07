@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilan added</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #FF0000;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="https://i.ibb.co/GpBDPjR/LOGO.png" alt="CuraCLoud logo" width="250" height="250">
+    <h1>Your Bilan was added successfully </h1>
+    <p>Here is your Bilan. You can check more details in the link below. </p>
+    <!-- Ajoutez le lien vers votre fichier PDF -->
+    <a id="pdfLink" href="#" target="_blank">See PDF</a>
+
+
+</div>
+<script>
+    // Exemple de code JavaScript pour mettre à jour le lien PDF en fonction de l'utilisateur connecté
+    document.addEventListener("DOMContentLoaded", function() {
+        // Supposons que vous ayez une variable userLoggedIn contenant l'ID de l'utilisateur connecté
+        var userLoggedIn = getUserId(); // Fonction hypothétique pour récupérer l'ID de l'utilisateur connecté
+
+        // Obtenir le lien PDF en fonction de l'utilisateur connecté
+        var pdfLink = getPDFLink(userLoggedIn); // Fonction hypothétique pour obtenir le lien PDF
+
+        // Mettre à jour le lien <a> avec le lien PDF obtenu
+        var linkElement = document.getElementById("pdfLink");
+        linkElement.href = pdfLink;
+    });
+
+    // Fonction hypothétique pour récupérer l'ID de l'utilisateur connecté
+    function getUserId() {
+        // Code pour récupérer l'ID de l'utilisateur connecté
+        return "123"; // Exemple d'ID utilisateur
+    }
+
+    // Fonction hypothétique pour obtenir le lien PDF en fonction de l'utilisateur connecté
+    function getPDFLink(userId) {
+        // Code pour obtenir le lien PDF en fonction de l'ID de l'utilisateur
+        // Par exemple, vous pourriez avoir une table de correspondance entre les ID utilisateur et les liens PDF
+        var pdfLinks = {
+            "123": "chemin/vers/pdf1.pdf",
+            "456": "chemin/vers/pdf2.pdf"
+            // Ajoutez d'autres correspondances ici selon vos besoins
+        };
+
+        return pdfLinks[userId] || "#"; // Retourne le lien correspondant à l'ID utilisateur, ou "#" s'il n'y a pas de correspondance
+    }
+</script>
+
+</body>
+</html>

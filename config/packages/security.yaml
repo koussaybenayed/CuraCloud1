@@ -2,11 +2,11 @@ security:
 
     role_hierarchy:
         ROLE_ADMIN:       [ROLE_ADMIN]
-        ROLE_DOCTOR:      [ROLE_USER]
-        ROLE_PHARMACY:    [ROLE_USER]
-        ROLE_RADIOLOGY:   [ROLE_USER]
-        ROLE_LAB:         [ROLE_USER]
-        ROLE_PATIENT:     [ROLE_USER]
+        ROLE_DOCTOR:      [ROLE_DOCTOR]
+        ROLE_PHARMACY:    [ROLE_PHARMACY]
+        ROLE_RADIOLOGY:   [ROLE_RADIOLOGY]
+        ROLE_LAB:         [ROLE_LAB]
+        ROLE_PATIENT:     [ROLE_PATIENT]
 
     enable_authenticator_manager: true
     # https://symfony.com/doc/current/security.html#registering-the-user-hashing-passwords
@@ -26,6 +26,21 @@ security:
         main:
             lazy: true
             provider: app_user_provider
+            custom_authenticator: App\Security\LoginFormAuthenticator
+            guard:
+                authenticators:
+                    - App\Security\GoogleAuthenticator
+            entry_point: App\Security\LoginFormAuthenticator  # Specify the entry point here
+            logout:
+                path: app_logout
+                # where to redirect after logout
+                target: app_prehome
+
+            remember_me:
+                secret: '%kernel.secret%'
+                lifetime: 604800 #1week in seconds
+                path: /
+                always_remember_me: false
             # activate different ways to authenticate
             # https://symfony.com/doc/current/security.html#the-firewall
 

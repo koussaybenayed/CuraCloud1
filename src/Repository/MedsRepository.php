@@ -45,4 +45,32 @@ class MedsRepository extends ServiceEntityRepository
 //            ->getOneOrNullResult()
 //        ;
 //    }
+public function isMedicationExists(string $medicationName): bool
+{
+    $qb = $this->createQueryBuilder('m')
+        ->where('m.name = :medicationName')
+        ->setParameter('medicationName', $medicationName);
+
+    return (bool) $qb->getQuery()->getOneOrNullResult();
 }
+
+public function findMedsByName(string $name): ?Meds
+{
+    return $this->createQueryBuilder('m')
+        ->andWhere('m.name = :name')
+        ->setParameter('name', $name)
+        ->getQuery()
+        ->getOneOrNullResult();
+}
+
+public function findMedsByPrice(float $price): ?Meds
+{
+    return $this->createQueryBuilder('m')
+        ->andWhere('m.price = :price')
+        ->setParameter('price', $price)
+        ->getQuery()
+        ->getOneOrNullResult();
+}
+
+}
+
